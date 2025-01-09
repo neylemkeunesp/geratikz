@@ -162,6 +162,169 @@ def compile_tikz(tikz_code: str) -> Path:
         images[0].save(png_path, "PNG")
         return png_path
 
+def get_available_models() -> list[dict]:
+    """Fetch available models from OpenRouter API."""
+    headers = {
+        "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
+        "HTTP-Referer": "http://localhost:3333",
+        "Content-Type": "application/json"
+    }
+    
+    try:
+        logger.info("Fetching models from OpenRouter API...")
+        response = requests.get(
+            "https://openrouter.ai/api/v1/models",
+            headers=headers,
+            timeout=10
+        )
+        response.raise_for_status()
+        
+        models = response.json()
+        logger.info(f"Retrieved {len(models)} models from OpenRouter")
+        
+        # Filter for models that support chat completion
+        chat_models = []
+        for model in models:
+            types = model.get("types", [])
+            context_length = model.get("context_length", 0)
+            
+            # Only include models that:
+            # 1. Support chat completion
+            # 2. Have a reasonable context length (>1000 tokens)
+            # 3. Have valid pricing information
+            if (any(t == "chat" for t in types) and 
+                context_length >= 1000 and 
+                model.get("pricing", {}).get("prompt") is not None):
+                chat_models.append(model)
+        
+        logger.info(f"Filtered to {len(chat_models)} valid chat models")
+        
+        # Sort by pricing (cost per 1k tokens)
+        chat_models.sort(key=lambda x: x.get("pricing", {}).get("prompt", 0))
+        
+        # Log the available models for debugging
+        for model in chat_models:
+            logger.info(f"Available model: {model.get('id')} - "
+                       f"Context: {model.get('context_length')} tokens, "
+                       f"Price: {model.get('pricing', {}).get('prompt', 0):.5f} per token")
+        
+        return chat_models
+        
+    except requests.exceptions.Timeout:
+        logger.error("Timeout while fetching models from OpenRouter")
+        return get_fallback_models()
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Request failed while fetching models: {str(e)}")
+        return get_fallback_models()
+    except Exception as e:
+        logger.error(f"Unexpected error while fetching models: {str(e)}")
+        return get_fallback_models()
+
+def get_fallback_models() -> list[dict]:
+    """Return a list of fallback models when OpenRouter API is unavailable."""
+    return [
+        {
+            "id": "anthropic/claude-3-opus-20240229",
+            "name": "Claude 3 Opus",
+            "pricing": {"prompt": 0.00150}
+        },
+        {
+            "id": "anthropic/claude-3-sonnet-20240229",
+            "name": "Claude 3 Sonnet",
+            "pricing": {"prompt": 0.00075}
+        },
+        {
+            "id": "anthropic/claude-3-haiku-20240307",
+            "name": "Claude 3 Haiku",
+            "pricing": {"prompt": 0.00025}
+        },
+        {
+            "id": "anthropic/claude-2.1",
+            "name": "Claude 2.1",
+            "pricing": {"prompt": 0.00080}
+        },
+        {
+            "id": "anthropic/claude-2.0",
+            "name": "Claude 2.0",
+            "pricing": {"prompt": 0.00080}
+        },
+        {
+            "id": "anthropic/claude-instant-1.2",
+            "name": "Claude Instant 1.2",
+            "pricing": {"prompt": 0.00020}
+        },
+        {
+            "id": "google/gemini-pro",
+            "name": "Gemini Pro",
+            "pricing": {"prompt": 0.00010}
+        },
+        {
+            "id": "google/gemini-pro-vision",
+            "name": "Gemini Pro Vision",
+            "pricing": {"prompt": 0.00010}
+        },
+        {
+            "id": "meta-llama/llama-2-13b-chat",
+            "name": "Llama 2 13B",
+            "pricing": {"prompt": 0.00010}
+        },
+        {
+            "id": "meta-llama/llama-2-70b-chat",
+            "name": "Llama 2 70B",
+            "pricing": {"prompt": 0.00015}
+        },
+        {
+            "id": "mistral/mistral-tiny",
+            "name": "Mistral Tiny",
+            "pricing": {"prompt": 0.00010}
+        },
+        {
+            "id": "mistral/mistral-small",
+            "name": "Mistral Small",
+            "pricing": {"prompt": 0.00020}
+        },
+        {
+            "id": "mistral/mistral-medium",
+            "name": "Mistral Medium",
+            "pricing": {"prompt": 0.00040}
+        },
+        {
+            "id": "perplexity/pplx-7b-chat",
+            "name": "PPLX 7B",
+            "pricing": {"prompt": 0.00010}
+        },
+        {
+            "id": "perplexity/pplx-70b-chat",
+            "name": "PPLX 70B",
+            "pricing": {"prompt": 0.00020}
+        },
+        {
+            "id": "perplexity/pplx-online",
+            "name": "PPLX Online",
+            "pricing": {"prompt": 0.00020}
+        },
+        {
+            "id": "openai/gpt-4",
+            "name": "GPT-4",
+            "pricing": {"prompt": 0.00300}
+        },
+        {
+            "id": "openai/gpt-4-turbo",
+            "name": "GPT-4 Turbo",
+            "pricing": {"prompt": 0.00100}
+        },
+        {
+            "id": "openai/gpt-4-vision",
+            "name": "GPT-4 Vision",
+            "pricing": {"prompt": 0.00300}
+        },
+        {
+            "id": "openai/gpt-3.5-turbo",
+            "name": "GPT-3.5 Turbo",
+            "pricing": {"prompt": 0.00015}
+        }
+    ]
+
 def validate_figure(description: str, image_path: Path, model: str = "anthropic/claude-3-haiku") -> tuple[bool, str]:
     """Use OpenRouter Vision to analyze and validate the figure.
     
@@ -220,10 +383,13 @@ async def root():
 async def home(request: Request):
     logger.info("Handling UI route")  # Debug print
     try:
+        models = get_available_models()
+        default_model = "anthropic/claude-3-haiku"
         return templates.TemplateResponse("index.html", {
             "request": request, 
             "error": None,
-            "model": "anthropic/claude-3-haiku"  # Set default model
+            "model": default_model,
+            "available_models": models
         })
     except Exception as e:
         logger.error(f"Template error: {str(e)}")
@@ -245,7 +411,8 @@ async def generate(request: Request, description: str = Form(...), model: str = 
                     "request": request,
                     "error": "Invalid OpenRouter API key. Please check your configuration. Key should start with 'sk-or-'",
                     "description": description,
-                    "model": model
+                    "model": model,
+                    "available_models": get_available_models()
                 }
             )
             
@@ -264,7 +431,8 @@ async def generate(request: Request, description: str = Form(...), model: str = 
                 "is_valid": is_valid,
                 "analysis": analysis,
                 "error": None,
-                "model": model
+                "model": model,
+                "available_models": get_available_models()
             }
         )
     except requests.exceptions.HTTPError as e:
@@ -274,7 +442,8 @@ async def generate(request: Request, description: str = Form(...), model: str = 
                 "request": request,
                 "error": "Invalid OpenRouter API key. Please check your configuration.",
                 "description": description,
-                "model": model
+                "model": model,
+                "available_models": get_available_models()
             }
         )
     except Exception as e:
@@ -283,7 +452,9 @@ async def generate(request: Request, description: str = Form(...), model: str = 
             {
                 "request": request,
                 "error": str(e),
-                "description": description
+                "description": description,
+                "model": model,
+                "available_models": get_available_models()
             }
         )
 

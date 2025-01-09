@@ -1,0 +1,8 @@
+Starting network diagnostics...
+
+=== DNS Test ===
+DNS resolution failed: [Errno -2] Name or service not known
+
+DNS test failed
+
+Diagnostics complete.

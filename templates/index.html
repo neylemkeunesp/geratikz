@@ -21,9 +21,11 @@
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     required
                 >
-                    <option value="anthropic/claude-3-haiku" {% if model == "anthropic/claude-3-haiku" %}selected{% endif %}>Claude 3 Haiku (Fast)</option>
-                    <option value="anthropic/claude-3-sonnet" {% if model == "anthropic/claude-3-sonnet" %}selected{% endif %}>Claude 3 Sonnet (Balanced)</option>
-                    <option value="anthropic/claude-3-opus" {% if model == "anthropic/claude-3-opus" %}selected{% endif %}>Claude 3 Opus (Powerful)</option>
+                    {% for m in available_models %}
+                        <option value="{{ m.id }}" {% if model == m.id %}selected{% endif %}>
+                            {{ m.name }} ({{ "%.3f" | format(m.pricing.prompt * 100) }}¢ per 1k tokens)
+                        </option>
+                    {% endfor %}
                 </select>
             </div>
             <div class="mb-4">

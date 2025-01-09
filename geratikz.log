@@ -1,0 +1,1618 @@
+2025-01-09 11:41:05,989 - __main__ - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 11:41:05,990 - __main__ - INFO - Loaded API key: sk-proj-pI...
+2025-01-09 11:41:06,007 - __main__ - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 11:41:27,736 - __main__ - INFO - Handling UI route
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_name with data[0:5]
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_data with data[6:32]
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_name with data[33:44]
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_data with data[45:53]
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-01-09 11:41:34,547 - python_multipart.multipart - DEBUG - Calling on_end with no data
+2025-01-09 11:41:37,541 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-01-09 11:41:37,541 - python_multipart.multipart - DEBUG - Calling on_field_name with data[0:5]
+2025-01-09 11:41:37,541 - python_multipart.multipart - DEBUG - Calling on_field_data with data[6:32]
+2025-01-09 11:41:37,541 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-01-09 11:41:37,541 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-01-09 11:41:37,541 - python_multipart.multipart - DEBUG - Calling on_field_name with data[33:44]
+2025-01-09 11:41:37,542 - python_multipart.multipart - DEBUG - Calling on_field_data with data[45:53]
+2025-01-09 11:41:37,542 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-01-09 11:41:37,542 - python_multipart.multipart - DEBUG - Calling on_end with no data
+2025-01-09 11:44:03,393 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 11:44:03,394 - INFO - Loaded API key: sk-proj-pI...
+2025-01-09 11:44:03,415 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 11:44:31,007 - INFO - Handling UI route
+2025-01-09 11:52:58,646 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 11:52:58,646 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 11:52:58,668 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 11:53:22,222 - INFO - Handling UI route
+2025-01-09 13:27:52,022 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 13:27:52,023 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 13:27:52,039 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 13:28:17,757 - INFO - Handling UI route
+2025-01-09 13:28:25,670 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 13:28:25,670 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 13:28:25,670 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "triangle"
+    }
+  ]
+}
+2025-01-09 13:28:25,735 - INFO - Response status code: 401
+2025-01-09 13:28:25,735 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 16:29:59 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '60', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff5cf2c196ff252-GRU'}
+2025-01-09 13:28:25,735 - INFO - Response text: {"error":{"message":"No auth credentials found","code":401}}
+2025-01-09 13:29:24,454 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 13:29:24,455 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 13:29:24,470 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 13:29:36,342 - INFO - Handling UI route
+2025-01-09 13:29:43,217 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 13:29:43,218 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 13:29:43,218 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "triangle"
+    }
+  ]
+}
+2025-01-09 13:29:43,277 - INFO - Response status code: 401
+2025-01-09 13:29:43,277 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 16:31:16 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '60', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff5d1109e6e603c-GRU'}
+2025-01-09 13:29:43,277 - INFO - Response text: {"error":{"message":"No auth credentials found","code":401}}
+2025-01-09 13:29:55,799 - INFO - Handling UI route
+2025-01-09 13:30:00,435 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 13:30:00,435 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 13:30:00,435 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "fff"
+    }
+  ]
+}
+2025-01-09 13:30:00,463 - INFO - Response status code: 401
+2025-01-09 13:30:00,463 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 16:31:33 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '60', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff5d17c2ec4f175-GRU'}
+2025-01-09 13:30:00,464 - INFO - Response text: {"error":{"message":"No auth credentials found","code":401}}
+2025-01-09 13:41:03,496 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 13:41:03,497 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 13:41:03,514 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 13:41:22,063 - INFO - Handling UI route
+2025-01-09 13:41:29,437 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 13:41:29,437 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 13:41:29,437 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "cat"
+    }
+  ]
+}
+2025-01-09 13:41:29,488 - INFO - Response status code: 401
+2025-01-09 13:41:29,488 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 16:43:02 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '60', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff5e24e8ab551ae-GRU'}
+2025-01-09 13:41:29,488 - INFO - Response text: {"error":{"message":"No auth credentials found","code":401}}
+2025-01-09 13:45:04,170 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 13:45:04,171 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 13:45:04,185 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 13:45:19,928 - INFO - Handling UI route
+2025-01-09 13:45:25,720 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 13:45:25,720 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 13:45:25,720 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "cat"
+    }
+  ]
+}
+2025-01-09 13:45:27,250 - INFO - Response status code: 200
+2025-01-09 13:45:27,250 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 16:46:59 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff5e8134dbaf1e5-GRU', 'Content-Encoding': 'gzip'}
+2025-01-09 13:45:27,250 - INFO - Response text: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1736441219-NpqKR5DnMlHIxuPCO5fO","provider":"Anthropic","model":"anthropic/claude-3-haiku","object":"chat.completion","created":1736441219,"choices":[{"logprobs":null,"finish_reason":"end_turn","index":0,"message":{"role":"assistant","content":"\\draw (0,0) node[circle,draw,inner sep=0.5cm] {cat};","refusal":""}}],"usage":{"prompt_tokens":138,"completion_tokens":28,"total_tokens":166}}
+2025-01-09 13:45:27,250 - INFO - OpenRouter response: {'id': 'gen-1736441219-NpqKR5DnMlHIxuPCO5fO', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736441219, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': '\\draw (0,0) node[circle,draw,inner sep=0.5cm] {cat};', 'refusal': ''}}], 'usage': {'prompt_tokens': 138, 'completion_tokens': 28, 'total_tokens': 166}}
+2025-01-09 13:45:27,250 - INFO - Generated TikZ code: \begin{tikzpicture}
+\draw (0,0) node[circle,draw,inner sep=0.5cm] {cat};
+\end{tikzpicture}
+2025-01-09 13:45:27,487 - INFO - LaTeX compilation output: This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+(/tmp/tmprpv81dwg/figure.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file figure.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./figure.aux) )</usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on figure.pdf (1 page, 10968 bytes).
+Transcript written on figure.log.
+
+2025-01-09 13:45:27,487 - INFO - LaTeX compilation errors: 
+2025-01-09 13:45:28,942 - INFO - OpenRouter response: {'id': 'gen-1736441221-bBomevwtSGj8pLl1zgr7', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736441221, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': 'No, the provided TikZ figure does not accurately represent the description "cat". The image simply shows a circular shape with the word "cat" written inside it, but it does not depict an actual cat or any visual representation of a cat.', 'refusal': ''}}], 'usage': {'prompt_tokens': 89, 'completion_tokens': 57, 'total_tokens': 146}}
+2025-01-09 13:45:28,943 - INFO - Image analysis: No, the provided TikZ figure does not accurately represent the description "cat". The image simply shows a circular shape with the word "cat" written inside it, but it does not depict an actual cat or any visual representation of a cat.
+2025-01-09 13:46:54,815 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 13:46:54,816 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 13:46:54,834 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 13:47:38,646 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 13:47:38,646 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 13:47:38,646 - INFO - Payload: {
+  "model": "anthropic/claude-3-sonnet",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "Draw a 3D cone  "
+    }
+  ]
+}
+2025-01-09 13:47:42,977 - INFO - Response status code: 200
+2025-01-09 13:47:42,978 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 16:49:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff5eb521a7cf203-GRU', 'Content-Encoding': 'gzip'}
+2025-01-09 13:47:42,978 - INFO - Response text: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1736441352-lbecXoi2ngSMibuDqyEE","provider":"Anthropic","model":"anthropic/claude-3-sonnet","object":"chat.completion","created":1736441352,"choices":[{"logprobs":null,"finish_reason":"end_turn","index":0,"message":{"role":"assistant","content":"\\tikzset{%\n  3D/.style={%\n    xyz spin=25, % Rotation around z axis\n    x=0.866025404cm,y=-0.5cm,z=0.28867513cm % Isometric projection\n  }\n}\n\n\\begin{tikzpicture}[3D]\n  \\shade[canvas is xy plane at z=0,opacity=0.6]\n    (0,0) -- (2,0) arc(0:60:2) -- cycle;\n  \\shadedraw[canvas is xy plane at z=0,opacity=0.6]\n    (0,0) circle(2);\n  \\shadedraw[canvas is yz plane at x=0,opacity=0.6]\n    (0,0) -- (0,2) arc(90:-30:2) -- cycle;\n\\end{tikzpicture}","refusal":""}}],"usage":{"prompt_tokens":143,"completion_tokens":215,"total_tokens":358}}
+2025-01-09 13:47:42,978 - INFO - OpenRouter response: {'id': 'gen-1736441352-lbecXoi2ngSMibuDqyEE', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-sonnet', 'object': 'chat.completion', 'created': 1736441352, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': '\\tikzset{%\n  3D/.style={%\n    xyz spin=25, % Rotation around z axis\n    x=0.866025404cm,y=-0.5cm,z=0.28867513cm % Isometric projection\n  }\n}\n\n\\begin{tikzpicture}[3D]\n  \\shade[canvas is xy plane at z=0,opacity=0.6]\n    (0,0) -- (2,0) arc(0:60:2) -- cycle;\n  \\shadedraw[canvas is xy plane at z=0,opacity=0.6]\n    (0,0) circle(2);\n  \\shadedraw[canvas is yz plane at x=0,opacity=0.6]\n    (0,0) -- (0,2) arc(90:-30:2) -- cycle;\n\\end{tikzpicture}', 'refusal': ''}}], 'usage': {'prompt_tokens': 143, 'completion_tokens': 215, 'total_tokens': 358}}
+2025-01-09 13:47:42,979 - INFO - Generated TikZ code: \tikzset{%
+  3D/.style={%
+    xyz spin=25, % Rotation around z axis
+    x=0.866025404cm,y=-0.5cm,z=0.28867513cm % Isometric projection
+  }
+}
+
+\begin{tikzpicture}[3D]
+  \shade[canvas is xy plane at z=0,opacity=0.6]
+    (0,0) -- (2,0) arc(0:60:2) -- cycle;
+  \shadedraw[canvas is xy plane at z=0,opacity=0.6]
+    (0,0) circle(2);
+  \shadedraw[canvas is yz plane at x=0,opacity=0.6]
+    (0,0) -- (0,2) arc(90:-30:2) -- cycle;
+\end{tikzpicture}
+2025-01-09 13:51:33,920 - ERROR - LaTeX compilation failed: This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+(/tmp/tmpk01gq0jc/figure.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file figure.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+! Package pgfkeys Error: I do not know the key '/tikz/xyz spin', to which you p
+assed '25', and I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{tikzpicture}[3D]
+                            
+? ! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.13 \begin{tikzpicture}[3D]
+                            
+? 
+! Package pgfkeys Error: I do not know the key '/tikz/canvas is xy plane at z',
+ to which you passed '0', and I am going to ignore it. Perhaps you misspelled i
+t.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...ade[canvas is xy plane at z=0,opacity=0.6]
+                                                  
+? 
+! Package pgfkeys Error: I do not know the key '/tikz/canvas is xy plane at z',
+ to which you passed '0', and I am going to ignore it. Perhaps you misspelled i
+t.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...raw[canvas is xy plane at z=0,opacity=0.6]
+                                                  
+? ! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.16 ...raw[canvas is xy plane at z=0,opacity=0.6]
+                                                  
+? 
+! Package pgfkeys Error: I do not know the key '/tikz/canvas is yz plane at x',
+ to which you passed '0', and I am going to ignore it. Perhaps you misspelled i
+t.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...raw[canvas is yz plane at x=0,opacity=0.6]
+                                                  
+? [1] (./figure.aux) )
+Output written on figure.pdf (1 page, 1754 bytes).
+Transcript written on figure.log.
+ 
+2025-01-09 13:51:38,744 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 13:51:38,744 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 13:51:38,759 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 13:52:09,795 - INFO - Handling UI route
+2025-01-09 13:52:19,428 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 13:52:19,428 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 13:52:19,428 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "3d cone"
+    }
+  ]
+}
+2025-01-09 13:52:22,435 - INFO - Response status code: 200
+2025-01-09 13:52:22,435 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 16:53:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff5f22d1f0fdec8-GRU', 'Content-Encoding': 'gzip'}
+2025-01-09 13:52:22,435 - INFO - Response text: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1736441634-XFIbm2mHx5jP7JpZ69PT","provider":"Anthropic","model":"anthropic/claude-3-haiku","object":"chat.completion","created":1736441634,"choices":[{"logprobs":null,"finish_reason":"end_turn","index":0,"message":{"role":"assistant","content":"\\begin{tikzpicture}\n\\coordinate (apex) at (0,3,0);\n\\draw[thick] (0,0,0) -- (apex);\n\\draw[thick] (0,0,0) circle (2);\n\\end{tikzpicture}","refusal":""}}],"usage":{"prompt_tokens":141,"completion_tokens":71,"total_tokens":212}}
+2025-01-09 13:52:22,436 - INFO - OpenRouter response: {'id': 'gen-1736441634-XFIbm2mHx5jP7JpZ69PT', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736441634, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': '\\begin{tikzpicture}\n\\coordinate (apex) at (0,3,0);\n\\draw[thick] (0,0,0) -- (apex);\n\\draw[thick] (0,0,0) circle (2);\n\\end{tikzpicture}', 'refusal': ''}}], 'usage': {'prompt_tokens': 141, 'completion_tokens': 71, 'total_tokens': 212}}
+2025-01-09 13:52:22,436 - INFO - Generated TikZ code: \begin{tikzpicture}
+\coordinate (apex) at (0,3,0);
+\draw[thick] (0,0,0) -- (apex);
+\draw[thick] (0,0,0) circle (2);
+\end{tikzpicture}
+2025-01-09 13:52:22,598 - INFO - LaTeX compilation output: This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+(/tmp/tmpyhp7bz44/figure.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file figure.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+[1] (./figure.aux) )
+Output written on figure.pdf (1 page, 1154 bytes).
+Transcript written on figure.log.
+
+2025-01-09 13:52:22,599 - INFO - LaTeX compilation errors: 
+2025-01-09 13:52:25,305 - INFO - OpenRouter response: {'id': 'gen-1736441636-Y4ufxkRM7JRuE9Suquys', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736441636, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': 'No, the figure you provided does not accurately represent a 3D cone. The image shows a 2D circular shape with a vertical line passing through the center, which is not representative of a 3D cone. A 3D cone would typically be depicted with a circular base and a tapering, pointed top or apex rising above the base. The provided figure is a flat, 2-dimensional representation and does not convey the 3-dimensional nature of a cone.', 'refusal': ''}}], 'usage': {'prompt_tokens': 266, 'completion_tokens': 103, 'total_tokens': 369}}
+2025-01-09 13:52:25,305 - INFO - Image analysis: No, the figure you provided does not accurately represent a 3D cone. The image shows a 2D circular shape with a vertical line passing through the center, which is not representative of a 3D cone. A 3D cone would typically be depicted with a circular base and a tapering, pointed top or apex rising above the base. The provided figure is a flat, 2-dimensional representation and does not convey the 3-dimensional nature of a cone.
+2025-01-09 14:10:41,186 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 14:10:41,187 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 14:10:41,211 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 14:10:59,537 - INFO - Handling UI route
+2025-01-09 14:10:59,687 - ERROR - Failed to fetch models: 'str' object has no attribute 'get'
+2025-01-09 14:11:09,654 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 14:11:09,654 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 14:11:09,654 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "cone"
+    }
+  ]
+}
+2025-01-09 14:11:13,467 - INFO - Response status code: 200
+2025-01-09 14:11:13,467 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 17:12:43 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff60dc4eeb7ae4d-GRU', 'Content-Encoding': 'gzip'}
+2025-01-09 14:11:13,468 - INFO - Response text: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1736442763-JvYH2AW6w2qN1JbtFejg","provider":"Anthropic","model":"anthropic/claude-3-haiku","object":"chat.completion","created":1736442763,"choices":[{"logprobs":null,"finish_reason":"end_turn","index":0,"message":{"role":"assistant","content":"\\begin{tikzpicture}\n\\draw (0,0) -- (0,3);\n\\draw[rotate=30] (0,0) -- (0,3);\n\\draw[rotate=60] (0,0) -- (0,3);\n\\draw[rotate=90] (0,0) -- (0,3);\n\\draw[rotate=120] (0,0) -- (0,3);\n\\draw[rotate=150] (0,0) -- (0,3);\n\\draw[rotate=180] (0,0) -- (0,3);\n\\draw[rotate=210] (0,0) -- (0,3);\n\\draw[rotate=240] (0,0) -- (0,3);\n\\draw[rotate=270] (0,0) -- (0,3);\n\\draw[rotate=300] (0,0) -- (0,3);\n\\draw[rotate=330] (0,0) -- (0,3);\n\\end{tikzpicture}","refusal":""}}],"usage":{"prompt_tokens":138,"completion_tokens":246,"total_tokens":384}}
+2025-01-09 14:11:13,468 - INFO - OpenRouter response: {'id': 'gen-1736442763-JvYH2AW6w2qN1JbtFejg', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736442763, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': '\\begin{tikzpicture}\n\\draw (0,0) -- (0,3);\n\\draw[rotate=30] (0,0) -- (0,3);\n\\draw[rotate=60] (0,0) -- (0,3);\n\\draw[rotate=90] (0,0) -- (0,3);\n\\draw[rotate=120] (0,0) -- (0,3);\n\\draw[rotate=150] (0,0) -- (0,3);\n\\draw[rotate=180] (0,0) -- (0,3);\n\\draw[rotate=210] (0,0) -- (0,3);\n\\draw[rotate=240] (0,0) -- (0,3);\n\\draw[rotate=270] (0,0) -- (0,3);\n\\draw[rotate=300] (0,0) -- (0,3);\n\\draw[rotate=330] (0,0) -- (0,3);\n\\end{tikzpicture}', 'refusal': ''}}], 'usage': {'prompt_tokens': 138, 'completion_tokens': 246, 'total_tokens': 384}}
+2025-01-09 14:11:13,468 - INFO - Generated TikZ code: \begin{tikzpicture}
+\draw (0,0) -- (0,3);
+\draw[rotate=30] (0,0) -- (0,3);
+\draw[rotate=60] (0,0) -- (0,3);
+\draw[rotate=90] (0,0) -- (0,3);
+\draw[rotate=120] (0,0) -- (0,3);
+\draw[rotate=150] (0,0) -- (0,3);
+\draw[rotate=180] (0,0) -- (0,3);
+\draw[rotate=210] (0,0) -- (0,3);
+\draw[rotate=240] (0,0) -- (0,3);
+\draw[rotate=270] (0,0) -- (0,3);
+\draw[rotate=300] (0,0) -- (0,3);
+\draw[rotate=330] (0,0) -- (0,3);
+\end{tikzpicture}
+2025-01-09 14:11:13,657 - INFO - LaTeX compilation output: This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+(/tmp/tmpd7g75nw6/figure.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file figure.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+[1] (./figure.aux) )
+Output written on figure.pdf (1 page, 1138 bytes).
+Transcript written on figure.log.
+
+2025-01-09 14:11:13,657 - INFO - LaTeX compilation errors: 
+2025-01-09 14:11:15,934 - INFO - OpenRouter response: {'id': 'gen-1736442767-X22lKLMM2dzwwJu25mDU', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736442767, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': 'No, the provided TikZ figure does not accurately represent the description "cone". The image appears to show a radial pattern of lines emanating from a central point, rather than a three-dimensional cone shape. A cone would typically be represented by a triangular shape with a circular base and a pointed apex.', 'refusal': ''}}], 'usage': {'prompt_tokens': 386, 'completion_tokens': 71, 'total_tokens': 457}}
+2025-01-09 14:11:15,934 - INFO - Image analysis: No, the provided TikZ figure does not accurately represent the description "cone". The image appears to show a radial pattern of lines emanating from a central point, rather than a three-dimensional cone shape. A cone would typically be represented by a triangular shape with a circular base and a pointed apex.
+2025-01-09 14:11:16,104 - ERROR - Failed to fetch models: 'str' object has no attribute 'get'
+2025-01-09 14:39:18,767 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 14:39:18,768 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 14:39:18,786 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 14:39:46,526 - INFO - Handling UI route
+2025-01-09 14:39:46,527 - INFO - Fetching models from OpenRouter API...
+2025-01-09 14:39:46,756 - INFO - Retrieved 1 models from OpenRouter
+2025-01-09 14:39:46,756 - ERROR - Unexpected error while fetching models: 'str' object has no attribute 'get'
+2025-01-09 14:40:09,385 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 14:40:09,385 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 14:40:09,386 - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "cone\r\n"
+    }
+  ]
+}
+2025-01-09 14:40:11,864 - INFO - Response status code: 200
+2025-01-09 14:40:11,864 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 17:41:43 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff6383e4a73a4bd-GRU', 'Content-Encoding': 'gzip'}
+2025-01-09 14:40:11,864 - INFO - Response text: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1736444503-CjtOA0XAPqKtbMWfqQsl","provider":"Anthropic","model":"anthropic/claude-3-haiku","object":"chat.completion","created":1736444503,"choices":[{"logprobs":null,"finish_reason":"end_turn","index":0,"message":{"role":"assistant","content":"\\begin{tikzpicture}\n\\draw[fill=gray!30] (0,0) -- (0,4) arc (90:270:1) -- cycle;\n\\draw[fill=gray!30] (0,4) circle (1);\n\\end{tikzpicture}","refusal":""}}],"usage":{"prompt_tokens":138,"completion_tokens":74,"total_tokens":212}}
+2025-01-09 14:40:11,865 - INFO - OpenRouter response: {'id': 'gen-1736444503-CjtOA0XAPqKtbMWfqQsl', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736444503, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': '\\begin{tikzpicture}\n\\draw[fill=gray!30] (0,0) -- (0,4) arc (90:270:1) -- cycle;\n\\draw[fill=gray!30] (0,4) circle (1);\n\\end{tikzpicture}', 'refusal': ''}}], 'usage': {'prompt_tokens': 138, 'completion_tokens': 74, 'total_tokens': 212}}
+2025-01-09 14:40:11,865 - INFO - Generated TikZ code: \begin{tikzpicture}
+\draw[fill=gray!30] (0,0) -- (0,4) arc (90:270:1) -- cycle;
+\draw[fill=gray!30] (0,4) circle (1);
+\end{tikzpicture}
+2025-01-09 14:40:12,063 - INFO - LaTeX compilation output: This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+(/tmp/tmpmgbybypx/figure.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file figure.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+[1] (./figure.aux) )
+Output written on figure.pdf (1 page, 1208 bytes).
+Transcript written on figure.log.
+
+2025-01-09 14:40:12,063 - INFO - LaTeX compilation errors: 
+2025-01-09 14:40:14,990 - INFO - OpenRouter response: {'id': 'gen-1736444506-sBhVTC2WtFHAFURSleR6', 'provider': 'Anthropic', 'model': 'anthropic/claude-3-haiku', 'object': 'chat.completion', 'created': 1736444506, 'choices': [{'logprobs': None, 'finish_reason': 'end_turn', 'index': 0, 'message': {'role': 'assistant', 'content': 'No, the provided TikZ figure does not accurately represent the geometrical shape of a cone. The image shows a circular shape, which resembles a circle or a spherical object, but not a cone. A cone is a three-dimensional geometric shape that has a circular base and tapers to a point at the top. The TikZ figure does not depict the tapered, conical structure that would be expected for the description "cone".', 'refusal': ''}}], 'usage': {'prompt_tokens': 161, 'completion_tokens': 100, 'total_tokens': 261}}
+2025-01-09 14:40:14,990 - INFO - Image analysis: No, the provided TikZ figure does not accurately represent the geometrical shape of a cone. The image shows a circular shape, which resembles a circle or a spherical object, but not a cone. A cone is a three-dimensional geometric shape that has a circular base and tapers to a point at the top. The TikZ figure does not depict the tapered, conical structure that would be expected for the description "cone".
+2025-01-09 14:40:14,990 - INFO - Fetching models from OpenRouter API...
+2025-01-09 14:40:15,110 - INFO - Retrieved 1 models from OpenRouter
+2025-01-09 14:40:15,110 - ERROR - Unexpected error while fetching models: 'str' object has no attribute 'get'
+2025-01-09 14:46:08,841 - INFO - Logging initialized - Check geratikz.log for detailed logs
+2025-01-09 14:46:08,842 - INFO - Loaded API key: sk-or-v1-1...
+2025-01-09 14:46:08,860 - INFO - Starting GeraTikZ server on http://localhost:3333
+2025-01-09 14:46:26,204 - INFO - Handling UI route
+2025-01-09 14:46:26,204 - INFO - Fetching models from OpenRouter API...
+2025-01-09 14:46:26,308 - INFO - Retrieved 1 models from OpenRouter
+2025-01-09 14:46:26,309 - ERROR - Unexpected error while fetching models: 'str' object has no attribute 'get'
+2025-01-09 14:47:05,552 - INFO - Making request to OpenRouter API: https://openrouter.ai/api/v1/chat/completions
+2025-01-09 14:47:05,552 - INFO - Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+2025-01-09 14:47:05,552 - INFO - Payload: {
+  "model": "google/gemini-pro",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "the cone\r\n"
+    }
+  ]
+}
+2025-01-09 14:47:10,879 - INFO - Response status code: 200
+2025-01-09 14:47:10,879 - INFO - Response headers: {'Date': 'Thu, 09 Jan 2025 17:48:39 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'x-clerk-auth-message': 'Invalid JWT form. A JWT consists of three parts separated by dots. (reason=token-invalid, token-carrier=header)', 'x-clerk-auth-reason': 'token-invalid', 'x-clerk-auth-status': 'signed-out', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8ff642676d94f229-GRU', 'Content-Encoding': 'gzip'}
+2025-01-09 14:47:10,879 - INFO - Response text: 
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1736444919-G2tI76W1HKp9ZaCLT90W","provider":"Google","model":"google/gemini-pro","object":"chat.completion","created":1736444919,"choices":[{"logprobs":null,"finish_reason":"STOP","index":0,"message":{"role":"assistant","content":"\\begin{tikzpicture}[scale=0.6]\n\\coordinate (A) at (0,0);\n\\coordinate (B) at (2.8,-3);\n\\coordinate (C) at (-2.8,-3);\n\\coordinate (D) at (0,-0.8);\n\\draw[color=orange, fill=orange, fill opacity=0.5, rotate around={(12,28.6)}] (B) -- (A) -- (C);\n\\draw (B) -- (D) -- (C);\n\\draw[dashed, color=gray] (D) -- (0,-7);\n\\draw[color=blue, fill=blue, fill opacity=0.3] (B) -- (0,-7) -- (C);\n\n\\path (B) node [left] {$B$};\n\\path (C) node [right] {$C$};\n\\path (D) node [right] {$D$};\n\\path (0,-7) node [below] {$O$};\n\n\\draw[|-|, thick] (-3.4,-7.5)--(3.4,-7.5);\n\\draw[|-|, thick] (-3.4,-7.5)--(0,0);\n\\draw[|-|, thick] (3.4,-7.5)--(0,0);\n\n\\path (-2.4,-8) node [below] {2 cm};\n\\path (3.4,0.4) node [left] {6.28 cm};\n\n\\end{tikzpicture}","refusal":""}}],"usage":{"prompt_tokens":121,"completion_tokens":340,"total_tokens":461}}
+2025-01-09 14:47:10,879 - INFO - OpenRouter response: {'id': 'gen-1736444919-G2tI76W1HKp9ZaCLT90W', 'provider': 'Google', 'model': 'google/gemini-pro', 'object': 'chat.completion', 'created': 1736444919, 'choices': [{'logprobs': None, 'finish_reason': 'STOP', 'index': 0, 'message': {'role': 'assistant', 'content': '\\begin{tikzpicture}[scale=0.6]\n\\coordinate (A) at (0,0);\n\\coordinate (B) at (2.8,-3);\n\\coordinate (C) at (-2.8,-3);\n\\coordinate (D) at (0,-0.8);\n\\draw[color=orange, fill=orange, fill opacity=0.5, rotate around={(12,28.6)}] (B) -- (A) -- (C);\n\\draw (B) -- (D) -- (C);\n\\draw[dashed, color=gray] (D) -- (0,-7);\n\\draw[color=blue, fill=blue, fill opacity=0.3] (B) -- (0,-7) -- (C);\n\n\\path (B) node [left] {$B$};\n\\path (C) node [right] {$C$};\n\\path (D) node [right] {$D$};\n\\path (0,-7) node [below] {$O$};\n\n\\draw[|-|, thick] (-3.4,-7.5)--(3.4,-7.5);\n\\draw[|-|, thick] (-3.4,-7.5)--(0,0);\n\\draw[|-|, thick] (3.4,-7.5)--(0,0);\n\n\\path (-2.4,-8) node [below] {2 cm};\n\\path (3.4,0.4) node [left] {6.28 cm};\n\n\\end{tikzpicture}', 'refusal': ''}}], 'usage': {'prompt_tokens': 121, 'completion_tokens': 340, 'total_tokens': 461}}
+2025-01-09 14:47:10,880 - INFO - Generated TikZ code: \begin{tikzpicture}[scale=0.6]
+\coordinate (A) at (0,0);
+\coordinate (B) at (2.8,-3);
+\coordinate (C) at (-2.8,-3);
+\coordinate (D) at (0,-0.8);
+\draw[color=orange, fill=orange, fill opacity=0.5, rotate around={(12,28.6)}] (B) -- (A) -- (C);
+\draw (B) -- (D) -- (C);
+\draw[dashed, color=gray] (D) -- (0,-7);
+\draw[color=blue, fill=blue, fill opacity=0.3] (B) -- (0,-7) -- (C);
+
+\path (B) node [left] {$B$};
+\path (C) node [right] {$C$};
+\path (D) node [right] {$D$};
+\path (0,-7) node [below] {$O$};
+
+\draw[|-|, thick] (-3.4,-7.5)--(3.4,-7.5);
+\draw[|-|, thick] (-3.4,-7.5)--(0,0);
+\draw[|-|, thick] (3.4,-7.5)--(0,0);
+
+\path (-2.4,-8) node [below] {2 cm};
+\path (3.4,0.4) node [left] {6.28 cm};
+
+\end{tikzpicture}
+2025-01-09 15:11:24,456 - ERROR - LaTeX compilation failed: This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+(/tmp/tmpkh3y8hlj/figure.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file figure.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Runaway argument?
+(12,28.6)\else \expandafter \def \expandafter \tikz@transform \expandafter \ETC
+.
+! Paragraph ended before \tikz@doparseA was complete.
+<to be read again> 
+                   \par 
+l.15 
+     
+? ! Interruption.
+l.15 
+     
+? ! Extra }, or forgotten \endgroup.
+\endpgfpicture ...globally \endgroup \hss \egroup 
+                                                  \pgf@restore@layerlist@fro...
+l.28 \end{tikzpicture}
+                      
+? ! Interruption.
+<to be read again> 
+                   \let 
+l.28 \end{tikzpicture}
+                      
+? ! Missing } inserted.
+<inserted text> 
+                }
+l.28 \end{tikzpicture}
+                      
+? ! Interruption.
+<to be read again> 
+                   \endgroup 
+l.28 \end{tikzpicture}
+                      
+? ! Extra }, or forgotten \endgroup.
+\endpgfpicture ...dpicture \endgroup \hss \egroup 
+                                                  \pgfsys@typesetpicturebox ...
+l.28 \end{tikzpicture}
+                      
+? ! Interruption.
+<to be read again> 
+                   \pgf@ya 
+l.28 \end{tikzpicture}
+                      
+? ! Missing } inserted.
+<inserted text> 
+                }
+l.28 \end{tikzpicture}
+                      
+? ! Interruption.
+<to be read again> 
+                   \endgroup 
+l.28 \end{tikzpicture}
+                      
+? ! Extra }, or forgotten \endgroup.
+\endsa@boxit ...dvarwidth \color@endgroup \egroup 
+                                                  
+l.28 \end{tikzpicture}
+                      
+? ! Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  >\z@ \vskip -\ifdim \prevd...
+l.28 \end{tikzpicture}
+                      
+? ! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.28 \end{tikzpicture}
+                      
+? ! Interruption.
+<to be read again> 
+                   \vfil 
+l.28 \end{tikzpicture}
+                      
+? ! Missing } inserted.
+<inserted text> 
+                }
+l.28 \end{tikzpicture}
+                      
+? ! Interruption.
+<to be read again> 
+                   \vfil 
+l.28 \end{tikzpicture}
+                      
+? [1] [2] (./figure.aux) )
+(\end occurred when \ifx on line 11 was incomplete)
+(\end occurred when \ifx on line 11 was incomplete)
+(\end occurred when \ifx on line 11 was incomplete)
+Output written on figure.pdf (2 pages, 1151 bytes).
+Transcript written on figure.log.
+ 
+2025-01-09 15:11:24,456 - INFO - Fetching models from OpenRouter API...
+2025-01-09 15:11:24,698 - INFO - Retrieved 1 models from OpenRouter
+2025-01-09 15:11:24,698 - ERROR - Unexpected error while fetching models: 'str' object has no attribute 'get'

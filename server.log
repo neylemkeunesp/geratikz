@@ -1,34 +1,155 @@
-2025-01-09 09:20:39,368 - __main__ - INFO - Starting server...
-INFO:     Started server process [2561132]
+2025-01-09 11:08:13,069 - __main__ - INFO - Loaded API key: sk-or-v1-1...
+Starting GeraTikZ server on http://localhost:3333
+INFO:     Started server process [2618529]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:3333 (Press CTRL+C to quit)
-2025-01-09 09:20:46,724 - modified_server - INFO - Received signal 2
-ERROR:    Traceback (most recent call last):
-  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "uvloop/loop.pyx", line 1512, in uvloop.loop.Loop.run_until_complete
-  File "uvloop/loop.pyx", line 1505, in uvloop.loop.Loop.run_until_complete
-  File "uvloop/loop.pyx", line 1379, in uvloop.loop.Loop.run_forever
-  File "uvloop/loop.pyx", line 557, in uvloop.loop.Loop._run
-  File "uvloop/handles/poll.pyx", line 216, in uvloop.loop.__on_uvpoll_event
-  File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
-  File "uvloop/cbhandles.pyx", line 66, in uvloop.loop.Handle._run
-  File "uvloop/loop.pyx", line 399, in uvloop.loop.Loop._read_from_self
-  File "uvloop/loop.pyx", line 404, in uvloop.loop.Loop._invoke_signals
-  File "uvloop/loop.pyx", line 379, in uvloop.loop.Loop._ceval_process_signals
-  File "/home/lemke/geratikz/modified_server.py", line 22, in handle_exit
-    sys.exit(0)
-SystemExit: 0
+2025-01-09 11:08:17,384 - __main__ - INFO - Using API key starting with: sk-or-v1-1...
+2025-01-09 11:08:17,384 - __main__ - INFO - API key length: 73
+2025-01-09 11:08:17,384 - __main__ - INFO - Making test request to OpenRouter API...
+2025-01-09 11:08:17,384 - __main__ - INFO - Headers (sanitized): {
+  "Authorization": "Bearer sk-...",
+  "HTTP-Referer": "http://localhost:3333",
+  "Content-Type": "application/json"
+}
+2025-01-09 11:08:17,384 - __main__ - INFO - Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello"
+    }
+  ]
+}
+2025-01-09 11:08:17,385 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.openrouter.ai:443
+2025-01-09 11:08:17,416 - __main__ - ERROR - Connection error: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa73bc295d0>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)"))
+INFO:     127.0.0.1:33324 - "GET /test HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44176 - "GET / HTTP/1.1" 200 OK
+Handling UI route
+INFO:     127.0.0.1:44180 - "GET /ui HTTP/1.1" 200 OK
+2025-01-09 11:29:06,054 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_field_name with data[0:5]
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_field_data with data[6:32]
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_field_name with data[33:44]
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_field_data with data[45:53]
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-01-09 11:29:06,055 - python_multipart.multipart - DEBUG - Calling on_end with no data
+Making request to OpenRouter API...
+Headers: {'Authorization': 'Bearer sk-...', 'HTTP-Referer': 'http://localhost:3333', 'Content-Type': 'application/json'}
+Payload: {
+  "model": "anthropic/claude-3-haiku",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.\nRules:\n1. Do not include any explanatory text or comments\n2. Do not include LaTeX preamble or document environment\n3. Only include the TikZ commands needed to draw the figure\n4. If color is specified, use the appropriate TikZ color command\n5. Use exact measurements as specified in the description\nExample for 'Draw a red circle with radius 2cm centered at origin':\n\\draw[red] (0,0) circle (2cm);"
+    },
+    {
+      "role": "user",
+      "content": "triangle"
+    }
+  ]
+}
+2025-01-09 11:29:06,056 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.openrouter.ai:443
+Request error: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa73ba7e410>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)"))
+INFO:     127.0.0.1:44194 - "POST /generate HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fa73ba7e410>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lemke/.local/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/lemke/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa73ba7e410>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)"))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py", line 700, in lifespan
-    await receive()
-  File "/home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/on.py", line 137, in receive
-    return await self.receive_queue.get()
-  File "/usr/lib/python3.10/asyncio/queues.py", line 159, in get
-    await getter
-asyncio.exceptions.CancelledError
+  File "/home/lemke/geratikz/src/main.py", line 239, in generate
+    tikz_code = generate_tikz(description, model)
+  File "/home/lemke/geratikz/src/main.py", line 75, in generate_tikz
+    response = requests.post(
+  File "/home/lemke/.local/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/lemke/.local/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/lemke/.local/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lemke/.local/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lemke/.local/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa73ba7e410>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)"))
 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/home/lemke/.local/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/home/lemke/.local/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/lemke/geratikz/src/main.py", line 257, in generate
+    except requests.exceptions.HTTPError as e:
+NameError: name 'requests' is not defined. Did you mean: 'request'?
