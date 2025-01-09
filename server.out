@@ -1,0 +1,11 @@
+nohup: ignoring input
+2025-01-08 17:49:53,387 - __main__ - INFO - Starting server...
+INFO:     Started server process [2078331]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:3333 (Press CTRL+C to quit)
+INFO:     127.0.0.1:47714 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47714 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48782 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48784 - "GET /ui HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60030 - "GET / HTTP/1.1" 200 OK

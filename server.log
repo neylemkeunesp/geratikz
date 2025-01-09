@@ -1,0 +1,34 @@
+2025-01-09 09:20:39,368 - __main__ - INFO - Starting server...
+INFO:     Started server process [2561132]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:3333 (Press CTRL+C to quit)
+2025-01-09 09:20:46,724 - modified_server - INFO - Received signal 2
+ERROR:    Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1512, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1505, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1379, in uvloop.loop.Loop.run_forever
+  File "uvloop/loop.pyx", line 557, in uvloop.loop.Loop._run
+  File "uvloop/handles/poll.pyx", line 216, in uvloop.loop.__on_uvpoll_event
+  File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+  File "uvloop/cbhandles.pyx", line 66, in uvloop.loop.Handle._run
+  File "uvloop/loop.pyx", line 399, in uvloop.loop.Loop._read_from_self
+  File "uvloop/loop.pyx", line 404, in uvloop.loop.Loop._invoke_signals
+  File "uvloop/loop.pyx", line 379, in uvloop.loop.Loop._ceval_process_signals
+  File "/home/lemke/geratikz/modified_server.py", line 22, in handle_exit
+    sys.exit(0)
+SystemExit: 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py", line 700, in lifespan
+    await receive()
+  File "/home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.10/asyncio/queues.py", line 159, in get
+    await getter
+asyncio.exceptions.CancelledError
+

@@ -1,0 +1,2437 @@
+import _frozen_importlib # frozen
+import _imp # builtin
+import '_thread' # <class '_frozen_importlib.BuiltinImporter'>
+import '_warnings' # <class '_frozen_importlib.BuiltinImporter'>
+import '_weakref' # <class '_frozen_importlib.BuiltinImporter'>
+import '_io' # <class '_frozen_importlib.BuiltinImporter'>
+import 'marshal' # <class '_frozen_importlib.BuiltinImporter'>
+import 'posix' # <class '_frozen_importlib.BuiltinImporter'>
+import '_frozen_importlib_external' # <class '_frozen_importlib.FrozenImporter'>
+# installing zipimport hook
+import 'time' # <class '_frozen_importlib.BuiltinImporter'>
+import 'zipimport' # <class '_frozen_importlib.FrozenImporter'>
+# installed zipimport hook
+# /usr/lib/python3.10/encodings/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/encodings/__init__.py
+# code object from '/usr/lib/python3.10/encodings/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/codecs.cpython-310.pyc matches /usr/lib/python3.10/codecs.py
+# code object from '/usr/lib/python3.10/__pycache__/codecs.cpython-310.pyc'
+import '_codecs' # <class '_frozen_importlib.BuiltinImporter'>
+import 'codecs' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028a378b0>
+# /usr/lib/python3.10/encodings/__pycache__/aliases.cpython-310.pyc matches /usr/lib/python3.10/encodings/aliases.py
+# code object from '/usr/lib/python3.10/encodings/__pycache__/aliases.cpython-310.pyc'
+import 'encodings.aliases' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028828e80>
+import 'encodings' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028a37670>
+# /usr/lib/python3.10/encodings/__pycache__/utf_8.cpython-310.pyc matches /usr/lib/python3.10/encodings/utf_8.py
+# code object from '/usr/lib/python3.10/encodings/__pycache__/utf_8.cpython-310.pyc'
+import 'encodings.utf_8' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028a37610>
+import '_signal' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.10/__pycache__/io.cpython-310.pyc matches /usr/lib/python3.10/io.py
+# code object from '/usr/lib/python3.10/__pycache__/io.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/abc.cpython-310.pyc matches /usr/lib/python3.10/abc.py
+# code object from '/usr/lib/python3.10/__pycache__/abc.cpython-310.pyc'
+import '_abc' # <class '_frozen_importlib.BuiltinImporter'>
+import 'abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60288291e0>
+import 'io' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028828fd0>
+# /usr/lib/python3.10/__pycache__/site.cpython-310.pyc matches /usr/lib/python3.10/site.py
+# code object from '/usr/lib/python3.10/__pycache__/site.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/os.cpython-310.pyc matches /usr/lib/python3.10/os.py
+# code object from '/usr/lib/python3.10/__pycache__/os.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/stat.cpython-310.pyc matches /usr/lib/python3.10/stat.py
+# code object from '/usr/lib/python3.10/__pycache__/stat.cpython-310.pyc'
+import '_stat' # <class '_frozen_importlib.BuiltinImporter'>
+import 'stat' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602882b400>
+# /usr/lib/python3.10/__pycache__/_collections_abc.cpython-310.pyc matches /usr/lib/python3.10/_collections_abc.py
+# code object from '/usr/lib/python3.10/__pycache__/_collections_abc.cpython-310.pyc'
+import '_collections_abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602882b760>
+# /usr/lib/python3.10/__pycache__/posixpath.cpython-310.pyc matches /usr/lib/python3.10/posixpath.py
+# code object from '/usr/lib/python3.10/__pycache__/posixpath.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/genericpath.cpython-310.pyc matches /usr/lib/python3.10/genericpath.py
+# code object from '/usr/lib/python3.10/__pycache__/genericpath.cpython-310.pyc'
+import 'genericpath' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028869f90>
+import 'posixpath' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602882b7f0>
+import 'os' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602882a020>
+# /usr/lib/python3.10/__pycache__/_sitebuiltins.cpython-310.pyc matches /usr/lib/python3.10/_sitebuiltins.py
+# code object from '/usr/lib/python3.10/__pycache__/_sitebuiltins.cpython-310.pyc'
+import '_sitebuiltins' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602882b100>
+Processing user site-packages
+Adding directory: '/home/lemke/.local/lib/python3.10/site-packages'
+Processing .pth file: '/home/lemke/.local/lib/python3.10/site-packages/_geratikz.pth'
+Processing .pth file: '/home/lemke/.local/lib/python3.10/site-packages/google_generativeai-0.7.1-py3.11-nspkg.pth'
+# /usr/lib/python3.10/__pycache__/types.cpython-310.pyc matches /usr/lib/python3.10/types.py
+# code object from '/usr/lib/python3.10/__pycache__/types.cpython-310.pyc'
+import 'types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602886bdc0>
+# /usr/lib/python3.10/importlib/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/importlib/__init__.py
+# code object from '/usr/lib/python3.10/importlib/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/warnings.cpython-310.pyc matches /usr/lib/python3.10/warnings.py
+# code object from '/usr/lib/python3.10/__pycache__/warnings.cpython-310.pyc'
+import 'warnings' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602886b220>
+import 'importlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602886b730>
+# /usr/lib/python3.10/importlib/__pycache__/util.cpython-310.pyc matches /usr/lib/python3.10/importlib/util.py
+# code object from '/usr/lib/python3.10/importlib/__pycache__/util.cpython-310.pyc'
+# /usr/lib/python3.10/importlib/__pycache__/_abc.cpython-310.pyc matches /usr/lib/python3.10/importlib/_abc.py
+# code object from '/usr/lib/python3.10/importlib/__pycache__/_abc.cpython-310.pyc'
+import 'importlib._abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602886a410>
+# /usr/lib/python3.10/__pycache__/contextlib.cpython-310.pyc matches /usr/lib/python3.10/contextlib.py
+# code object from '/usr/lib/python3.10/__pycache__/contextlib.cpython-310.pyc'
+# /usr/lib/python3.10/collections/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/collections/__init__.py
+# code object from '/usr/lib/python3.10/collections/__pycache__/__init__.cpython-310.pyc'
+import 'itertools' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.10/__pycache__/keyword.cpython-310.pyc matches /usr/lib/python3.10/keyword.py
+# code object from '/usr/lib/python3.10/__pycache__/keyword.cpython-310.pyc'
+import 'keyword' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028897d60>
+# /usr/lib/python3.10/__pycache__/operator.cpython-310.pyc matches /usr/lib/python3.10/operator.py
+# code object from '/usr/lib/python3.10/__pycache__/operator.cpython-310.pyc'
+import '_operator' # <class '_frozen_importlib.BuiltinImporter'>
+import 'operator' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028897e20>
+# /usr/lib/python3.10/__pycache__/reprlib.cpython-310.pyc matches /usr/lib/python3.10/reprlib.py
+# code object from '/usr/lib/python3.10/__pycache__/reprlib.cpython-310.pyc'
+import 'reprlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028897fa0>
+import '_collections' # <class '_frozen_importlib.BuiltinImporter'>
+import 'collections' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028894940>
+# /usr/lib/python3.10/__pycache__/functools.cpython-310.pyc matches /usr/lib/python3.10/functools.py
+# code object from '/usr/lib/python3.10/__pycache__/functools.cpython-310.pyc'
+import '_functools' # <class '_frozen_importlib.BuiltinImporter'>
+import 'functools' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60288d8df0>
+import 'contextlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028895b40>
+import 'importlib.util' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602886ae90>
+# /usr/lib/python3.10/importlib/__pycache__/machinery.cpython-310.pyc matches /usr/lib/python3.10/importlib/machinery.py
+# code object from '/usr/lib/python3.10/importlib/__pycache__/machinery.cpython-310.pyc'
+import 'importlib.machinery' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028895300>
+# possible namespace for /home/lemke/.local/lib/python3.10/site-packages/google
+Processing global site-packages
+Adding directory: '/usr/local/lib/python3.10/dist-packages'
+Adding directory: '/usr/lib/python3/dist-packages'
+# /usr/lib/python3.10/__pycache__/sitecustomize.cpython-310.pyc matches /usr/lib/python3.10/sitecustomize.py
+# code object from '/usr/lib/python3.10/__pycache__/sitecustomize.cpython-310.pyc'
+# /usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-310.pyc matches /usr/lib/python3/dist-packages/apport_python_hook.py
+# code object from '/usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-310.pyc'
+import 'apport_python_hook' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028894370>
+import 'sitecustomize' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602886b490>
+import 'site' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60288299f0>
+Python 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+# /usr/lib/python3.10/logging/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/logging/__init__.py
+# code object from '/usr/lib/python3.10/logging/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/re.cpython-310.pyc matches /usr/lib/python3.10/re.py
+# code object from '/usr/lib/python3.10/__pycache__/re.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/enum.cpython-310.pyc matches /usr/lib/python3.10/enum.py
+# code object from '/usr/lib/python3.10/__pycache__/enum.cpython-310.pyc'
+import 'enum' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286ecb20>
+# /usr/lib/python3.10/__pycache__/sre_compile.cpython-310.pyc matches /usr/lib/python3.10/sre_compile.py
+# code object from '/usr/lib/python3.10/__pycache__/sre_compile.cpython-310.pyc'
+import '_sre' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.10/__pycache__/sre_parse.cpython-310.pyc matches /usr/lib/python3.10/sre_parse.py
+# code object from '/usr/lib/python3.10/__pycache__/sre_parse.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/sre_constants.cpython-310.pyc matches /usr/lib/python3.10/sre_constants.py
+# code object from '/usr/lib/python3.10/__pycache__/sre_constants.cpython-310.pyc'
+import 'sre_constants' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286eefb0>
+import 'sre_parse' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286ee7a0>
+import 'sre_compile' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286eded0>
+import '_locale' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.10/__pycache__/copyreg.cpython-310.pyc matches /usr/lib/python3.10/copyreg.py
+# code object from '/usr/lib/python3.10/__pycache__/copyreg.cpython-310.pyc'
+import 'copyreg' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028744af0>
+import 're' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60288942e0>
+# /usr/lib/python3.10/__pycache__/traceback.cpython-310.pyc matches /usr/lib/python3.10/traceback.py
+# code object from '/usr/lib/python3.10/__pycache__/traceback.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/linecache.cpython-310.pyc matches /usr/lib/python3.10/linecache.py
+# code object from '/usr/lib/python3.10/__pycache__/linecache.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/tokenize.cpython-310.pyc matches /usr/lib/python3.10/tokenize.py
+# code object from '/usr/lib/python3.10/__pycache__/tokenize.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/token.cpython-310.pyc matches /usr/lib/python3.10/token.py
+# code object from '/usr/lib/python3.10/__pycache__/token.cpython-310.pyc'
+import 'token' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287462c0>
+import 'tokenize' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028745a20>
+import 'linecache' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287457b0>
+import 'traceback' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028744d60>
+# /usr/lib/python3.10/__pycache__/weakref.cpython-310.pyc matches /usr/lib/python3.10/weakref.py
+# code object from '/usr/lib/python3.10/__pycache__/weakref.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/_weakrefset.cpython-310.pyc matches /usr/lib/python3.10/_weakrefset.py
+# code object from '/usr/lib/python3.10/__pycache__/_weakrefset.cpython-310.pyc'
+import '_weakrefset' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287474f0>
+import 'weakref' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028746c80>
+# /usr/lib/python3.10/collections/__pycache__/abc.cpython-310.pyc matches /usr/lib/python3.10/collections/abc.py
+# code object from '/usr/lib/python3.10/collections/__pycache__/abc.cpython-310.pyc'
+import 'collections.abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028747fa0>
+# /usr/lib/python3.10/__pycache__/string.cpython-310.pyc matches /usr/lib/python3.10/string.py
+# code object from '/usr/lib/python3.10/__pycache__/string.cpython-310.pyc'
+import '_string' # <class '_frozen_importlib.BuiltinImporter'>
+import 'string' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287840d0>
+# /usr/lib/python3.10/__pycache__/threading.cpython-310.pyc matches /usr/lib/python3.10/threading.py
+# code object from '/usr/lib/python3.10/__pycache__/threading.cpython-310.pyc'
+import 'threading' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028784640>
+import 'atexit' # <class '_frozen_importlib.BuiltinImporter'>
+import 'logging' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60288dbd90>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/config.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/config.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/config.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/__future__.cpython-310.pyc matches /usr/lib/python3.10/__future__.py
+# code object from '/usr/lib/python3.10/__pycache__/__future__.cpython-310.pyc'
+import '__future__' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028786e00>
+# /usr/lib/python3.10/asyncio/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/asyncio/__init__.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/asyncio/__pycache__/base_events.cpython-310.pyc matches /usr/lib/python3.10/asyncio/base_events.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/base_events.cpython-310.pyc'
+# /usr/lib/python3.10/concurrent/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/concurrent/__init__.py
+# code object from '/usr/lib/python3.10/concurrent/__pycache__/__init__.cpython-310.pyc'
+import 'concurrent' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c1000>
+# /usr/lib/python3.10/concurrent/futures/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/concurrent/futures/__init__.py
+# code object from '/usr/lib/python3.10/concurrent/futures/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/concurrent/futures/__pycache__/_base.cpython-310.pyc matches /usr/lib/python3.10/concurrent/futures/_base.py
+# code object from '/usr/lib/python3.10/concurrent/futures/__pycache__/_base.cpython-310.pyc'
+import 'concurrent.futures._base' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c1330>
+import 'concurrent.futures' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c10c0>
+# /usr/lib/python3.10/__pycache__/heapq.cpython-310.pyc matches /usr/lib/python3.10/heapq.py
+# code object from '/usr/lib/python3.10/__pycache__/heapq.cpython-310.pyc'
+import '_heapq' # <class '_frozen_importlib.BuiltinImporter'>
+import 'heapq' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c13f0>
+# /usr/lib/python3.10/__pycache__/socket.cpython-310.pyc matches /usr/lib/python3.10/socket.py
+# code object from '/usr/lib/python3.10/__pycache__/socket.cpython-310.pyc'
+import '_socket' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.10/__pycache__/selectors.cpython-310.pyc matches /usr/lib/python3.10/selectors.py
+# code object from '/usr/lib/python3.10/__pycache__/selectors.cpython-310.pyc'
+import 'math' # <class '_frozen_importlib.BuiltinImporter'>
+import 'select' # <class '_frozen_importlib.BuiltinImporter'>
+import 'selectors' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c33a0>
+import 'errno' # <class '_frozen_importlib.BuiltinImporter'>
+import 'array' # <class '_frozen_importlib.BuiltinImporter'>
+import 'socket' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c2740>
+# /usr/lib/python3.10/__pycache__/subprocess.cpython-310.pyc matches /usr/lib/python3.10/subprocess.py
+# code object from '/usr/lib/python3.10/__pycache__/subprocess.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/signal.cpython-310.pyc matches /usr/lib/python3.10/signal.py
+# code object from '/usr/lib/python3.10/__pycache__/signal.cpython-310.pyc'
+import 'signal' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028629e10>
+import 'fcntl' # <class '_frozen_importlib.BuiltinImporter'>
+import '_posixsubprocess' # <class '_frozen_importlib.BuiltinImporter'>
+import 'subprocess' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c2d70>
+# /usr/lib/python3.10/__pycache__/ssl.cpython-310.pyc matches /usr/lib/python3.10/ssl.py
+# code object from '/usr/lib/python3.10/__pycache__/ssl.cpython-310.pyc'
+# extension module '_ssl' loaded from '/usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so'
+# extension module '_ssl' executed from '/usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so'
+import '_ssl' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f602862bdf0>
+# /usr/lib/python3.10/__pycache__/base64.cpython-310.pyc matches /usr/lib/python3.10/base64.py
+# code object from '/usr/lib/python3.10/__pycache__/base64.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/struct.cpython-310.pyc matches /usr/lib/python3.10/struct.py
+# code object from '/usr/lib/python3.10/__pycache__/struct.cpython-310.pyc'
+import '_struct' # <class '_frozen_importlib.BuiltinImporter'>
+import 'struct' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028662980>
+import 'binascii' # <class '_frozen_importlib.BuiltinImporter'>
+import 'base64' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028661cc0>
+import 'ssl' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028629300>
+# /usr/lib/python3.10/asyncio/__pycache__/constants.cpython-310.pyc matches /usr/lib/python3.10/asyncio/constants.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/constants.cpython-310.pyc'
+import 'asyncio.constants' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028629930>
+# /usr/lib/python3.10/asyncio/__pycache__/coroutines.cpython-310.pyc matches /usr/lib/python3.10/asyncio/coroutines.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/coroutines.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/inspect.cpython-310.pyc matches /usr/lib/python3.10/inspect.py
+# code object from '/usr/lib/python3.10/__pycache__/inspect.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/ast.cpython-310.pyc matches /usr/lib/python3.10/ast.py
+# code object from '/usr/lib/python3.10/__pycache__/ast.cpython-310.pyc'
+import '_ast' # <class '_frozen_importlib.BuiltinImporter'>
+import 'ast' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286ba560>
+# /usr/lib/python3.10/__pycache__/dis.cpython-310.pyc matches /usr/lib/python3.10/dis.py
+# code object from '/usr/lib/python3.10/__pycache__/dis.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/opcode.cpython-310.pyc matches /usr/lib/python3.10/opcode.py
+# code object from '/usr/lib/python3.10/__pycache__/opcode.cpython-310.pyc'
+# extension module '_opcode' loaded from '/usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so'
+# extension module '_opcode' executed from '/usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so'
+import '_opcode' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027fa76d0>
+import 'opcode' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fa7460>
+import 'dis' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286bad10>
+import 'inspect' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286b81f0>
+# /usr/lib/python3.10/asyncio/__pycache__/base_futures.cpython-310.pyc matches /usr/lib/python3.10/asyncio/base_futures.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/base_futures.cpython-310.pyc'
+# /usr/lib/python3.10/asyncio/__pycache__/format_helpers.cpython-310.pyc matches /usr/lib/python3.10/asyncio/format_helpers.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/format_helpers.cpython-310.pyc'
+import 'asyncio.format_helpers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fe6020>
+import 'asyncio.base_futures' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60286b8e20>
+# /usr/lib/python3.10/asyncio/__pycache__/log.cpython-310.pyc matches /usr/lib/python3.10/asyncio/log.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/log.cpython-310.pyc'
+import 'asyncio.log' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fe5db0>
+import 'asyncio.coroutines' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028663b50>
+# /usr/lib/python3.10/asyncio/__pycache__/events.cpython-310.pyc matches /usr/lib/python3.10/asyncio/events.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/events.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/contextvars.cpython-310.pyc matches /usr/lib/python3.10/contextvars.py
+# code object from '/usr/lib/python3.10/__pycache__/contextvars.cpython-310.pyc'
+# extension module '_contextvars' loaded from '/usr/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so'
+# extension module '_contextvars' executed from '/usr/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so'
+import '_contextvars' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027fe75e0>
+import 'contextvars' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fe7460>
+# /usr/lib/python3.10/asyncio/__pycache__/exceptions.cpython-310.pyc matches /usr/lib/python3.10/asyncio/exceptions.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/exceptions.cpython-310.pyc'
+import 'asyncio.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fe7a00>
+# /usr/lib/python3.10/asyncio/__pycache__/base_tasks.cpython-310.pyc matches /usr/lib/python3.10/asyncio/base_tasks.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/base_tasks.cpython-310.pyc'
+import 'asyncio.base_tasks' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fe7e50>
+# extension module '_asyncio' loaded from '/usr/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so'
+# extension module '_asyncio' executed from '/usr/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so'
+import '_asyncio' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027fe7820>
+import 'asyncio.events' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fe5d80>
+# /usr/lib/python3.10/asyncio/__pycache__/futures.cpython-310.pyc matches /usr/lib/python3.10/asyncio/futures.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/futures.cpython-310.pyc'
+import 'asyncio.futures' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027fe7eb0>
+# /usr/lib/python3.10/asyncio/__pycache__/protocols.cpython-310.pyc matches /usr/lib/python3.10/asyncio/protocols.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/protocols.cpython-310.pyc'
+import 'asyncio.protocols' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60280085e0>
+# /usr/lib/python3.10/asyncio/__pycache__/sslproto.cpython-310.pyc matches /usr/lib/python3.10/asyncio/sslproto.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/sslproto.cpython-310.pyc'
+# /usr/lib/python3.10/asyncio/__pycache__/transports.cpython-310.pyc matches /usr/lib/python3.10/asyncio/transports.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/transports.cpython-310.pyc'
+import 'asyncio.transports' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60280094e0>
+import 'asyncio.sslproto' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028008730>
+# /usr/lib/python3.10/asyncio/__pycache__/staggered.cpython-310.pyc matches /usr/lib/python3.10/asyncio/staggered.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/staggered.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/typing.cpython-310.pyc matches /usr/lib/python3.10/typing.py
+# code object from '/usr/lib/python3.10/__pycache__/typing.cpython-310.pyc'
+import 'typing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602800a140>
+# /usr/lib/python3.10/asyncio/__pycache__/locks.cpython-310.pyc matches /usr/lib/python3.10/asyncio/locks.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/locks.cpython-310.pyc'
+# /usr/lib/python3.10/asyncio/__pycache__/mixins.cpython-310.pyc matches /usr/lib/python3.10/asyncio/mixins.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/mixins.cpython-310.pyc'
+import 'asyncio.mixins' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602804b190>
+# /usr/lib/python3.10/asyncio/__pycache__/tasks.cpython-310.pyc matches /usr/lib/python3.10/asyncio/tasks.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/tasks.cpython-310.pyc'
+import 'asyncio.tasks' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602804b2e0>
+import 'asyncio.locks' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602800b3a0>
+import 'asyncio.staggered' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028009f60>
+# /usr/lib/python3.10/asyncio/__pycache__/trsock.cpython-310.pyc matches /usr/lib/python3.10/asyncio/trsock.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/trsock.cpython-310.pyc'
+import 'asyncio.trsock' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e843a0>
+import 'asyncio.base_events' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287876d0>
+# /usr/lib/python3.10/asyncio/__pycache__/runners.cpython-310.pyc matches /usr/lib/python3.10/asyncio/runners.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/runners.cpython-310.pyc'
+import 'asyncio.runners' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60287c0d60>
+# /usr/lib/python3.10/asyncio/__pycache__/queues.cpython-310.pyc matches /usr/lib/python3.10/asyncio/queues.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/queues.cpython-310.pyc'
+import 'asyncio.queues' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e84700>
+# /usr/lib/python3.10/asyncio/__pycache__/streams.cpython-310.pyc matches /usr/lib/python3.10/asyncio/streams.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/streams.cpython-310.pyc'
+import 'asyncio.streams' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e84ca0>
+# /usr/lib/python3.10/asyncio/__pycache__/subprocess.cpython-310.pyc matches /usr/lib/python3.10/asyncio/subprocess.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/subprocess.cpython-310.pyc'
+import 'asyncio.subprocess' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e857e0>
+# /usr/lib/python3.10/asyncio/__pycache__/threads.cpython-310.pyc matches /usr/lib/python3.10/asyncio/threads.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/threads.cpython-310.pyc'
+import 'asyncio.threads' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e85c60>
+# /usr/lib/python3.10/asyncio/__pycache__/unix_events.cpython-310.pyc matches /usr/lib/python3.10/asyncio/unix_events.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/unix_events.cpython-310.pyc'
+# /usr/lib/python3.10/asyncio/__pycache__/base_subprocess.cpython-310.pyc matches /usr/lib/python3.10/asyncio/base_subprocess.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/base_subprocess.cpython-310.pyc'
+import 'asyncio.base_subprocess' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e871c0>
+# /usr/lib/python3.10/asyncio/__pycache__/selector_events.cpython-310.pyc matches /usr/lib/python3.10/asyncio/selector_events.py
+# code object from '/usr/lib/python3.10/asyncio/__pycache__/selector_events.cpython-310.pyc'
+import 'asyncio.selector_events' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e87a60>
+import 'asyncio.unix_events' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e85d20>
+import 'asyncio' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028787490>
+# /usr/lib/python3.10/json/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/json/__init__.py
+# code object from '/usr/lib/python3.10/json/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/json/__pycache__/decoder.cpython-310.pyc matches /usr/lib/python3.10/json/decoder.py
+# code object from '/usr/lib/python3.10/json/__pycache__/decoder.cpython-310.pyc'
+# /usr/lib/python3.10/json/__pycache__/scanner.cpython-310.pyc matches /usr/lib/python3.10/json/scanner.py
+# code object from '/usr/lib/python3.10/json/__pycache__/scanner.cpython-310.pyc'
+# extension module '_json' loaded from '/usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so'
+# extension module '_json' executed from '/usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so'
+import '_json' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027edd120>
+import 'json.scanner' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027edcf70>
+import 'json.decoder' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027edcd60>
+# /usr/lib/python3.10/json/__pycache__/encoder.cpython-310.pyc matches /usr/lib/python3.10/json/encoder.py
+# code object from '/usr/lib/python3.10/json/__pycache__/encoder.cpython-310.pyc'
+import 'json.encoder' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027edcdf0>
+import 'json' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027edcbb0>
+# /usr/lib/python3.10/logging/__pycache__/config.cpython-310.pyc matches /usr/lib/python3.10/logging/config.py
+# code object from '/usr/lib/python3.10/logging/__pycache__/config.cpython-310.pyc'
+# /usr/lib/python3.10/logging/__pycache__/handlers.cpython-310.pyc matches /usr/lib/python3.10/logging/handlers.py
+# code object from '/usr/lib/python3.10/logging/__pycache__/handlers.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/pickle.cpython-310.pyc matches /usr/lib/python3.10/pickle.py
+# code object from '/usr/lib/python3.10/__pycache__/pickle.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/_compat_pickle.cpython-310.pyc matches /usr/lib/python3.10/_compat_pickle.py
+# code object from '/usr/lib/python3.10/__pycache__/_compat_pickle.cpython-310.pyc'
+import '_compat_pickle' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027f24f10>
+import '_pickle' # <class '_frozen_importlib.BuiltinImporter'>
+import 'pickle' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ede9e0>
+# /usr/lib/python3.10/__pycache__/queue.cpython-310.pyc matches /usr/lib/python3.10/queue.py
+# code object from '/usr/lib/python3.10/__pycache__/queue.cpython-310.pyc'
+# extension module '_queue' loaded from '/usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so'
+# extension module '_queue' executed from '/usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so'
+import '_queue' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027f257b0>
+import 'queue' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027edfb50>
+# /usr/lib/python3.10/__pycache__/copy.cpython-310.pyc matches /usr/lib/python3.10/copy.py
+# code object from '/usr/lib/python3.10/__pycache__/copy.cpython-310.pyc'
+import 'copy' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027f258d0>
+import 'logging.handlers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027eddc00>
+# /usr/lib/python3.10/__pycache__/socketserver.cpython-310.pyc matches /usr/lib/python3.10/socketserver.py
+# code object from '/usr/lib/python3.10/__pycache__/socketserver.cpython-310.pyc'
+import 'socketserver' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ede560>
+import 'logging.config' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027edd330>
+# /usr/lib/python3.10/__pycache__/configparser.cpython-310.pyc matches /usr/lib/python3.10/configparser.py
+# code object from '/usr/lib/python3.10/__pycache__/configparser.cpython-310.pyc'
+import 'configparser' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027f26b90>
+# /usr/lib/python3.10/__pycache__/pathlib.cpython-310.pyc matches /usr/lib/python3.10/pathlib.py
+# code object from '/usr/lib/python3.10/__pycache__/pathlib.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/fnmatch.cpython-310.pyc matches /usr/lib/python3.10/fnmatch.py
+# code object from '/usr/lib/python3.10/__pycache__/fnmatch.cpython-310.pyc'
+import 'fnmatch' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d72200>
+# /usr/lib/python3.10/__pycache__/ntpath.cpython-310.pyc matches /usr/lib/python3.10/ntpath.py
+# code object from '/usr/lib/python3.10/__pycache__/ntpath.cpython-310.pyc'
+import 'ntpath' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d72500>
+# /usr/lib/python3.10/urllib/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/urllib/__init__.py
+# code object from '/usr/lib/python3.10/urllib/__pycache__/__init__.cpython-310.pyc'
+import 'urllib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d72e90>
+# /usr/lib/python3.10/urllib/__pycache__/parse.cpython-310.pyc matches /usr/lib/python3.10/urllib/parse.py
+# code object from '/usr/lib/python3.10/urllib/__pycache__/parse.cpython-310.pyc'
+import 'urllib.parse' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d72e30>
+import 'pathlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027f26f80>
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/core.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/core.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/core.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/gettext.cpython-310.pyc matches /usr/lib/python3.10/gettext.py
+# code object from '/usr/lib/python3.10/__pycache__/gettext.cpython-310.pyc'
+import 'gettext' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027dabfd0>
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/types.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/types.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/types.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/datetime.cpython-310.pyc matches /usr/lib/python3.10/datetime.py
+# code object from '/usr/lib/python3.10/__pycache__/datetime.cpython-310.pyc'
+import '_datetime' # <class '_frozen_importlib.BuiltinImporter'>
+import 'datetime' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027de1c60>
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/_compat.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/_compat.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/_compat.cpython-310.pyc'
+import 'click._compat' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027de1db0>
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/exceptions.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/utils.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/globals.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/globals.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/globals.cpython-310.pyc'
+import 'click.globals' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e321d0>
+import 'click.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e31fc0>
+import 'click.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e317e0>
+import 'click.types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027de0a60>
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/formatting.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/formatting.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/formatting.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/parser.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/parser.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/parser.cpython-310.pyc'
+import 'click.parser' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e33760>
+import 'click.formatting' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e33370>
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/termui.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/termui.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/termui.cpython-310.pyc'
+import 'click.termui' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e54610>
+import 'click.core' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027da99c0>
+# /home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/decorators.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/click/decorators.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/click/__pycache__/decorators.cpython-310.pyc'
+import 'click.decorators' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e57250>
+import 'click' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d71690>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/_types.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/_types.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/_types.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/__pycache__/typing_extensions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/typing_extensions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/__pycache__/typing_extensions.cpython-310.pyc'
+import 'typing_extensions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027c78490>
+import 'uvicorn._types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027e57400>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/importer.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/importer.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/importer.cpython-310.pyc'
+import 'uvicorn.importer' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027c78280>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/logging.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/logging.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/logging.cpython-310.pyc'
+# /usr/lib/python3.10/http/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/http/__init__.py
+# code object from '/usr/lib/python3.10/http/__pycache__/__init__.cpython-310.pyc'
+import 'http' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb59f0>
+import 'uvicorn.logging' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb5480>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/__init__.cpython-310.pyc'
+import 'uvicorn.middleware' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb67d0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/asgi2.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/asgi2.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/asgi2.cpython-310.pyc'
+import 'uvicorn.middleware.asgi2' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb6890>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/message_logger.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/message_logger.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/message_logger.cpython-310.pyc'
+import 'uvicorn.middleware.message_logger' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb69b0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/proxy_headers.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/proxy_headers.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/ipaddress.cpython-310.pyc matches /usr/lib/python3.10/ipaddress.py
+# code object from '/usr/lib/python3.10/__pycache__/ipaddress.cpython-310.pyc'
+import 'ipaddress' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb6fb0>
+import 'uvicorn.middleware.proxy_headers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb6bf0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/wsgi.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/wsgi.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/middleware/__pycache__/wsgi.cpython-310.pyc'
+import 'uvicorn.middleware.wsgi' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cb6e00>
+import 'uvicorn.config' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6028786470>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/main.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/main.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/main.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/platform.cpython-310.pyc matches /usr/lib/python3.10/platform.py
+# code object from '/usr/lib/python3.10/__pycache__/platform.cpython-310.pyc'
+import 'platform' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cd3f10>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/server.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/server.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/server.cpython-310.pyc'
+# /usr/lib/python3.10/email/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/email/__init__.py
+# code object from '/usr/lib/python3.10/email/__pycache__/__init__.cpython-310.pyc'
+import 'email' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cf96c0>
+# /usr/lib/python3.10/email/__pycache__/utils.cpython-310.pyc matches /usr/lib/python3.10/email/utils.py
+# code object from '/usr/lib/python3.10/email/__pycache__/utils.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/random.cpython-310.pyc matches /usr/lib/python3.10/random.py
+# code object from '/usr/lib/python3.10/__pycache__/random.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/bisect.cpython-310.pyc matches /usr/lib/python3.10/bisect.py
+# code object from '/usr/lib/python3.10/__pycache__/bisect.cpython-310.pyc'
+import '_bisect' # <class '_frozen_importlib.BuiltinImporter'>
+import 'bisect' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cfa8f0>
+import '_random' # <class '_frozen_importlib.BuiltinImporter'>
+import '_sha512' # <class '_frozen_importlib.BuiltinImporter'>
+import 'random' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cf9d20>
+# /usr/lib/python3.10/email/__pycache__/_parseaddr.cpython-310.pyc matches /usr/lib/python3.10/email/_parseaddr.py
+# code object from '/usr/lib/python3.10/email/__pycache__/_parseaddr.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/calendar.cpython-310.pyc matches /usr/lib/python3.10/calendar.py
+# code object from '/usr/lib/python3.10/__pycache__/calendar.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/locale.cpython-310.pyc matches /usr/lib/python3.10/locale.py
+# code object from '/usr/lib/python3.10/__pycache__/locale.cpython-310.pyc'
+import 'locale' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d34370>
+import 'calendar' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cfb010>
+import 'email._parseaddr' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cfab90>
+# /usr/lib/python3.10/email/__pycache__/charset.cpython-310.pyc matches /usr/lib/python3.10/email/charset.py
+# code object from '/usr/lib/python3.10/email/__pycache__/charset.cpython-310.pyc'
+# /usr/lib/python3.10/email/__pycache__/base64mime.cpython-310.pyc matches /usr/lib/python3.10/email/base64mime.py
+# code object from '/usr/lib/python3.10/email/__pycache__/base64mime.cpython-310.pyc'
+import 'email.base64mime' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d35300>
+# /usr/lib/python3.10/email/__pycache__/quoprimime.cpython-310.pyc matches /usr/lib/python3.10/email/quoprimime.py
+# code object from '/usr/lib/python3.10/email/__pycache__/quoprimime.cpython-310.pyc'
+import 'email.quoprimime' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d35510>
+# /usr/lib/python3.10/email/__pycache__/errors.cpython-310.pyc matches /usr/lib/python3.10/email/errors.py
+# code object from '/usr/lib/python3.10/email/__pycache__/errors.cpython-310.pyc'
+import 'email.errors' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d359f0>
+# /usr/lib/python3.10/email/__pycache__/encoders.cpython-310.pyc matches /usr/lib/python3.10/email/encoders.py
+# code object from '/usr/lib/python3.10/email/__pycache__/encoders.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/quopri.cpython-310.pyc matches /usr/lib/python3.10/quopri.py
+# code object from '/usr/lib/python3.10/__pycache__/quopri.cpython-310.pyc'
+import 'quopri' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d36740>
+import 'email.encoders' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d363e0>
+import 'email.charset' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cfbf40>
+import 'email.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cf97e0>
+import 'uvicorn.server' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cf8d00>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/basereload.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/basereload.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/basereload.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/_subprocess.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/_subprocess.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/__pycache__/_subprocess.cpython-310.pyc'
+# /usr/lib/python3.10/multiprocessing/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/multiprocessing/__init__.py
+# code object from '/usr/lib/python3.10/multiprocessing/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/multiprocessing/__pycache__/context.cpython-310.pyc matches /usr/lib/python3.10/multiprocessing/context.py
+# code object from '/usr/lib/python3.10/multiprocessing/__pycache__/context.cpython-310.pyc'
+# /usr/lib/python3.10/multiprocessing/__pycache__/process.cpython-310.pyc matches /usr/lib/python3.10/multiprocessing/process.py
+# code object from '/usr/lib/python3.10/multiprocessing/__pycache__/process.cpython-310.pyc'
+import 'multiprocessing.process' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027af4880>
+# /usr/lib/python3.10/multiprocessing/__pycache__/reduction.cpython-310.pyc matches /usr/lib/python3.10/multiprocessing/reduction.py
+# code object from '/usr/lib/python3.10/multiprocessing/__pycache__/reduction.cpython-310.pyc'
+import 'multiprocessing.reduction' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027af53c0>
+import 'multiprocessing.context' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d375b0>
+import 'multiprocessing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d37220>
+# /usr/lib/python3.10/multiprocessing/__pycache__/connection.cpython-310.pyc matches /usr/lib/python3.10/multiprocessing/connection.py
+# code object from '/usr/lib/python3.10/multiprocessing/__pycache__/connection.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/tempfile.cpython-310.pyc matches /usr/lib/python3.10/tempfile.py
+# code object from '/usr/lib/python3.10/__pycache__/tempfile.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/shutil.cpython-310.pyc matches /usr/lib/python3.10/shutil.py
+# code object from '/usr/lib/python3.10/__pycache__/shutil.cpython-310.pyc'
+import 'zlib' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.10/__pycache__/bz2.cpython-310.pyc matches /usr/lib/python3.10/bz2.py
+# code object from '/usr/lib/python3.10/__pycache__/bz2.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/_compression.cpython-310.pyc matches /usr/lib/python3.10/_compression.py
+# code object from '/usr/lib/python3.10/__pycache__/_compression.cpython-310.pyc'
+import '_compression' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b31330>
+# extension module '_bz2' loaded from '/usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so'
+# extension module '_bz2' executed from '/usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so'
+import '_bz2' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027b31840>
+import 'bz2' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b30b20>
+# /usr/lib/python3.10/__pycache__/lzma.cpython-310.pyc matches /usr/lib/python3.10/lzma.py
+# code object from '/usr/lib/python3.10/__pycache__/lzma.cpython-310.pyc'
+# extension module '_lzma' loaded from '/usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so'
+# extension module '_lzma' executed from '/usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so'
+import '_lzma' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027b31f00>
+import 'lzma' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b318a0>
+import 'shutil' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027af7c70>
+import 'tempfile' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027af6c50>
+# extension module '_multiprocessing' loaded from '/usr/lib/python3.10/lib-dynload/_multiprocessing.cpython-310-x86_64-linux-gnu.so'
+# extension module '_multiprocessing' executed from '/usr/lib/python3.10/lib-dynload/_multiprocessing.cpython-310-x86_64-linux-gnu.so'
+import '_multiprocessing' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6027af6e30>
+# /usr/lib/python3.10/multiprocessing/__pycache__/util.cpython-310.pyc matches /usr/lib/python3.10/multiprocessing/util.py
+# code object from '/usr/lib/python3.10/multiprocessing/__pycache__/util.cpython-310.pyc'
+import 'multiprocessing.util' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b327a0>
+import 'multiprocessing.connection' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d372b0>
+import 'uvicorn._subprocess' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d36fb0>
+import 'uvicorn.supervisors.basereload' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d36d70>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/multiprocess.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/multiprocess.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/multiprocess.cpython-310.pyc'
+import 'uvicorn.supervisors.multiprocess' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027d37040>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/watchfilesreload.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/watchfilesreload.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/supervisors/__pycache__/watchfilesreload.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/watchfiles/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/filters.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/watchfiles/filters.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/filters.cpython-310.pyc'
+import 'watchfiles.filters' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b33490>
+# /home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/main.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/watchfiles/main.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/main.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/__init__.cpython-310.pyc'
+import 'anyio._core' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6cfd0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_eventloop.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_eventloop.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_eventloop.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/sniffio/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/sniffio/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/sniffio/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/sniffio/__pycache__/_version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/sniffio/_version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/sniffio/__pycache__/_version.cpython-310.pyc'
+import 'sniffio._version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6d690>
+# /home/lemke/.local/lib/python3.10/site-packages/sniffio/__pycache__/_impl.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/sniffio/_impl.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/sniffio/__pycache__/_impl.cpython-310.pyc'
+import 'sniffio._impl' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6d720>
+import 'sniffio' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6d420>
+import 'anyio._core._eventloop' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6d030>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_exceptions.cpython-310.pyc'
+import 'anyio._core._exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6d870>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_fileio.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_fileio.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_fileio.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/dataclasses.cpython-310.pyc matches /usr/lib/python3.10/dataclasses.py
+# code object from '/usr/lib/python3.10/__pycache__/dataclasses.cpython-310.pyc'
+import 'dataclasses' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6ed10>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/to_thread.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/to_thread.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/to_thread.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_eventloop.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/_eventloop.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_eventloop.cpython-310.pyc'
+import 'anyio.abc._eventloop' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba0df0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_resources.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/_resources.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_resources.cpython-310.pyc'
+import 'anyio.abc._resources' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba1cc0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_sockets.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/_sockets.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_sockets.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_typedattr.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_typedattr.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_typedattr.cpython-310.pyc'
+import 'anyio._core._typedattr' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba2620>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_streams.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/_streams.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_streams.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_tasks.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/_tasks.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_tasks.cpython-310.pyc'
+import 'anyio.abc._tasks' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba3040>
+import 'anyio.abc._streams' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba2aa0>
+import 'anyio.abc._sockets' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba1ea0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_subprocesses.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/_subprocesses.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_subprocesses.cpython-310.pyc'
+import 'anyio.abc._subprocesses' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba23b0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_testing.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/abc/_testing.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/abc/__pycache__/_testing.cpython-310.pyc'
+import 'anyio.abc._testing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027bc4220>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_synchronization.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_synchronization.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_synchronization.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/lowlevel.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/lowlevel.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/lowlevel.cpython-310.pyc'
+import 'anyio.lowlevel' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027bc56c0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_tasks.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_tasks.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_tasks.cpython-310.pyc'
+import 'anyio._core._tasks' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027bc5d50>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_testing.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_testing.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_testing.cpython-310.pyc'
+import 'anyio._core._testing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027bc7820>
+import 'anyio._core._synchronization' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027bc4430>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/from_thread.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/from_thread.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/__pycache__/from_thread.cpython-310.pyc'
+# /usr/lib/python3.10/concurrent/futures/__pycache__/thread.cpython-310.pyc matches /usr/lib/python3.10/concurrent/futures/thread.py
+# code object from '/usr/lib/python3.10/concurrent/futures/__pycache__/thread.cpython-310.pyc'
+import 'concurrent.futures.thread' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c5ba0>
+import 'anyio.from_thread' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027bc7b80>
+import 'anyio.abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027ba04c0>
+import 'anyio.to_thread' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6efe0>
+import 'anyio._core._fileio' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6dba0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_resources.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_resources.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_resources.cpython-310.pyc'
+import 'anyio._core._resources' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6e950>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_signals.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_signals.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_signals.cpython-310.pyc'
+import 'anyio._core._signals' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6e6b0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_sockets.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_sockets.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_sockets.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/__init__.cpython-310.pyc'
+import 'anyio.streams' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c4880>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/stapled.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/stapled.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/stapled.cpython-310.pyc'
+import 'anyio.streams.stapled' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c48e0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/tls.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/tls.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/tls.cpython-310.pyc'
+import 'anyio.streams.tls' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c7400>
+# /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_catch.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/_catch.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_catch.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/_exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_exceptions.cpython-310.pyc'
+import 'exceptiongroup._exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c5de0>
+import 'exceptiongroup._catch' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c42b0>
+# /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/_version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_version.cpython-310.pyc'
+import 'exceptiongroup._version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c6110>
+# /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_formatting.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/_formatting.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_formatting.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/textwrap.cpython-310.pyc matches /usr/lib/python3.10/textwrap.py
+# code object from '/usr/lib/python3.10/__pycache__/textwrap.cpython-310.pyc'
+import 'textwrap' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fc130>
+import 'exceptiongroup._formatting' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c7d60>
+# /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_suppress.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/_suppress.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/exceptiongroup/__pycache__/_suppress.cpython-310.pyc'
+import 'exceptiongroup._suppress' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fcc70>
+import 'exceptiongroup' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c6800>
+import 'anyio._core._sockets' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c6a10>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_streams.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_streams.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_streams.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/memory.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/streams/memory.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/streams/__pycache__/memory.cpython-310.pyc'
+import 'anyio.streams.memory' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fcd00>
+import 'anyio._core._streams' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279c4df0>
+# /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_subprocesses.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/anyio/_core/_subprocesses.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/anyio/_core/__pycache__/_subprocesses.cpython-310.pyc'
+import 'anyio._core._subprocesses' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fe9b0>
+import 'anyio' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b6c100>
+# extension module 'watchfiles._rust_notify' loaded from '/home/lemke/.local/lib/python3.10/site-packages/watchfiles/_rust_notify.cpython-310-x86_64-linux-gnu.so'
+# extension module 'watchfiles._rust_notify' executed from '/home/lemke/.local/lib/python3.10/site-packages/watchfiles/_rust_notify.cpython-310-x86_64-linux-gnu.so'
+import 'watchfiles._rust_notify' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f60279fded0>
+import 'watchfiles.main' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b33a90>
+# /home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/run.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/watchfiles/run.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/run.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/shlex.cpython-310.pyc matches /usr/lib/python3.10/shlex.py
+# code object from '/usr/lib/python3.10/__pycache__/shlex.cpython-310.pyc'
+import 'shlex' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279ff0d0>
+import 'watchfiles.run' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fdab0>
+# /home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/watchfiles/version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/watchfiles/__pycache__/version.cpython-310.pyc'
+import 'watchfiles.version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279ff1c0>
+import 'watchfiles' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b33220>
+import 'uvicorn.supervisors.watchfilesreload' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b33010>
+import 'uvicorn.supervisors' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cf9b70>
+import 'uvicorn.main' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027cd3dc0>
+import 'uvicorn' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60288dab90>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/__init__.cpython-310.pyc'
+import 'starlette' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fea10>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/status.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/status.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/status.cpython-310.pyc'
+import 'starlette.status' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fe5f0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/applications.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/applications.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/applications.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/routing.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/routing.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/routing.cpython-310.pyc'
+# /usr/lib/python3.10/email/__pycache__/message.cpython-310.pyc matches /usr/lib/python3.10/email/message.py
+# code object from '/usr/lib/python3.10/email/__pycache__/message.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/uu.cpython-310.pyc matches /usr/lib/python3.10/uu.py
+# code object from '/usr/lib/python3.10/__pycache__/uu.cpython-310.pyc'
+import 'uu' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a31f00>
+# /usr/lib/python3.10/email/__pycache__/_policybase.cpython-310.pyc matches /usr/lib/python3.10/email/_policybase.py
+# code object from '/usr/lib/python3.10/email/__pycache__/_policybase.cpython-310.pyc'
+# /usr/lib/python3.10/email/__pycache__/header.cpython-310.pyc matches /usr/lib/python3.10/email/header.py
+# code object from '/usr/lib/python3.10/email/__pycache__/header.cpython-310.pyc'
+import 'email.header' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a32b60>
+import 'email._policybase' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a32140>
+# /usr/lib/python3.10/email/__pycache__/_encoded_words.cpython-310.pyc matches /usr/lib/python3.10/email/_encoded_words.py
+# code object from '/usr/lib/python3.10/email/__pycache__/_encoded_words.cpython-310.pyc'
+import 'email._encoded_words' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a33340>
+# /usr/lib/python3.10/email/__pycache__/iterators.cpython-310.pyc matches /usr/lib/python3.10/email/iterators.py
+# code object from '/usr/lib/python3.10/email/__pycache__/iterators.cpython-310.pyc'
+import 'email.iterators' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a336d0>
+import 'email.message' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a30790>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/params.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/params.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/params.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/__init__.cpython-310.pyc'
+import 'fastapi.openapi' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a33e20>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/models.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/models.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/models.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/_compat.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/_compat.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/_compat.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/exceptions.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/_migration.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_migration.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/_migration.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/version.cpython-310.pyc'
+import 'pydantic.version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a96d10>
+import 'pydantic._migration' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a96b30>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/errors.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/errors.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/errors.cpython-310.pyc'
+import 'pydantic.errors' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a96ec0>
+import 'pydantic' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a96680>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/main.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/main.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/main.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic_core/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic_core/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic_core/__pycache__/__init__.cpython-310.pyc'
+# extension module 'pydantic_core._pydantic_core' loaded from '/home/lemke/.local/lib/python3.10/site-packages/pydantic_core/_pydantic_core.cpython-310-x86_64-linux-gnu.so'
+# extension module 'pydantic_core._pydantic_core' executed from '/home/lemke/.local/lib/python3.10/site-packages/pydantic_core/_pydantic_core.cpython-310-x86_64-linux-gnu.so'
+import 'pydantic_core._pydantic_core' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f60277e0490>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic_core/__pycache__/core_schema.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic_core/core_schema.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic_core/__pycache__/core_schema.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/decimal.cpython-310.pyc matches /usr/lib/python3.10/decimal.py
+# code object from '/usr/lib/python3.10/__pycache__/decimal.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/numbers.cpython-310.pyc matches /usr/lib/python3.10/numbers.py
+# code object from '/usr/lib/python3.10/__pycache__/numbers.cpython-310.pyc'
+import 'numbers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60277e1ae0>
+# extension module '_decimal' loaded from '/usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so'
+# extension module '_decimal' executed from '/usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so'
+import '_decimal' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f60277e1870>
+import 'decimal' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60277e1660>
+import 'pydantic_core.core_schema' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60277e0970>
+import 'pydantic_core' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60277e01c0>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/__init__.cpython-310.pyc'
+import 'pydantic._internal' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602789a530>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_config.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_config.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_config.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/aliases.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/aliases.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/aliases.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_internal_dataclass.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_internal_dataclass.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_internal_dataclass.cpython-310.pyc'
+import 'pydantic._internal._internal_dataclass' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602789b1c0>
+import 'pydantic.aliases' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602789ace0>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/config.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/config.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/config.cpython-310.pyc'
+import 'pydantic.config' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602789b100>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/warnings.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/warnings.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/warnings.cpython-310.pyc'
+import 'pydantic.warnings' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60278a95a0>
+import 'pydantic._internal._config' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602789a650>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_decorators.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_decorators.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_decorators.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_core_utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_core_utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_core_utils.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_repr.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_repr.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_repr.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_typing_extra.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_typing_extra.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_typing_extra.cpython-310.pyc'
+import 'pydantic._internal._typing_extra' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60278ab400>
+import 'pydantic._internal._repr' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60278aada0>
+import 'pydantic._internal._core_utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60278aa050>
+import 'pydantic._internal._decorators' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60278a9360>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_fields.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_fields.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_fields.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_docs_extraction.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_docs_extraction.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_docs_extraction.cpython-310.pyc'
+import 'pydantic._internal._docs_extraction' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271b3160>
+import 'pydantic._internal._fields' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60278abfa0>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_forward_ref.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_forward_ref.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_forward_ref.cpython-310.pyc'
+import 'pydantic._internal._forward_ref' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271b1510>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_generics.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_generics.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_generics.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_utils.cpython-310.pyc'
+import 'pydantic._internal._utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271b2d40>
+import 'pydantic._internal._generics' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271b0f40>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_mock_val_ser.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_mock_val_ser.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_mock_val_ser.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/__pycache__/__init__.cpython-310.pyc'
+import 'pydantic.plugin' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271b1f30>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/__pycache__/_schema_validator.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/_schema_validator.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/__pycache__/_schema_validator.cpython-310.pyc'
+import 'pydantic.plugin._schema_validator' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271b0100>
+import 'pydantic._internal._mock_val_ser' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271b36a0>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_model_construction.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_model_construction.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_generate_schema.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_generate_schema.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/annotated_handlers.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/annotated_handlers.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/annotated_handlers.cpython-310.pyc'
+import 'pydantic.annotated_handlers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271e3700>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/json_schema.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/json_schema.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/json_schema.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_core_metadata.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_core_metadata.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_core_metadata.cpython-310.pyc'
+import 'pydantic._internal._core_metadata' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027225750>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_schema_generation_shared.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_schema_generation_shared.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_schema_generation_shared.cpython-310.pyc'
+import 'pydantic._internal._schema_generation_shared' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027225d20>
+import 'pydantic.json_schema' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271e3ac0>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_discriminated_union.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_discriminated_union.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_discriminated_union.cpython-310.pyc'
+import 'pydantic._internal._discriminated_union' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027226e30>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_known_annotated_metadata.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_known_annotated_metadata.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_known_annotated_metadata.cpython-310.pyc'
+import 'pydantic._internal._known_annotated_metadata' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027226530>
+import 'pydantic._internal._generate_schema' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271e1750>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_signature.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_signature.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_signature.cpython-310.pyc'
+import 'pydantic._internal._signature' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271e3490>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_validate_call.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_validate_call.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_validate_call.cpython-310.pyc'
+import 'pydantic._internal._validate_call' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027226b30>
+import 'pydantic._internal._model_construction' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271e0520>
+import 'pydantic.main' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a97340>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/exceptions.cpython-310.pyc'
+import 'starlette.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602726c310>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/fields.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/fields.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/fields.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/annotated_types/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/annotated_types/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/annotated_types/__pycache__/__init__.cpython-310.pyc'
+import 'annotated_types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602726d480>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_validators.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_validators.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_validators.cpython-310.pyc'
+import 'pydantic._internal._validators' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602726d7b0>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/types.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/types.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/types.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/uuid.cpython-310.pyc matches /usr/lib/python3.10/uuid.py
+# code object from '/usr/lib/python3.10/__pycache__/uuid.cpython-310.pyc'
+# extension module '_uuid' loaded from '/usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so'
+# extension module '_uuid' executed from '/usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so'
+import '_uuid' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f60270bdf00>
+import 'uuid' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60270bcbe0>
+import 'pydantic.types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60270a1ab0>
+import 'pydantic.fields' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602726cc40>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/__pycache__/_loader.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/_loader.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/plugin/__pycache__/_loader.cpython-310.pyc'
+# /usr/lib/python3.10/importlib/metadata/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/importlib/metadata/__init__.py
+# code object from '/usr/lib/python3.10/importlib/metadata/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/csv.cpython-310.pyc matches /usr/lib/python3.10/csv.py
+# code object from '/usr/lib/python3.10/__pycache__/csv.cpython-310.pyc'
+import '_csv' # <class '_frozen_importlib.BuiltinImporter'>
+import 'csv' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602710a8c0>
+# /usr/lib/python3.10/__pycache__/zipfile.cpython-310.pyc matches /usr/lib/python3.10/zipfile.py
+# code object from '/usr/lib/python3.10/__pycache__/zipfile.cpython-310.pyc'
+import 'zipfile' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271092d0>
+# /usr/lib/python3.10/importlib/metadata/__pycache__/_adapters.cpython-310.pyc matches /usr/lib/python3.10/importlib/metadata/_adapters.py
+# code object from '/usr/lib/python3.10/importlib/metadata/__pycache__/_adapters.cpython-310.pyc'
+# /usr/lib/python3.10/importlib/metadata/__pycache__/_text.cpython-310.pyc matches /usr/lib/python3.10/importlib/metadata/_text.py
+# code object from '/usr/lib/python3.10/importlib/metadata/__pycache__/_text.cpython-310.pyc'
+# /usr/lib/python3.10/importlib/metadata/__pycache__/_functools.cpython-310.pyc matches /usr/lib/python3.10/importlib/metadata/_functools.py
+# code object from '/usr/lib/python3.10/importlib/metadata/__pycache__/_functools.cpython-310.pyc'
+import 'importlib.metadata._functools' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271854e0>
+import 'importlib.metadata._text' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027185030>
+import 'importlib.metadata._adapters' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027184c10>
+# /usr/lib/python3.10/importlib/metadata/__pycache__/_meta.cpython-310.pyc matches /usr/lib/python3.10/importlib/metadata/_meta.py
+# code object from '/usr/lib/python3.10/importlib/metadata/__pycache__/_meta.cpython-310.pyc'
+import 'importlib.metadata._meta' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027185930>
+# /usr/lib/python3.10/importlib/metadata/__pycache__/_collections.cpython-310.pyc matches /usr/lib/python3.10/importlib/metadata/_collections.py
+# code object from '/usr/lib/python3.10/importlib/metadata/__pycache__/_collections.cpython-310.pyc'
+import 'importlib.metadata._collections' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027185d80>
+# /usr/lib/python3.10/importlib/metadata/__pycache__/_itertools.cpython-310.pyc matches /usr/lib/python3.10/importlib/metadata/_itertools.py
+# code object from '/usr/lib/python3.10/importlib/metadata/__pycache__/_itertools.cpython-310.pyc'
+import 'importlib.metadata._itertools' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027186770>
+# /usr/lib/python3.10/importlib/__pycache__/abc.cpython-310.pyc matches /usr/lib/python3.10/importlib/abc.py
+# code object from '/usr/lib/python3.10/importlib/__pycache__/abc.cpython-310.pyc'
+import 'importlib.abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027186650>
+import 'importlib.metadata' # <_frozen_importlib_external.SourceFileLoader object at 0x7f602710b2e0>
+import 'pydantic.plugin._loader' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60271081f0>
+import 'fastapi.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a96140>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/types.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/types.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/types.cpython-310.pyc'
+import 'fastapi.types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a963b0>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/datastructures.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/datastructures.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/datastructures.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/concurrency.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/concurrency.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/concurrency.cpython-310.pyc'
+import 'starlette.concurrency' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027126620>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/types.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/types.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/types.cpython-310.pyc'
+import 'starlette.types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027126920>
+import 'starlette.datastructures' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027125390>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/type_adapter.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/type_adapter.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/type_adapter.cpython-310.pyc'
+import 'pydantic.type_adapter' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027127280>
+import 'fastapi._compat' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a94820>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/logger.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/logger.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/logger.cpython-310.pyc'
+import 'fastapi.logger' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a959c0>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/networks.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/networks.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/networks.cpython-310.pyc'
+import 'pydantic.networks' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a95b10>
+# /home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/email_validator/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/exceptions_types.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/email_validator/exceptions_types.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/exceptions_types.cpython-310.pyc'
+import 'email_validator.exceptions_types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60270250c0>
+# /home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/validate_email.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/email_validator/validate_email.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/validate_email.cpython-310.pyc'
+import 'unicodedata' # <class '_frozen_importlib.BuiltinImporter'>
+# /home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/syntax.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/email_validator/syntax.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/syntax.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/rfc_constants.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/email_validator/rfc_constants.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/rfc_constants.cpython-310.pyc'
+import 'email_validator.rfc_constants' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027025b70>
+# /home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/idna/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/package_data.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/idna/package_data.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/package_data.cpython-310.pyc'
+import 'idna.package_data' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027026620>
+# /home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/core.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/idna/core.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/core.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/idnadata.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/idna/idnadata.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/idnadata.cpython-310.pyc'
+import 'idna.idnadata' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60270271f0>
+# /home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/intranges.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/idna/intranges.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/idna/__pycache__/intranges.cpython-310.pyc'
+import 'idna.intranges' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60270272b0>
+import 'idna.core' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027026d10>
+import 'idna' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027026bc0>
+import 'email_validator.syntax' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027025720>
+import 'email_validator.validate_email' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027025420>
+# /home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/email_validator/version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/email_validator/__pycache__/version.cpython-310.pyc'
+import 'email_validator.version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027025c30>
+import 'email_validator' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027025510>
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_std_types_schema.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/_std_types_schema.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/_internal/__pycache__/_std_types_schema.cpython-310.pyc'
+import 'pydantic._internal._std_types_schema' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027016e90>
+# /usr/lib/python3.10/email/__pycache__/parser.cpython-310.pyc matches /usr/lib/python3.10/email/parser.py
+# code object from '/usr/lib/python3.10/email/__pycache__/parser.cpython-310.pyc'
+# /usr/lib/python3.10/email/__pycache__/feedparser.cpython-310.pyc matches /usr/lib/python3.10/email/feedparser.py
+# code object from '/usr/lib/python3.10/email/__pycache__/feedparser.cpython-310.pyc'
+import 'email.feedparser' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027014a00>
+import 'email.parser' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027015ba0>
+import 'fastapi.openapi.models' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a33f10>
+import 'fastapi.params' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027a339d0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/datastructures.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/datastructures.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/datastructures.cpython-310.pyc'
+import 'fastapi.datastructures' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026e6e950>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/__pycache__/__init__.cpython-310.pyc'
+import 'fastapi.dependencies' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd40d0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/__pycache__/models.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/models.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/__pycache__/models.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/api_key.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/api_key.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/api_key.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/base.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/base.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/base.cpython-310.pyc'
+import 'fastapi.security.base' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd49d0>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/requests.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/requests.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/requests.cpython-310.pyc'
+# /usr/lib/python3.10/http/__pycache__/cookies.cpython-310.pyc matches /usr/lib/python3.10/http/cookies.py
+# code object from '/usr/lib/python3.10/http/__pycache__/cookies.cpython-310.pyc'
+import 'http.cookies' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd54b0>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/_utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/_utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/_utils.cpython-310.pyc'
+import 'starlette._utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026e8ee90>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/formparsers.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/formparsers.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/formparsers.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/python_multipart/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/multipart.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/python_multipart/multipart.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/multipart.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/decoders.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/python_multipart/decoders.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/decoders.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/python_multipart/exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/python_multipart/__pycache__/exceptions.cpython-310.pyc'
+import 'python_multipart.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026be87c0>
+import 'python_multipart.decoders' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026be8340>
+import 'python_multipart.multipart' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd6bc0>
+import 'python_multipart' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd6980>
+import 'starlette.formparsers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026f84af0>
+import 'starlette.requests' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd4ac0>
+import 'fastapi.security.api_key' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd47c0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/http.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/http.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/http.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/utils.cpython-310.pyc'
+import 'fastapi.security.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026be8d60>
+import 'fastapi.security.http' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026be9f30>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/oauth2.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/oauth2.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/oauth2.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/param_functions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/param_functions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/param_functions.cpython-310.pyc'
+import 'fastapi.param_functions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026beb430>
+import 'fastapi.security.oauth2' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026beb1f0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/open_id_connect_url.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/security/open_id_connect_url.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/security/__pycache__/open_id_connect_url.cpython-310.pyc'
+import 'fastapi.security.open_id_connect_url' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c03ac0>
+import 'fastapi.security' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026bd4340>
+import 'fastapi.dependencies.models' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026e6ffa0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/__pycache__/utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/dependencies/__pycache__/utils.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/background.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/background.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/background.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/background.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/background.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/background.cpython-310.pyc'
+import 'starlette.background' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0e3b0>
+import 'fastapi.background' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0f1f0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/concurrency.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/concurrency.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/concurrency.cpython-310.pyc'
+import 'fastapi.concurrency' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0c280>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/utils.cpython-310.pyc'
+import 'fastapi.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0c520>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/responses.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/responses.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/responses.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/mimetypes.cpython-310.pyc matches /usr/lib/python3.10/mimetypes.py
+# code object from '/usr/lib/python3.10/__pycache__/mimetypes.cpython-310.pyc'
+import 'mimetypes' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0d750>
+# /usr/lib/python3.10/__pycache__/secrets.cpython-310.pyc matches /usr/lib/python3.10/secrets.py
+# code object from '/usr/lib/python3.10/__pycache__/secrets.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/hmac.cpython-310.pyc matches /usr/lib/python3.10/hmac.py
+# code object from '/usr/lib/python3.10/__pycache__/hmac.cpython-310.pyc'
+# extension module '_hashlib' loaded from '/usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so'
+# extension module '_hashlib' executed from '/usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so'
+import '_hashlib' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026c0ec50>
+# /usr/lib/python3.10/__pycache__/hashlib.cpython-310.pyc matches /usr/lib/python3.10/hashlib.py
+# code object from '/usr/lib/python3.10/__pycache__/hashlib.cpython-310.pyc'
+import '_blake2' # <class '_frozen_importlib.BuiltinImporter'>
+import 'hashlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0fd90>
+import 'hmac' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0e5f0>
+import 'secrets' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0de10>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/_compat.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/_compat.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/_compat.cpython-310.pyc'
+import 'starlette._compat' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0ffa0>
+import 'starlette.responses' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0cb20>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/websockets.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/websockets.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/websockets.cpython-310.pyc'
+import 'starlette.websockets' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c0f580>
+import 'fastapi.dependencies.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c03fd0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/encoders.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/encoders.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/encoders.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/color.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/pydantic/color.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/pydantic/__pycache__/color.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/colorsys.cpython-310.pyc matches /usr/lib/python3.10/colorsys.py
+# code object from '/usr/lib/python3.10/__pycache__/colorsys.cpython-310.pyc'
+import 'colorsys' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026ce86d0>
+import 'pydantic.color' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026ce9360>
+import 'fastapi.encoders' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026ce9780>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/routing.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/routing.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/routing.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/_exception_handler.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/_exception_handler.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/_exception_handler.cpython-310.pyc'
+import 'starlette._exception_handler' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026ceadd0>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/convertors.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/convertors.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/convertors.cpython-310.pyc'
+import 'starlette.convertors' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026ceb100>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/__init__.cpython-310.pyc'
+import 'starlette.middleware' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026ceb9a0>
+import 'starlette.routing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026ce8e50>
+import 'fastapi.routing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fff40>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/exception_handlers.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/exception_handlers.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/exception_handlers.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/websockets.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/websockets.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/websockets.cpython-310.pyc'
+import 'fastapi.websockets' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6c460>
+import 'fastapi.exception_handlers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6c2b0>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/docs.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/docs.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/docs.cpython-310.pyc'
+import 'fastapi.openapi.docs' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6c400>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/utils.cpython-310.pyc'
+# /usr/lib/python3.10/http/__pycache__/client.cpython-310.pyc matches /usr/lib/python3.10/http/client.py
+# code object from '/usr/lib/python3.10/http/__pycache__/client.cpython-310.pyc'
+import 'http.client' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6d480>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/constants.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/constants.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/openapi/__pycache__/constants.cpython-310.pyc'
+import 'fastapi.openapi.constants' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6e800>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/responses.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/responses.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/responses.cpython-310.pyc'
+# extension module 'ujson' loaded from '/home/lemke/.local/lib/python3.10/site-packages/ujson.cpython-310-x86_64-linux-gnu.so'
+# extension module 'ujson' executed from '/home/lemke/.local/lib/python3.10/site-packages/ujson.cpython-310-x86_64-linux-gnu.so'
+import 'ujson' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026c6ec20>
+# /home/lemke/.local/lib/python3.10/site-packages/orjson/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/orjson/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/orjson/__pycache__/__init__.cpython-310.pyc'
+# extension module 'orjson.orjson' loaded from '/home/lemke/.local/lib/python3.10/site-packages/orjson/orjson.cpython-310-x86_64-linux-gnu.so'
+# /usr/lib/python3.10/zoneinfo/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/zoneinfo/__init__.py
+# code object from '/usr/lib/python3.10/zoneinfo/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/zoneinfo/__pycache__/_tzpath.cpython-310.pyc matches /usr/lib/python3.10/zoneinfo/_tzpath.py
+# code object from '/usr/lib/python3.10/zoneinfo/__pycache__/_tzpath.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/sysconfig.cpython-310.pyc matches /usr/lib/python3.10/sysconfig.py
+# code object from '/usr/lib/python3.10/__pycache__/sysconfig.cpython-310.pyc'
+import 'sysconfig' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6f760>
+# /usr/lib/python3.10/__pycache__/_sysconfigdata__x86_64-linux-gnu.cpython-310.pyc matches /usr/lib/python3.10/_sysconfigdata__x86_64-linux-gnu.py
+# code object from '/usr/lib/python3.10/__pycache__/_sysconfigdata__x86_64-linux-gnu.cpython-310.pyc'
+import '_sysconfigdata__x86_64-linux-gnu' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6fee0>
+import 'zoneinfo._tzpath' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6f490>
+# /usr/lib/python3.10/zoneinfo/__pycache__/_common.cpython-310.pyc matches /usr/lib/python3.10/zoneinfo/_common.py
+# code object from '/usr/lib/python3.10/zoneinfo/__pycache__/_common.cpython-310.pyc'
+import 'zoneinfo._common' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6ff70>
+# extension module '_zoneinfo' loaded from '/usr/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so'
+# extension module '_zoneinfo' executed from '/usr/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so'
+import '_zoneinfo' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026a882b0>
+import 'zoneinfo' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6f0d0>
+# extension module 'orjson.orjson' executed from '/home/lemke/.local/lib/python3.10/site-packages/orjson/orjson.cpython-310-x86_64-linux-gnu.so'
+import 'orjson.orjson' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026c6ef80>
+import 'orjson' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6ed10>
+import 'fastapi.responses' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6e890>
+import 'fastapi.openapi.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6cf10>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/applications.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/applications.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/__pycache__/applications.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/base.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/base.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/base.cpython-310.pyc'
+import 'starlette.middleware.base' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026a88880>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/errors.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/errors.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/errors.cpython-310.pyc'
+# /usr/lib/python3.10/html/__pycache__/__init__.cpython-310.pyc matches /usr/lib/python3.10/html/__init__.py
+# code object from '/usr/lib/python3.10/html/__pycache__/__init__.cpython-310.pyc'
+# /usr/lib/python3.10/html/__pycache__/entities.cpython-310.pyc matches /usr/lib/python3.10/html/entities.py
+# code object from '/usr/lib/python3.10/html/__pycache__/entities.cpython-310.pyc'
+import 'html.entities' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026a89390>
+import 'html' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026a89060>
+import 'starlette.middleware.errors' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026a88c70>
+# /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/starlette/middleware/__pycache__/exceptions.cpython-310.pyc'
+import 'starlette.middleware.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026a89720>
+import 'starlette.applications' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026c6f1c0>
+import 'fastapi.applications' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60279fdb10>
+# /home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/requests.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/fastapi/requests.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/fastapi/__pycache__/requests.cpython-310.pyc'
+import 'fastapi.requests' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026afc970>
+import 'fastapi' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6027b33250>
+2025-01-08 17:42:50,425 - __main__ - INFO - Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
+2025-01-08 17:42:50,426 - __main__ - INFO - Starting server...
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/__pycache__/__init__.cpython-310.pyc'
+import 'uvicorn.loops' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026afd750>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/__pycache__/auto.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/auto.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/__pycache__/auto.cpython-310.pyc'
+import 'uvicorn.loops.auto' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026afd7b0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvloop/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvloop/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvloop/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/uvloop/includes/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvloop/includes/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvloop/includes/__pycache__/__init__.cpython-310.pyc'
+import 'gc' # <class '_frozen_importlib.BuiltinImporter'>
+import 'uvloop.includes' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026afdc30>
+# extension module 'uvloop.loop' loaded from '/home/lemke/.local/lib/python3.10/site-packages/uvloop/loop.cpython-310-x86_64-linux-gnu.so'
+# /home/lemke/.local/lib/python3.10/site-packages/uvloop/__pycache__/_noop.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvloop/_noop.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvloop/__pycache__/_noop.cpython-310.pyc'
+import 'uvloop._noop' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026afcd00>
+# extension module 'uvloop.loop' executed from '/home/lemke/.local/lib/python3.10/site-packages/uvloop/loop.cpython-310-x86_64-linux-gnu.so'
+import 'uvloop.loop' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026afdcc0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvloop/__pycache__/_version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvloop/_version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvloop/__pycache__/_version.cpython-310.pyc'
+import 'uvloop._version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b21240>
+import 'uvloop' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026afd840>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/__pycache__/uvloop.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/uvloop.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/loops/__pycache__/uvloop.cpython-310.pyc'
+import 'uvicorn.loops.uvloop' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026afd9c0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/__pycache__/__init__.cpython-310.pyc'
+import 'uvicorn.protocols' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b22620>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/__init__.cpython-310.pyc'
+import 'uvicorn.protocols.http' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b22710>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/auto.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/auto.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/auto.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/httptools/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/httptools/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/httptools/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/httptools/parser/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/httptools/parser/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/httptools/parser/__pycache__/__init__.cpython-310.pyc'
+# extension module 'httptools.parser.parser' loaded from '/home/lemke/.local/lib/python3.10/site-packages/httptools/parser/parser.cpython-310-x86_64-linux-gnu.so'
+# /home/lemke/.local/lib/python3.10/site-packages/httptools/parser/__pycache__/errors.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/httptools/parser/errors.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/httptools/parser/__pycache__/errors.cpython-310.pyc'
+import 'httptools.parser.errors' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b21db0>
+# extension module 'httptools.parser.parser' executed from '/home/lemke/.local/lib/python3.10/site-packages/httptools/parser/parser.cpython-310-x86_64-linux-gnu.so'
+import 'httptools.parser.parser' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026b22050>
+# extension module 'httptools.parser.url_parser' loaded from '/home/lemke/.local/lib/python3.10/site-packages/httptools/parser/url_parser.cpython-310-x86_64-linux-gnu.so'
+# extension module 'httptools.parser.url_parser' executed from '/home/lemke/.local/lib/python3.10/site-packages/httptools/parser/url_parser.cpython-310-x86_64-linux-gnu.so'
+import 'httptools.parser.url_parser' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026b21cc0>
+import 'httptools.parser' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b22260>
+# /home/lemke/.local/lib/python3.10/site-packages/httptools/__pycache__/_version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/httptools/_version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/httptools/__pycache__/_version.cpython-310.pyc'
+import 'httptools._version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b21e70>
+import 'httptools' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b22530>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/httptools_impl.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/httptools_impl.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/flow_control.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/flow_control.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/http/__pycache__/flow_control.cpython-310.pyc'
+import 'uvicorn.protocols.http.flow_control' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b213c0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/__pycache__/utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/__pycache__/utils.cpython-310.pyc'
+import 'uvicorn.protocols.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b21660>
+import 'uvicorn.protocols.http.httptools_impl' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b224d0>
+import 'uvicorn.protocols.http.auto' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b22770>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/__pycache__/__init__.cpython-310.pyc'
+import 'uvicorn.protocols.websockets' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b23940>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/__pycache__/auto.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/auto.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/__pycache__/auto.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/imports.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/imports.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/imports.cpython-310.pyc'
+import 'websockets.imports' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b4bd00>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/version.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/version.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/version.cpython-310.pyc'
+import 'websockets.version' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b4bf10>
+import 'websockets' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b4bb80>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/__pycache__/websockets_impl.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/websockets_impl.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/protocols/websockets/__pycache__/websockets_impl.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/__init__.cpython-310.pyc'
+import 'websockets.legacy' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b58820>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/handshake.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/handshake.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/handshake.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/datastructures.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/datastructures.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/datastructures.cpython-310.pyc'
+import 'websockets.datastructures' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b58bb0>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/exceptions.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/frames.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/frames.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/frames.cpython-310.pyc'
+# extension module 'websockets.speedups' loaded from '/home/lemke/.local/lib/python3.10/site-packages/websockets/speedups.cpython-310-x86_64-linux-gnu.so'
+# extension module 'websockets.speedups' executed from '/home/lemke/.local/lib/python3.10/site-packages/websockets/speedups.cpython-310-x86_64-linux-gnu.so'
+import 'websockets.speedups' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f6026b5a350>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/__pycache__/__init__.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/__pycache__/base.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/base.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/__pycache__/base.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/typing.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/typing.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/typing.cpython-310.pyc'
+import 'websockets.typing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5b010>
+import 'websockets.extensions.base' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5b400>
+import 'websockets.extensions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5b0d0>
+import 'websockets.frames' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5a020>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/http11.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/http11.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/http11.cpython-310.pyc'
+import 'websockets.http11' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5a4d0>
+import 'websockets.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b594e0>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/headers.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/headers.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/headers.cpython-310.pyc'
+import 'websockets.headers' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5aa70>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/utils.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/utils.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/utils.cpython-310.pyc'
+import 'websockets.utils' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5bd90>
+import 'websockets.legacy.handshake' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b58910>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/__pycache__/permessage_deflate.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/permessage_deflate.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/extensions/__pycache__/permessage_deflate.cpython-310.pyc'
+import 'websockets.extensions.permessage_deflate' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b5b8b0>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/server.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/server.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/server.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/__pycache__/__init__.cpython-310.pyc'
+import 'websockets.asyncio' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264f8610>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/__pycache__/compatibility.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/compatibility.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/__pycache__/compatibility.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/__pycache__/async_timeout.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/async_timeout.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/asyncio/__pycache__/async_timeout.cpython-310.pyc'
+import 'websockets.asyncio.async_timeout' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264f9150>
+import 'websockets.asyncio.compatibility' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264f8970>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/protocol.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/protocol.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/protocol.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/streams.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/streams.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/streams.cpython-310.pyc'
+import 'websockets.streams' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264fa1a0>
+import 'websockets.protocol' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264f9c00>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/exceptions.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/exceptions.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/exceptions.cpython-310.pyc'
+import 'websockets.legacy.exceptions' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264fa350>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/http.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/http.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/http.cpython-310.pyc'
+import 'websockets.legacy.http' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264fa740>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/protocol.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/protocol.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/protocol.cpython-310.pyc'
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/framing.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/framing.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/legacy/__pycache__/framing.cpython-310.pyc'
+import 'websockets.legacy.framing' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264fb2e0>
+import 'websockets.legacy.protocol' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264faaa0>
+import 'websockets.legacy.server' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264f8bb0>
+# /home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/server.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/websockets/server.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/websockets/__pycache__/server.cpython-310.pyc'
+import 'websockets.server' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264fbcd0>
+import 'uvicorn.protocols.websockets.websockets_impl' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b4bfa0>
+import 'uvicorn.protocols.websockets.auto' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026b20eb0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/__pycache__/__init__.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/__init__.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/__pycache__/__init__.cpython-310.pyc'
+import 'uvicorn.lifespan' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60265342e0>
+# /home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/__pycache__/on.cpython-310.pyc matches /home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/on.py
+# code object from '/home/lemke/.local/lib/python3.10/site-packages/uvicorn/lifespan/__pycache__/on.cpython-310.pyc'
+import 'uvicorn.lifespan.on' # <_frozen_importlib_external.SourceFileLoader object at 0x7f60264fbc70>
+INFO:     Started server process [2074654]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+# /usr/lib/python3.10/encodings/__pycache__/idna.cpython-310.pyc matches /usr/lib/python3.10/encodings/idna.py
+# code object from '/usr/lib/python3.10/encodings/__pycache__/idna.cpython-310.pyc'
+# /usr/lib/python3.10/__pycache__/stringprep.cpython-310.pyc matches /usr/lib/python3.10/stringprep.py
+# code object from '/usr/lib/python3.10/__pycache__/stringprep.cpython-310.pyc'
+import 'stringprep' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026534be0>
+import 'encodings.idna' # <_frozen_importlib_external.SourceFileLoader object at 0x7f6026534940>
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2074654]
+# clear builtins._
+# clear sys.path
+# clear sys.argv
+# clear sys.ps1
+# clear sys.ps2
+# clear sys.last_type
+# clear sys.last_value
+# clear sys.last_traceback
+# clear sys.path_hooks
+# clear sys.path_importer_cache
+# clear sys.meta_path
+# clear sys.__interactivehook__
+# restore sys.stdin
+# restore sys.stdout
+# restore sys.stderr
+# cleanup[2] removing sys
+# cleanup[2] removing builtins
+# cleanup[2] removing _frozen_importlib
+# cleanup[2] removing _imp
+# cleanup[2] removing _thread
+# cleanup[2] removing _warnings
+# cleanup[2] removing _weakref
+# cleanup[2] removing _io
+# cleanup[2] removing marshal
+# cleanup[2] removing posix
+# cleanup[2] removing _frozen_importlib_external
+# cleanup[2] removing time
+# cleanup[2] removing zipimport
+# destroy zipimport
+# cleanup[2] removing _codecs
+# cleanup[2] removing codecs
+# cleanup[2] removing encodings.aliases
+# cleanup[2] removing encodings
+# cleanup[2] removing encodings.utf_8
+# cleanup[2] removing _signal
+# cleanup[2] removing _abc
+# cleanup[2] removing abc
+# cleanup[2] removing io
+# cleanup[2] removing __main__
+# cleanup[2] removing _stat
+# cleanup[2] removing stat
+# cleanup[2] removing _collections_abc
+# cleanup[2] removing genericpath
+# cleanup[2] removing posixpath
+# cleanup[2] removing os.path
+# cleanup[2] removing os
+# cleanup[2] removing _sitebuiltins
+# cleanup[2] removing types
+# cleanup[2] removing importlib._bootstrap
+# cleanup[2] removing importlib._bootstrap_external
+# cleanup[2] removing warnings
+# cleanup[2] removing importlib
+# cleanup[2] removing importlib._abc
+# cleanup[2] removing itertools
+# cleanup[2] removing keyword
+# cleanup[2] removing _operator
+# cleanup[2] removing operator
+# cleanup[2] removing reprlib
+# cleanup[2] removing _collections
+# cleanup[2] removing collections
+# cleanup[2] removing _functools
+# cleanup[2] removing functools
+# cleanup[2] removing contextlib
+# cleanup[2] removing importlib.util
+# cleanup[2] removing importlib.machinery
+# cleanup[2] removing google
+# destroy google
+# cleanup[2] removing apport_python_hook
+# cleanup[2] removing sitecustomize
+# destroy sitecustomize
+# cleanup[2] removing site
+# destroy site
+# cleanup[2] removing enum
+# cleanup[2] removing _sre
+# cleanup[2] removing sre_constants
+# destroy sre_constants
+# cleanup[2] removing sre_parse
+# cleanup[2] removing sre_compile
+# cleanup[2] removing _locale
+# cleanup[2] removing copyreg
+# cleanup[2] removing re
+# cleanup[2] removing token
+# cleanup[2] removing tokenize
+# cleanup[2] removing linecache
+# cleanup[2] removing traceback
+# cleanup[2] removing _weakrefset
+# destroy _weakrefset
+# cleanup[2] removing weakref
+# cleanup[2] removing collections.abc
+# cleanup[2] removing _string
+# cleanup[2] removing string
+# cleanup[2] removing threading
+# cleanup[2] removing atexit
+# cleanup[2] removing logging
+# cleanup[2] removing __future__
+# destroy __future__
+# cleanup[2] removing concurrent
+# cleanup[2] removing concurrent.futures._base
+# cleanup[2] removing concurrent.futures
+# cleanup[2] removing _heapq
+# cleanup[2] removing heapq
+# cleanup[2] removing _socket
+# cleanup[2] removing math
+# cleanup[2] removing select
+# cleanup[2] removing selectors
+# cleanup[2] removing errno
+# cleanup[2] removing array
+# cleanup[2] removing socket
+# cleanup[2] removing signal
+# cleanup[2] removing fcntl
+# cleanup[2] removing _posixsubprocess
+# cleanup[2] removing subprocess
+# cleanup[2] removing _ssl
+# cleanup[2] removing _struct
+# cleanup[2] removing struct
+# cleanup[2] removing binascii
+# cleanup[2] removing base64
+# cleanup[2] removing ssl
+# cleanup[2] removing asyncio.constants
+# cleanup[2] removing _ast
+# destroy _ast
+# cleanup[2] removing ast
+# cleanup[2] removing _opcode
+# cleanup[2] removing opcode
+# destroy opcode
+# cleanup[2] removing dis
+# cleanup[2] removing inspect
+# cleanup[2] removing asyncio.format_helpers
+# cleanup[2] removing asyncio.base_futures
+# cleanup[2] removing asyncio.log
+# cleanup[2] removing asyncio.coroutines
+# cleanup[2] removing _contextvars
+# cleanup[2] removing contextvars
+# cleanup[2] removing asyncio.exceptions
+# cleanup[2] removing asyncio.base_tasks
+# cleanup[2] removing _asyncio
+# cleanup[2] removing asyncio.events
+# cleanup[2] removing asyncio.futures
+# cleanup[2] removing asyncio.protocols
+# cleanup[2] removing asyncio.transports
+# cleanup[2] removing asyncio.sslproto
+# cleanup[2] removing typing
+# cleanup[2] removing asyncio.mixins
+# cleanup[2] removing asyncio.tasks
+# cleanup[2] removing asyncio.locks
+# cleanup[2] removing asyncio.staggered
+# cleanup[2] removing asyncio.trsock
+# cleanup[2] removing asyncio.base_events
+# cleanup[2] removing asyncio.runners
+# cleanup[2] removing asyncio.queues
+# cleanup[2] removing asyncio.streams
+# cleanup[2] removing asyncio.subprocess
+# cleanup[2] removing asyncio.threads
+# cleanup[2] removing asyncio.base_subprocess
+# cleanup[2] removing asyncio.selector_events
+# cleanup[2] removing asyncio.unix_events
+# cleanup[2] removing asyncio
+# cleanup[2] removing _json
+# cleanup[2] removing json.scanner
+# cleanup[2] removing json.decoder
+# cleanup[2] removing json.encoder
+# cleanup[2] removing json
+# cleanup[2] removing _compat_pickle
+# cleanup[2] removing _pickle
+# cleanup[2] removing pickle
+# cleanup[2] removing _queue
+# cleanup[2] removing queue
+# cleanup[2] removing copy
+# cleanup[2] removing logging.handlers
+# cleanup[2] removing socketserver
+# destroy socketserver
+# cleanup[2] removing logging.config
+# cleanup[2] removing configparser
+# destroy configparser
+# cleanup[2] removing fnmatch
+# cleanup[2] removing ntpath
+# cleanup[2] removing urllib
+# cleanup[2] removing urllib.parse
+# cleanup[2] removing pathlib
+# cleanup[2] removing gettext
+# destroy gettext
+# cleanup[2] removing _datetime
+# cleanup[2] removing datetime
+# cleanup[2] removing click._compat
+# cleanup[2] removing click.globals
+# cleanup[2] removing click.utils
+# cleanup[2] removing click.exceptions
+# cleanup[2] removing click.types
+# cleanup[2] removing click.parser
+# cleanup[2] removing click.formatting
+# cleanup[2] removing click.termui
+# cleanup[2] removing click.core
+# cleanup[2] removing click.decorators
+# cleanup[2] removing click
+# cleanup[2] removing typing_extensions
+# cleanup[2] removing uvicorn._types
+# cleanup[2] removing uvicorn.importer
+# cleanup[2] removing http
+# cleanup[2] removing uvicorn.logging
+# cleanup[2] removing uvicorn.middleware
+# cleanup[2] removing uvicorn.middleware.asgi2
+# cleanup[2] removing uvicorn.middleware.message_logger
+# cleanup[2] removing ipaddress
+# cleanup[2] removing uvicorn.middleware.proxy_headers
+# cleanup[2] removing uvicorn.middleware.wsgi
+# cleanup[2] removing uvicorn.config
+# cleanup[2] removing platform
+# cleanup[2] removing email
+# cleanup[2] removing _bisect
+# cleanup[2] removing bisect
+# cleanup[2] removing _random
+# cleanup[2] removing _sha512
+# cleanup[2] removing random
+# cleanup[2] removing locale
+# cleanup[2] removing calendar
+# cleanup[2] removing email._parseaddr
+# cleanup[2] removing email.base64mime
+# cleanup[2] removing email.quoprimime
+# cleanup[2] removing email.errors
+# cleanup[2] removing quopri
+# cleanup[2] removing email.encoders
+# cleanup[2] removing email.charset
+# cleanup[2] removing email.utils
+# cleanup[2] removing uvicorn.server
+# cleanup[2] removing multiprocessing.process
+# cleanup[2] removing multiprocessing.reduction
+# cleanup[2] removing multiprocessing.context
+# cleanup[2] removing __mp_main__
+# destroy __main__
+# cleanup[2] removing multiprocessing
+# cleanup[2] removing zlib
+# cleanup[2] removing _compression
+# cleanup[2] removing _bz2
+# cleanup[2] removing bz2
+# cleanup[2] removing _lzma
+# cleanup[2] removing lzma
+# cleanup[2] removing shutil
+# cleanup[2] removing tempfile
+# cleanup[2] removing _multiprocessing
+# cleanup[2] removing multiprocessing.util
+# cleanup[2] removing multiprocessing.connection
+# cleanup[2] removing uvicorn._subprocess
+# cleanup[2] removing uvicorn.supervisors.basereload
+# cleanup[2] removing uvicorn.supervisors.multiprocess
+# cleanup[2] removing watchfiles.filters
+# cleanup[2] removing anyio._core
+# cleanup[2] removing sniffio._version
+# cleanup[2] removing sniffio._impl
+# cleanup[2] removing sniffio
+# cleanup[2] removing anyio._core._eventloop
+# cleanup[2] removing anyio._core._exceptions
+# cleanup[2] removing dataclasses
+# cleanup[2] removing anyio.abc._eventloop
+# cleanup[2] removing anyio.abc._resources
+# cleanup[2] removing anyio._core._typedattr
+# cleanup[2] removing anyio.abc._tasks
+# cleanup[2] removing anyio.abc._streams
+# cleanup[2] removing anyio.abc._sockets
+# cleanup[2] removing anyio.abc._subprocesses
+# cleanup[2] removing anyio.abc._testing
+# cleanup[2] removing anyio.lowlevel
+# cleanup[2] removing anyio._core._tasks
+# cleanup[2] removing anyio._core._testing
+# cleanup[2] removing anyio._core._synchronization
+# cleanup[2] removing concurrent.futures.thread
+# cleanup[2] removing anyio.from_thread
+# cleanup[2] removing anyio.abc
+# cleanup[2] removing anyio.to_thread
+# cleanup[2] removing anyio._core._fileio
+# cleanup[2] removing anyio._core._resources
+# cleanup[2] removing anyio._core._signals
+# cleanup[2] removing anyio.streams
+# cleanup[2] removing anyio.streams.stapled
+# cleanup[2] removing anyio.streams.tls
+# cleanup[2] removing exceptiongroup._exceptions
+# cleanup[2] removing exceptiongroup._catch
+# cleanup[2] removing exceptiongroup._version
+# cleanup[2] removing textwrap
+# cleanup[2] removing exceptiongroup._formatting
+# cleanup[2] removing exceptiongroup._suppress
+# cleanup[2] removing exceptiongroup
+# destroy exceptiongroup
+# destroy exceptiongroup._exceptions
+# destroy exceptiongroup._catch
+# destroy exceptiongroup._version
+# destroy exceptiongroup._formatting
+# destroy exceptiongroup._suppress
+# cleanup[2] removing anyio._core._sockets
+# cleanup[2] removing anyio.streams.memory
+# cleanup[2] removing anyio._core._streams
+# cleanup[2] removing anyio._core._subprocesses
+# cleanup[2] removing anyio
+# cleanup[2] removing watchfiles._rust_notify
+# cleanup[2] removing watchfiles.main
+# cleanup[2] removing shlex
+# cleanup[2] removing watchfiles.run
+# cleanup[2] removing watchfiles.version
+# cleanup[2] removing watchfiles
+# destroy watchfiles
+# destroy watchfiles.filters
+# destroy watchfiles.main
+# destroy watchfiles.run
+# destroy watchfiles.version
+# cleanup[2] removing uvicorn.supervisors.watchfilesreload
+# cleanup[2] removing uvicorn.supervisors
+# cleanup[2] removing uvicorn.main
+# destroy uvicorn.main
+# cleanup[2] removing uvicorn
+# cleanup[2] removing starlette
+# destroy starlette
+# cleanup[2] removing starlette.status
+# cleanup[2] removing uu
+# cleanup[2] removing email.header
+# cleanup[2] removing email._policybase
+# cleanup[2] removing email._encoded_words
+# cleanup[2] removing email.iterators
+# cleanup[2] removing email.message
+# cleanup[2] removing fastapi.openapi
+# cleanup[2] removing pydantic.version
+# cleanup[2] removing pydantic._migration
+# cleanup[2] removing pydantic.errors
+# cleanup[2] removing pydantic
+# destroy pydantic
+# cleanup[2] removing pydantic_core._pydantic_core
+# cleanup[2] removing numbers
+# destroy numbers
+# cleanup[2] removing _decimal
+# cleanup[2] removing decimal
+# cleanup[2] removing pydantic_core.core_schema
+# cleanup[2] removing pydantic_core
+# cleanup[2] removing pydantic._internal
+# cleanup[2] removing pydantic._internal._internal_dataclass
+# cleanup[2] removing pydantic.aliases
+# cleanup[2] removing pydantic.config
+# cleanup[2] removing pydantic.warnings
+# cleanup[2] removing pydantic._internal._config
+# cleanup[2] removing pydantic._internal._typing_extra
+# cleanup[2] removing pydantic._internal._repr
+# cleanup[2] removing pydantic._internal._core_utils
+# cleanup[2] removing pydantic._internal._decorators
+# cleanup[2] removing pydantic._internal._docs_extraction
+# cleanup[2] removing pydantic._internal._fields
+# cleanup[2] removing pydantic._internal._forward_ref
+# cleanup[2] removing pydantic._internal._utils
+# cleanup[2] removing pydantic._internal._generics
+# cleanup[2] removing pydantic.plugin
+# cleanup[2] removing pydantic.plugin._schema_validator
+# cleanup[2] removing pydantic._internal._mock_val_ser
+# cleanup[2] removing pydantic.annotated_handlers
+# cleanup[2] removing pydantic._internal._core_metadata
+# cleanup[2] removing pydantic._internal._schema_generation_shared
+# cleanup[2] removing pydantic.json_schema
+# cleanup[2] removing pydantic._internal._discriminated_union
+# cleanup[2] removing pydantic._internal._known_annotated_metadata
+# cleanup[2] removing pydantic._internal._generate_schema
+# cleanup[2] removing pydantic._internal._signature
+# cleanup[2] removing pydantic._internal._validate_call
+# cleanup[2] removing pydantic._internal._model_construction
+# cleanup[2] removing pydantic.main
+# cleanup[2] removing starlette.exceptions
+# destroy starlette.exceptions
+# cleanup[2] removing annotated_types
+# cleanup[2] removing pydantic._internal._validators
+# cleanup[2] removing _uuid
+# cleanup[2] removing uuid
+# cleanup[2] removing pydantic.types
+# cleanup[2] removing pydantic.fields
+# cleanup[2] removing _csv
+# cleanup[2] removing csv
+# cleanup[2] removing zipfile
+# cleanup[2] removing importlib.metadata._functools
+# cleanup[2] removing importlib.metadata._text
+# cleanup[2] removing importlib.metadata._adapters
+# cleanup[2] removing importlib.metadata._meta
+# cleanup[2] removing importlib.metadata._collections
+# cleanup[2] removing importlib.metadata._itertools
+# cleanup[2] removing importlib.abc
+# cleanup[2] removing importlib.metadata
+# cleanup[2] removing pydantic.plugin._loader
+# cleanup[2] removing fastapi.exceptions
+# cleanup[2] removing fastapi.types
+# cleanup[2] removing starlette.concurrency
+# destroy starlette.concurrency
+# cleanup[2] removing starlette.types
+# destroy starlette.types
+# cleanup[2] removing starlette.datastructures
+# destroy starlette.datastructures
+# cleanup[2] removing pydantic.type_adapter
+# cleanup[2] removing fastapi._compat
+# cleanup[2] removing fastapi.logger
+# cleanup[2] removing pydantic.networks
+# cleanup[2] removing email_validator.exceptions_types
+# cleanup[2] removing unicodedata
+# cleanup[2] removing email_validator.rfc_constants
+# cleanup[2] removing idna.package_data
+# cleanup[2] removing idna.idnadata
+# cleanup[2] removing idna.intranges
+# cleanup[2] removing idna.core
+# cleanup[2] removing idna
+# cleanup[2] removing email_validator.syntax
+# cleanup[2] removing email_validator.validate_email
+# destroy email_validator.validate_email
+# cleanup[2] removing email_validator.version
+# cleanup[2] removing email_validator
+# cleanup[2] removing pydantic._internal._std_types_schema
+# cleanup[2] removing email.feedparser
+# cleanup[2] removing email.parser
+# cleanup[2] removing fastapi.openapi.models
+# cleanup[2] removing fastapi.params
+# cleanup[2] removing fastapi.datastructures
+# cleanup[2] removing fastapi.dependencies
+# cleanup[2] removing fastapi.security.base
+# cleanup[2] removing http.cookies
+# cleanup[2] removing starlette._utils
+# destroy starlette._utils
+# cleanup[2] removing python_multipart.exceptions
+# cleanup[2] removing python_multipart.decoders
+# cleanup[2] removing python_multipart.multipart
+# cleanup[2] removing python_multipart
+# cleanup[2] removing starlette.formparsers
+# destroy starlette.formparsers
+# cleanup[2] removing starlette.requests
+# destroy starlette.requests
+# cleanup[2] removing fastapi.security.api_key
+# cleanup[2] removing fastapi.security.utils
+# cleanup[2] removing fastapi.security.http
+# cleanup[2] removing fastapi.param_functions
+# cleanup[2] removing fastapi.security.oauth2
+# cleanup[2] removing fastapi.security.open_id_connect_url
+# cleanup[2] removing fastapi.security
+# cleanup[2] removing fastapi.dependencies.models
+# cleanup[2] removing starlette.background
+# destroy starlette.background
+# cleanup[2] removing fastapi.background
+# cleanup[2] removing fastapi.concurrency
+# cleanup[2] removing fastapi.utils
+# cleanup[2] removing mimetypes
+# destroy mimetypes
+# cleanup[2] removing _hashlib
+# cleanup[2] removing _blake2
+# cleanup[2] removing hashlib
+# cleanup[2] removing hmac
+# destroy hmac
+# cleanup[2] removing secrets
+# cleanup[2] removing starlette._compat
+# destroy starlette._compat
+# cleanup[2] removing starlette.responses
+# destroy starlette.responses
+# cleanup[2] removing starlette.websockets
+# destroy starlette.websockets
+# cleanup[2] removing fastapi.dependencies.utils
+# cleanup[2] removing colorsys
+# destroy colorsys
+# cleanup[2] removing pydantic.color
+# cleanup[2] removing fastapi.encoders
+# cleanup[2] removing starlette._exception_handler
+# destroy starlette._exception_handler
+# cleanup[2] removing starlette.convertors
+# destroy starlette.convertors
+# cleanup[2] removing starlette.middleware
+# destroy starlette.middleware
+# cleanup[2] removing starlette.routing
+# cleanup[2] removing fastapi.routing
+# cleanup[2] removing fastapi.websockets
+# cleanup[2] removing fastapi.exception_handlers
+# cleanup[2] removing fastapi.openapi.docs
+# cleanup[2] removing http.client
+# cleanup[2] removing fastapi.openapi.constants
+# cleanup[2] removing ujson
+# cleanup[2] removing sysconfig
+# cleanup[2] removing _sysconfigdata__x86_64-linux-gnu
+# destroy _sysconfigdata__x86_64-linux-gnu
+# cleanup[2] removing zoneinfo._tzpath
+# cleanup[2] removing zoneinfo._common
+# cleanup[2] removing _zoneinfo
+# destroy _zoneinfo
+# cleanup[2] removing zoneinfo
+# destroy zoneinfo
+# cleanup[2] removing orjson.orjson
+# cleanup[2] removing orjson
+# cleanup[2] removing fastapi.responses
+# cleanup[2] removing fastapi.openapi.utils
+# cleanup[2] removing starlette.middleware.base
+# cleanup[2] removing html.entities
+# cleanup[2] removing html
+# cleanup[2] removing starlette.middleware.errors
+# cleanup[2] removing starlette.middleware.exceptions
+# cleanup[2] removing starlette.applications
+# destroy starlette.applications
+# cleanup[2] removing fastapi.applications
+# cleanup[2] removing fastapi.requests
+# cleanup[2] removing fastapi
+# cleanup[2] removing uvicorn.loops
+# cleanup[2] removing uvicorn.loops.auto
+# cleanup[2] removing gc
+# cleanup[2] removing uvloop.includes
+# cleanup[2] removing cython_runtime
+# cleanup[2] removing _cython_3_0_11
+# destroy _cython_3_0_11
+# cleanup[2] removing uvloop._noop
+# cleanup[2] removing uvloop.loop
+# cleanup[2] removing uvloop._version
+# cleanup[2] removing uvloop
+# cleanup[2] removing uvicorn.loops.uvloop
+# cleanup[2] removing uvicorn.protocols
+# cleanup[2] removing uvicorn.protocols.http
+# cleanup[2] removing httptools.parser.errors
+# cleanup[2] removing httptools.parser.parser
+# cleanup[2] removing httptools.parser.url_parser
+# cleanup[2] removing httptools.parser
+# cleanup[2] removing httptools._version
+# cleanup[2] removing httptools
+# cleanup[2] removing uvicorn.protocols.http.flow_control
+# cleanup[2] removing uvicorn.protocols.utils
+# cleanup[2] removing uvicorn.protocols.http.httptools_impl
+# cleanup[2] removing uvicorn.protocols.http.auto
+# cleanup[2] removing uvicorn.protocols.websockets
+# cleanup[2] removing websockets.imports
+# cleanup[2] removing websockets.version
+# cleanup[2] removing websockets
+# cleanup[2] removing websockets.legacy
+# cleanup[2] removing websockets.datastructures
+# cleanup[2] removing websockets.speedups
+# cleanup[2] removing websockets.typing
+# cleanup[2] removing websockets.extensions.base
+# cleanup[2] removing websockets.extensions
+# cleanup[2] removing websockets.frames
+# cleanup[2] removing websockets.http11
+# cleanup[2] removing websockets.exceptions
+# cleanup[2] removing websockets.headers
+# cleanup[2] removing websockets.utils
+# cleanup[2] removing websockets.legacy.handshake
+# cleanup[2] removing websockets.extensions.permessage_deflate
+# cleanup[2] removing websockets.asyncio
+# cleanup[2] removing websockets.asyncio.async_timeout
+# cleanup[2] removing websockets.asyncio.compatibility
+# cleanup[2] removing websockets.streams
+# cleanup[2] removing websockets.protocol
+# cleanup[2] removing websockets.legacy.exceptions
+# cleanup[2] removing websockets.legacy.http
+# cleanup[2] removing websockets.legacy.framing
+# cleanup[2] removing websockets.legacy.protocol
+# cleanup[2] removing websockets.legacy.server
+# cleanup[2] removing websockets.server
+# cleanup[2] removing uvicorn.protocols.websockets.websockets_impl
+# cleanup[2] removing uvicorn.protocols.websockets.auto
+# cleanup[2] removing uvicorn.lifespan
+# cleanup[2] removing uvicorn.lifespan.on
+# cleanup[2] removing stringprep
+# cleanup[2] removing encodings.idna
+# destroy uvicorn._types
+# destroy uvicorn.importer
+# destroy uvicorn.logging
+# destroy uvicorn.middleware
+# destroy uvicorn.middleware.asgi2
+# destroy uvicorn.middleware.message_logger
+# destroy uvicorn.middleware.proxy_headers
+# destroy uvicorn.middleware.wsgi
+# destroy uvicorn.config
+# destroy uvicorn.server
+# destroy uvicorn._subprocess
+# destroy uvicorn.supervisors
+# destroy uvicorn.supervisors.basereload
+# destroy uvicorn.supervisors.multiprocess
+# destroy uvicorn.supervisors.watchfilesreload
+# destroy uvicorn.loops
+# destroy uvicorn.loops.auto
+# destroy uvicorn.loops.uvloop
+# destroy uvicorn.protocols
+# destroy uvicorn.protocols.http
+# destroy uvicorn.protocols.http.flow_control
+# destroy uvicorn.protocols.http.httptools_impl
+# destroy uvicorn.protocols.http.auto
+# destroy uvicorn.protocols.utils
+# destroy uvicorn.protocols.websockets
+# destroy uvicorn.protocols.websockets.websockets_impl
+# destroy uvicorn.protocols.websockets.auto
+# destroy uvicorn.lifespan
+# destroy uvicorn.lifespan.on
+# destroy uvicorn
+# destroy multiprocessing
+# destroy multiprocessing.connection
+# destroy multiprocessing.context
+# destroy multiprocessing.util
+# destroy multiprocessing.reduction
+# destroy _multiprocessing
+# destroy multiprocessing.process
+# destroy shlex
+# destroy pydantic.version
+# destroy pydantic._migration
+# destroy pydantic.errors
+# destroy pydantic._internal
+# destroy pydantic._internal._docs_extraction
+# destroy pydantic._internal._signature
+# destroy pydantic._internal._validate_call
+# destroy pydantic._internal._std_types_schema
+# destroy pydantic.aliases
+# destroy pydantic.config
+# destroy pydantic.warnings
+# destroy pydantic.plugin
+# destroy pydantic.annotated_handlers
+# destroy pydantic.json_schema
+# destroy pydantic.main
+# destroy pydantic.fields
+# destroy pydantic.type_adapter
+# destroy pydantic.networks
+# destroy pydantic.color
+# destroy pydantic.plugin._schema_validator
+# destroy pydantic.plugin._loader
+# destroy zoneinfo._tzpath
+# destroy zoneinfo._common
+# destroy sysconfig
+# destroy uvloop
+# destroy httptools.parser
+# destroy httptools.parser.errors
+# destroy httptools._version
+# destroy httptools
+# destroy websockets.typing
+# destroy websockets.imports
+# destroy websockets.version
+# destroy websockets.legacy
+# destroy websockets.legacy.handshake
+# destroy websockets.legacy.exceptions
+# destroy websockets.legacy.http
+# destroy websockets.legacy.framing
+# destroy websockets.legacy.protocol
+# destroy websockets.legacy.server
+# destroy websockets.exceptions
+# destroy websockets.headers
+# destroy websockets.utils
+# destroy websockets.asyncio
+# destroy websockets.asyncio.async_timeout
+# destroy websockets.asyncio.compatibility
+# destroy websockets.streams
+# destroy websockets.protocol
+# destroy websockets.server
+# destroy websockets
+# destroy websockets.datastructures
+# cleanup[3] wiping encodings.idna
+# destroy stringprep
+# cleanup[3] wiping websockets.extensions.permessage_deflate
+# cleanup[3] wiping websockets.http11
+# cleanup[3] wiping websockets.frames
+# destroy secrets
+# destroy websockets.extensions
+# destroy websockets.extensions.base
+# destroy websockets.extensions.permessage_deflate
+# cleanup[3] wiping websockets.speedups
+# cleanup[3] wiping httptools.parser.url_parser
+# cleanup[3] wiping httptools.parser.parser
+# cleanup[3] wiping uvloop._version
+# cleanup[3] wiping uvloop.loop
+# cleanup[3] wiping uvloop._noop
+# cleanup[3] wiping cython_runtime
+# cleanup[3] wiping uvloop.includes
+# cleanup[3] wiping gc
+# cleanup[3] wiping fastapi
+# destroy fastapi._compat
+# destroy starlette.status
+# destroy fastapi.openapi
+# destroy fastapi.openapi.models
+# destroy fastapi.openapi.docs
+# destroy fastapi.openapi.constants
+# destroy fastapi.openapi.utils
+# destroy fastapi.exceptions
+# destroy fastapi.types
+# destroy fastapi.logger
+# destroy fastapi.datastructures
+# destroy fastapi.dependencies
+# destroy fastapi.dependencies.models
+# destroy fastapi.dependencies.utils
+# destroy fastapi.param_functions
+# destroy fastapi.security
+# destroy fastapi.security.base
+# destroy fastapi.security.api_key
+# destroy fastapi.security.utils
+# destroy fastapi.security.http
+# destroy fastapi.security.oauth2
+# destroy fastapi.security.open_id_connect_url
+# destroy fastapi.background
+# destroy fastapi.concurrency
+# destroy fastapi.utils
+# destroy fastapi.encoders
+# destroy fastapi.websockets
+# destroy fastapi.exception_handlers
+# destroy fastapi.responses
+# destroy fastapi.applications
+# destroy fastapi.requests
+# cleanup[3] wiping starlette.middleware.exceptions
+# cleanup[3] wiping starlette.middleware.errors
+# destroy html
+# cleanup[3] wiping html.entities
+# cleanup[3] wiping starlette.middleware.base
+# cleanup[3] wiping orjson
+# destroy orjson.orjson
+# cleanup[3] wiping ujson
+# cleanup[3] wiping http.client
+# cleanup[3] wiping fastapi.routing
+# destroy starlette.routing
+# cleanup[3] wiping hashlib
+# cleanup[3] wiping _blake2
+# cleanup[3] wiping _hashlib
+# cleanup[3] wiping python_multipart
+# destroy python_multipart.exceptions
+# destroy python_multipart.decoders
+# destroy python_multipart.multipart
+# cleanup[3] wiping http.cookies
+# destroy string
+# cleanup[3] wiping fastapi.params
+# cleanup[3] wiping email.parser
+# cleanup[3] wiping email.feedparser
+# cleanup[3] wiping email_validator
+# destroy email_validator.exceptions_types
+# destroy email_validator.rfc_constants
+# destroy email_validator.syntax
+# destroy email_validator.version
+# cleanup[3] wiping idna
+# destroy idna.package_data
+# destroy idna.intranges
+# destroy idna.core
+# cleanup[3] wiping idna.idnadata
+# cleanup[3] wiping unicodedata
+# cleanup[3] wiping importlib.metadata
+# destroy importlib.metadata._functools
+# destroy importlib.metadata._text
+# destroy importlib.metadata._adapters
+# destroy importlib.metadata._meta
+# destroy importlib.metadata._collections
+# destroy importlib.metadata._itertools
+# destroy csv
+# destroy zipfile
+# cleanup[3] wiping importlib.abc
+# cleanup[3] wiping _csv
+# cleanup[3] wiping pydantic.types
+# cleanup[3] wiping uuid
+# destroy platform
+# cleanup[3] wiping _uuid
+# destroy _uuid
+# cleanup[3] wiping pydantic._internal._validators
+# cleanup[3] wiping annotated_types
+# cleanup[3] wiping pydantic._internal._model_construction
+# cleanup[3] wiping pydantic._internal._generate_schema
+# destroy pydantic._internal._discriminated_union
+# cleanup[3] wiping pydantic._internal._known_annotated_metadata
+# cleanup[3] wiping pydantic._internal._schema_generation_shared
+# cleanup[3] wiping pydantic._internal._core_metadata
+# cleanup[3] wiping pydantic._internal._mock_val_ser
+# cleanup[3] wiping pydantic._internal._generics
+# cleanup[3] wiping pydantic._internal._utils
+# cleanup[3] wiping pydantic._internal._forward_ref
+# cleanup[3] wiping pydantic._internal._fields
+# cleanup[3] wiping pydantic._internal._decorators
+# cleanup[3] wiping pydantic._internal._core_utils
+# cleanup[3] wiping pydantic._internal._repr
+# cleanup[3] wiping pydantic._internal._typing_extra
+# cleanup[3] wiping pydantic._internal._config
+# cleanup[3] wiping pydantic._internal._internal_dataclass
+# cleanup[3] wiping pydantic_core
+# cleanup[3] wiping pydantic_core.core_schema
+# cleanup[3] wiping decimal
+# cleanup[3] wiping _decimal
+# cleanup[3] wiping pydantic_core._pydantic_core
+# cleanup[3] wiping email.message
+# destroy uu
+# destroy quopri
+# cleanup[3] wiping email.iterators
+# cleanup[3] wiping email._encoded_words
+# cleanup[3] wiping email._policybase
+# cleanup[3] wiping email.header
+# cleanup[3] wiping watchfiles._rust_notify
+# cleanup[3] wiping anyio
+# destroy anyio._core
+# destroy anyio._core._exceptions
+# destroy anyio._core._typedattr
+# destroy anyio._core._tasks
+# destroy anyio._core._testing
+# destroy anyio._core._synchronization
+# destroy anyio._core._fileio
+# destroy anyio._core._resources
+# destroy anyio._core._signals
+# destroy anyio._core._sockets
+# destroy anyio._core._streams
+# destroy anyio._core._subprocesses
+# destroy anyio.lowlevel
+# destroy anyio.from_thread
+# destroy anyio.abc
+# destroy anyio.abc._eventloop
+# destroy anyio.abc._resources
+# destroy anyio.abc._tasks
+# destroy anyio.abc._streams
+# destroy anyio.abc._sockets
+# destroy anyio.abc._subprocesses
+# destroy anyio.abc._testing
+# destroy anyio.streams
+# destroy anyio.streams.stapled
+# destroy anyio.streams.tls
+# destroy anyio.streams.memory
+# cleanup[3] wiping textwrap
+# cleanup[3] wiping anyio.to_thread
+# cleanup[3] wiping concurrent.futures.thread
+# cleanup[3] wiping dataclasses
+# destroy keyword
+# cleanup[3] wiping anyio._core._eventloop
+# destroy sniffio
+# destroy sniffio._version
+# destroy sniffio._impl
+# cleanup[3] wiping tempfile
+# cleanup[3] wiping shutil
+# cleanup[3] wiping lzma
+# cleanup[3] wiping _lzma
+# cleanup[3] wiping bz2
+# destroy _compression
+# cleanup[3] wiping _bz2
+# cleanup[3] wiping zlib
+# cleanup[3] wiping email.utils
+# destroy random
+# cleanup[3] wiping email.charset
+# cleanup[3] wiping email.encoders
+# cleanup[3] wiping email.errors
+# cleanup[3] wiping email.quoprimime
+# cleanup[3] wiping email.base64mime
+# cleanup[3] wiping email._parseaddr
+# destroy calendar
+# cleanup[3] wiping locale
+# destroy encodings
+# cleanup[3] wiping _sha512
+# cleanup[3] wiping _random
+# cleanup[3] wiping bisect
+# cleanup[3] wiping _bisect
+# cleanup[3] wiping email
+# destroy email._parseaddr
+# destroy email._policybase
+# destroy email._encoded_words
+# destroy email.base64mime
+# destroy email.quoprimime
+# destroy email.errors
+# destroy email.encoders
+# destroy email.charset
+# destroy email.utils
+# destroy email.header
+# destroy email.iterators
+# destroy email.message
+# destroy email.feedparser
+# destroy email.parser
+# cleanup[3] wiping ipaddress
+# cleanup[3] wiping http
+# destroy http.client
+# cleanup[3] wiping typing_extensions
+# cleanup[3] wiping click
+# destroy click._compat
+# destroy click.globals
+# destroy click.utils
+# destroy click.exceptions
+# destroy click.parser
+# destroy click.formatting
+# destroy click.termui
+# destroy click.core
+# destroy click.decorators
+# cleanup[3] wiping click.types
+# cleanup[3] wiping datetime
+# cleanup[3] wiping _datetime
+# cleanup[3] wiping pathlib
+# destroy fnmatch
+# cleanup[3] wiping urllib.parse
+# cleanup[3] wiping urllib
+# destroy urllib.parse
+# cleanup[3] wiping ntpath
+# cleanup[3] wiping logging.config
+# cleanup[3] wiping logging.handlers
+# destroy pickle
+# destroy queue
+# destroy copy
+# cleanup[3] wiping _queue
+# cleanup[3] wiping _pickle
+# cleanup[3] wiping _compat_pickle
+# cleanup[3] wiping json
+# destroy json.decoder
+# destroy json.encoder
+# cleanup[3] wiping json.scanner
+# cleanup[3] wiping _json
+# cleanup[3] wiping asyncio
+# destroy asyncio.log
+# destroy asyncio.runners
+# destroy asyncio.queues
+# destroy asyncio.subprocess
+# destroy asyncio.threads
+# destroy asyncio.unix_events
+# cleanup[3] wiping asyncio.selector_events
+# cleanup[3] wiping asyncio.base_subprocess
+# cleanup[3] wiping asyncio.streams
+# cleanup[3] wiping asyncio.base_events
+# destroy asyncio.sslproto
+# destroy asyncio.staggered
+# destroy asyncio.trsock
+# cleanup[3] wiping asyncio.locks
+# cleanup[3] wiping asyncio.tasks
+# destroy asyncio.base_tasks
+# cleanup[3] wiping asyncio.mixins
+# cleanup[3] wiping typing
+# cleanup[3] wiping asyncio.transports
+# cleanup[3] wiping asyncio.protocols
+# cleanup[3] wiping asyncio.futures
+# destroy concurrent
+# destroy concurrent.futures
+# cleanup[3] wiping asyncio.events
+# cleanup[3] wiping _asyncio
+# cleanup[3] wiping asyncio.exceptions
+# cleanup[3] wiping contextvars
+# cleanup[3] wiping _contextvars
+# destroy _contextvars
+# cleanup[3] wiping asyncio.coroutines
+# cleanup[3] wiping asyncio.base_futures
+# destroy asyncio.format_helpers
+# cleanup[3] wiping inspect
+# destroy dis
+# destroy token
+# cleanup[3] wiping _opcode
+# cleanup[3] wiping ast
+# cleanup[3] wiping asyncio.constants
+# cleanup[3] wiping ssl
+# cleanup[3] wiping base64
+# cleanup[3] wiping binascii
+# cleanup[3] wiping struct
+# cleanup[3] wiping _struct
+# cleanup[3] wiping _ssl
+# cleanup[3] wiping subprocess
+# cleanup[3] wiping _posixsubprocess
+# destroy _posixsubprocess
+# cleanup[3] wiping fcntl
+# destroy fcntl
+# cleanup[3] wiping signal
+# cleanup[3] wiping socket
+# cleanup[3] wiping array
+# cleanup[3] wiping errno
+# cleanup[3] wiping selectors
+# cleanup[3] wiping select
+# cleanup[3] wiping math
+# cleanup[3] wiping _socket
+# cleanup[3] wiping heapq
+# cleanup[3] wiping _heapq
+# cleanup[3] wiping concurrent.futures._base
+# cleanup[3] wiping logging
+# destroy weakref
+# destroy logging.handlers
+# destroy logging.config
+# cleanup[3] wiping atexit
+# destroy atexit
+# cleanup[3] wiping threading
+# cleanup[3] wiping _string
+# cleanup[3] wiping collections.abc
+# cleanup[3] wiping traceback
+# cleanup[3] wiping linecache
+# destroy tokenize
+# cleanup[3] wiping re
+# destroy sre_compile
+# destroy copyreg
+# cleanup[3] wiping _locale
+# destroy _locale
+# cleanup[3] wiping sre_parse
+# cleanup[3] wiping _sre
+# cleanup[3] wiping enum
+# cleanup[3] wiping apport_python_hook
+# cleanup[3] wiping importlib.machinery
+# cleanup[3] wiping importlib.util
+# cleanup[3] wiping contextlib
+# cleanup[3] wiping functools
+# cleanup[3] wiping _functools
+# cleanup[3] wiping collections
+# cleanup[3] wiping _collections
+# destroy _collections
+# cleanup[3] wiping reprlib
+# cleanup[3] wiping operator
+# cleanup[3] wiping _operator
+# cleanup[3] wiping itertools
+# cleanup[3] wiping importlib._abc
+# cleanup[3] wiping importlib
+# destroy importlib._abc
+# destroy importlib.util
+# destroy importlib.machinery
+# destroy importlib.abc
+# destroy importlib.metadata
+# cleanup[3] wiping warnings
+# cleanup[3] wiping importlib._bootstrap_external
+# cleanup[3] wiping importlib._bootstrap
+# cleanup[3] wiping types
+# cleanup[3] wiping _sitebuiltins
+# cleanup[3] wiping os
+# cleanup[3] wiping os.path
+# destroy genericpath
+# cleanup[3] wiping posixpath
+# cleanup[3] wiping _collections_abc
+# cleanup[3] wiping stat
+# cleanup[3] wiping _stat
+# cleanup[3] wiping io
+# destroy abc
+# cleanup[3] wiping _abc
+# cleanup[3] wiping _signal
+# cleanup[3] wiping encodings.utf_8
+# cleanup[3] wiping encodings.aliases
+# cleanup[3] wiping codecs
+# cleanup[3] wiping _codecs
+# cleanup[3] wiping time
+# cleanup[3] wiping _frozen_importlib_external
+# cleanup[3] wiping posix
+# cleanup[3] wiping marshal
+# cleanup[3] wiping _io
+# cleanup[3] wiping _weakref
+# cleanup[3] wiping _warnings
+# cleanup[3] wiping _thread
+# cleanup[3] wiping _imp
+# cleanup[3] wiping _frozen_importlib
+# cleanup[3] wiping sys
+# cleanup[3] wiping builtins
+# destroy websocket.speedups
+# destroy decimal
+# destroy _datetime
+# destroy concurrent.futures._base
+# destroy concurrent.futures.thread
+# destroy select
+# destroy array
+# destroy _opcode
+# destroy reprlib
+# destroy heapq
+# destroy asyncio.locks
+# destroy asyncio.mixins
+# destroy asyncio.protocols
+# destroy asyncio.streams
+# destroy contextvars
+# destroy ntpath
+# destroy _heapq
+# destroy _queue
+# destroy ast
+# destroy sre_parse
+# destroy uvloop.includes
+# destroy uvloop._noop
+# destroy uvloop._version
+# destroy _frozen_importlib_external
+# destroy _imp
+# destroy marshal
+# destroy apport_python_hook
+# destroy exceptiongroup_fake_sys
+# destroy _sitebuiltins
+# destroy _string
+# destroy _struct
+# destroy _compat_pickle
+# destroy _pickle
+# destroy importlib
+# destroy struct
+# destroy bz2
+# destroy lzma
+# destroy textwrap
+# destroy email
+# destroy zlib
+# destroy anyio._core._eventloop
+# destroy pathlib
+# destroy anyio.to_thread
+# destroy html.entities
+# destroy websockets.frames
+# destroy websockets.http11
+# destroy _csv
+# destroy _bz2
+# destroy _lzma
+# destroy _blake2
+# destroy fastapi.params
+# destroy datetime
+# destroy locale
+# destroy email_validator
+# destroy ujson
+# destroy orjson
+# destroy fastapi.routing
+# destroy idna
+# destroy ipaddress
+# destroy idna.idnadata
+# destroy bisect
+# destroy unicodedata
+# destroy _frozen_importlib
+# destroy encodings.aliases
+# destroy encodings.utf_8
+# destroy encodings.idna
+# destroy _codecs
+# clear sys.audit hooks

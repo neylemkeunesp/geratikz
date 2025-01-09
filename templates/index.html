@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeraTikZ - TikZ Figure Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8">GeraTikZ</h1>
+        
+        <form action="/generate" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="model">
+                    Select Model:
+                </label>
+                <select 
+                    id="model" 
+                    name="model" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    required
+                >
+                    <option value="anthropic/claude-3-haiku" {% if model == "anthropic/claude-3-haiku" %}selected{% endif %}>Claude 3 Haiku (Fast)</option>
+                    <option value="anthropic/claude-3-sonnet" {% if model == "anthropic/claude-3-sonnet" %}selected{% endif %}>Claude 3 Sonnet (Balanced)</option>
+                    <option value="anthropic/claude-3-opus" {% if model == "anthropic/claude-3-opus" %}selected{% endif %}>Claude 3 Opus (Powerful)</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="description">
+                    Describe the figure you want to create:
+                </label>
+                <textarea 
+                    id="description" 
+                    name="description" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32"
+                    required
+                >{{ description if description else "" }}</textarea>
+            </div>
+            <div class="flex items-center justify-between">
+                <button 
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit"
+                >
+                    Generate Figure
+                </button>
+            </div>
+        </form>
+
+        {% if error %}
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+            <strong class="font-bold">Error: </strong>
+            <span class="block sm:inline">{{ error }}</span>
+        </div>
+        {% endif %}
+
+        {% if tikz_code %}
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h2 class="text-xl font-bold mb-4">Generated TikZ Code</h2>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto">{{ tikz_code }}</pre>
+        </div>
+        {% endif %}
+
+        {% if image_url %}
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h2 class="text-xl font-bold mb-4">Generated Figure</h2>
+            <img src="{{ image_url }}" alt="Generated TikZ figure" class="mx-auto max-w-full">
+            
+            {% if analysis %}
+            <div class="mt-4 p-4 rounded {% if is_valid %}bg-green-100 text-green-700{% else %}bg-yellow-100 text-yellow-700{% endif %}">
+                <p class="font-bold mb-2">
+                    {% if is_valid %}
+                    ✓ The figure matches your description
+                    {% else %}
+                    ⚠ The figure might not fully match your description
+                    {% endif %}
+                </p>
+                <p class="text-sm">{{ analysis }}</p>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
