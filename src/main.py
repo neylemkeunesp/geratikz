@@ -7,23 +7,41 @@ import os
 import tempfile
 import base64
 import logging
+import requests
+import json
 from pathlib import Path
 from latex import build_pdf
 from pdf2image import convert_from_path
 from dotenv import load_dotenv
 
-# Configure logging
+# Configure logging to write to both file and console
 logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    level=logging.INFO,  # Set default level to INFO to reduce noise
+    format='%(asctime)s - %(levelname)s - %(message)s',  # Simplified format
+    handlers=[
+        logging.FileHandler('geratikz.log'),  # Log to file
+        logging.StreamHandler()  # Log to console
+    ]
 )
+
+# Set specific logger for our application
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)  # Keep debug level for our app
+
+# Reduce noise from other loggers
+logging.getLogger("python_multipart").setLevel(logging.WARNING)
+logging.getLogger("uvicorn").setLevel(logging.INFO)
+logging.getLogger("fastapi").setLevel(logging.INFO)
+
+logger.info("Logging initialized - Check geratikz.log for detailed logs")
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Debug log API key loading
-api_key = os.getenv('OPENAI_API_KEY')
+# api_key = os.getenv('OPENAI_API_KEY')
+#get api from .env file
+api_key = os.getenv('OPENROUTER_API_KEY')
 if api_key:
     logger.info(f"Loaded API key: {api_key[:10]}...")
 else:
@@ -42,11 +60,8 @@ def generate_tikz(description: str, model: str = "anthropic/claude-3-haiku") -> 
         description: The text description of the figure to generate
         model: The model to use (default: anthropic/claude-3-haiku)
     """
-    import requests
-    import json
-
     headers = {
-        "Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}",
+        "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
         "HTTP-Referer": "http://localhost:3333",  # Optional but good practice
         "Content-Type": "application/json"
     }
@@ -68,28 +83,29 @@ Example for 'Draw a red circle with radius 2cm centered at origin':
     }
 
     try:
-        print("Making request to OpenRouter API...")
-        print("Headers:", {k: v[:10] + '...' if k == 'Authorization' else v for k, v in headers.items()})
-        print("Payload:", json.dumps(payload, indent=2))
+        url = "https://openrouter.ai/api/v1/chat/completions"
+        logger.info(f"Making request to OpenRouter API: {url}")
+        logger.info("Headers: %s", {k: v[:10] + '...' if k == 'Authorization' else v for k, v in headers.items()})
+        logger.info("Payload: %s", json.dumps(payload, indent=2))
         
         response = requests.post(
-            "https://api.openrouter.ai/api/v1/chat/completions",
+            url,
             headers=headers,
             json=payload
         )
         
-        print(f"Response status code: {response.status_code}")
-        print(f"Response headers: {dict(response.headers)}")
-        print(f"Response text: {response.text}")
+        logger.info(f"Response status code: {response.status_code}")
+        logger.info(f"Response headers: {dict(response.headers)}")
+        logger.info(f"Response text: {response.text}")
         
         if response.status_code != 200:
             raise Exception(f"OpenRouter API error: {response.text}")
     except requests.exceptions.RequestException as e:
-        print(f"Request error: {str(e)}")
+        logger.error(f"Request error: {str(e)}")
         raise
     
     response_json = response.json()
-    print("OpenRouter response:", response_json)  # Debug print
+    logger.info("OpenRouter response: %s", response_json)  # Debug print
     
     if "choices" in response_json:
         tikz_code = response_json["choices"][0]["message"]["content"]
@@ -130,10 +146,10 @@ def compile_tikz(tikz_code: str) -> Path:
                 capture_output=True,
                 text=True
             )
-            print("LaTeX compilation output:", result.stdout)
-            print("LaTeX compilation errors:", result.stderr)
+            logger.info("LaTeX compilation output: %s", result.stdout)
+            logger.info("LaTeX compilation errors: %s", result.stderr)
         except subprocess.CalledProcessError as e:
-            print("LaTeX compilation failed:", e.stdout, e.stderr)
+            logger.error("LaTeX compilation failed: %s %s", e.stdout, e.stderr)
             raise Exception(f"LaTeX compilation failed: {e.stdout}\n{e.stderr}")
         
         # The PDF is already generated at the expected location
@@ -154,11 +170,8 @@ def validate_figure(description: str, image_path: Path, model: str = "anthropic/
         image_path: Path to the generated figure image
         model: The model to use for validation (default: anthropic/claude-3-haiku)
     """
-    import requests
-    import json
-
     headers = {
-        "Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}",
+        "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
         "HTTP-Referer": "http://localhost:3333",  # Optional but good practice
         "Content-Type": "application/json"
     }
@@ -180,7 +193,7 @@ def validate_figure(description: str, image_path: Path, model: str = "anthropic/
     }
 
     response = requests.post(
-        "https://api.openrouter.ai/api/v1/chat/completions",
+        "https://openrouter.ai/api/v1/chat/completions",
         headers=headers,
         json=payload
     )
@@ -189,10 +202,10 @@ def validate_figure(description: str, image_path: Path, model: str = "anthropic/
         raise Exception(f"OpenRouter API error: {response.text}")
     
     response_json = response.json()
-    print("OpenRouter response:", response_json)  # Debug print
+    logger.info("OpenRouter response: %s", response_json)  # Debug print
     if "choices" in response_json:
         response_text = response_json["choices"][0]["message"]["content"]
-        print("Image analysis:", response_text)  # Debug print
+        logger.info("Image analysis: %s", response_text)  # Debug print
         return "yes" in response_text.lower(), response_text
     elif "error" in response_json:
         raise Exception(f"OpenRouter API error: {response_json['error']}")
@@ -205,7 +218,7 @@ async def root():
 
 @app.get("/ui", response_class=HTMLResponse)
 async def home(request: Request):
-    print("Handling UI route")  # Debug print
+    logger.info("Handling UI route")  # Debug print
     try:
         return templates.TemplateResponse("index.html", {
             "request": request, 
@@ -213,7 +226,7 @@ async def home(request: Request):
             "model": "anthropic/claude-3-haiku"  # Set default model
         })
     except Exception as e:
-        print(f"Template error: {str(e)}")
+        logger.error(f"Template error: {str(e)}")
         return templates.TemplateResponse("index.html", {
             "request": request,
             "error": f"Template error: {str(e)}",
@@ -224,7 +237,7 @@ async def home(request: Request):
 async def generate(request: Request, description: str = Form(...), model: str = Form(...)):
     try:
         # Check if OpenRouter API key is valid
-        api_key = os.getenv("OPENAI_API_KEY")
+        api_key = os.getenv("OPENROUTER_API_KEY")
         if not api_key or not api_key.startswith("sk-or-"):
             return templates.TemplateResponse(
                 "index.html",
@@ -237,7 +250,7 @@ async def generate(request: Request, description: str = Form(...), model: str = 
             )
             
         tikz_code = generate_tikz(description, model)
-        print("Generated TikZ code:", tikz_code)  # Debug print
+        logger.info("Generated TikZ code: %s", tikz_code)  # Debug print
         image_path = compile_tikz(tikz_code)
         is_valid, analysis = validate_figure(description, image_path, model)
         
@@ -259,7 +272,7 @@ async def generate(request: Request, description: str = Form(...), model: str = 
             "index.html",
             {
                 "request": request,
-                "error": "Invalid OpenAI API key. Please check your configuration.",
+                "error": "Invalid OpenRouter API key. Please check your configuration.",
                 "description": description,
                 "model": model
             }
@@ -277,11 +290,20 @@ async def generate(request: Request, description: str = Form(...), model: str = 
 @app.get("/test")
 async def test():
     """Test route that attempts to make an API call to OpenRouter"""
-    import requests
-    import json
+    # Get and validate API key
+    api_key = os.getenv('OPENROUTER_API_KEY')
+    if not api_key:
+        error_msg = "No API key found in environment variables"
+        logger.error(error_msg)
+        return {"error": error_msg}
     
-    api_key = os.getenv('OPENAI_API_KEY')
-    logger.info(f"Using API key: {api_key[:10]}...")
+    if not api_key.startswith('sk-or-'):
+        error_msg = f"Invalid API key format. Key should start with 'sk-or-'. Got key starting with: {api_key[:5]}..."
+        logger.error(error_msg)
+        return {"error": error_msg}
+    
+    logger.info(f"Using API key starting with: {api_key[:10]}...")
+    logger.info(f"API key length: {len(api_key)}")
     
     headers = {
         "Authorization": f"Bearer {api_key}",
@@ -298,28 +320,50 @@ async def test():
     
     try:
         logger.info("Making test request to OpenRouter API...")
-        logger.debug(f"Headers: {headers}")
-        logger.debug(f"Payload: {json.dumps(payload, indent=2)}")
+        logger.info(f"Headers (sanitized): {json.dumps({k: (v[:10] + '...' if k == 'Authorization' else v) for k, v in headers.items()}, indent=2)}")
+        logger.info(f"Payload: {json.dumps(payload, indent=2)}")
         
-        response = requests.post(
-            "https://api.openrouter.ai/api/v1/chat/completions",
-            headers=headers,
-            json=payload,
-            timeout=10
-        )
-        
-        logger.info(f"Response status: {response.status_code}")
-        logger.info(f"Response text: {response.text}")
-        
-        return {
-            "message": "Test completed",
-            "status": response.status_code,
-            "response": response.text
-        }
-    except requests.exceptions.RequestException as e:
-        error_msg = f"Request error: {str(e)}"
-        logger.error(error_msg)
-        return {"error": error_msg}
+        # Make request with detailed error handling
+        try:
+            response = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=10
+            )
+            response.raise_for_status()  # Raise an error for bad status codes
+            
+            logger.info(f"Response status: {response.status_code}")
+            logger.info(f"Response headers: {dict(response.headers)}")
+            logger.info(f"Response text: {response.text}")
+            
+            return {
+                "message": "Test completed successfully",
+                "status": response.status_code,
+                "headers": dict(response.headers),
+                "response": response.text
+            }
+            
+        except requests.exceptions.HTTPError as e:
+            error_msg = f"HTTP error: {e.response.status_code} - {e.response.text}"
+            logger.error(error_msg)
+            return {"error": error_msg}
+            
+        except requests.exceptions.ConnectionError as e:
+            error_msg = f"Connection error: {str(e)}"
+            logger.error(error_msg)
+            return {"error": error_msg}
+            
+        except requests.exceptions.Timeout as e:
+            error_msg = "Request timed out"
+            logger.error(error_msg)
+            return {"error": error_msg}
+            
+        except requests.exceptions.RequestException as e:
+            error_msg = f"Request error: {str(e)}"
+            logger.error(error_msg)
+            return {"error": error_msg}
+            
     except Exception as e:
         error_msg = f"Unexpected error: {str(e)}"
         logger.error(error_msg)
@@ -327,5 +371,5 @@ async def test():
 
 if __name__ == "__main__":
     import uvicorn
-    print("Starting GeraTikZ server on http://localhost:3333")
+    logger.info("Starting GeraTikZ server on http://localhost:3333")
     uvicorn.run(app, host="127.0.0.1", port=3333, log_level="debug")
