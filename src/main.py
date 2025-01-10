@@ -179,36 +179,52 @@ def get_available_models() -> list[dict]:
         )
         response.raise_for_status()
         
-        models = response.json()
+        data = response.json()
+        if isinstance(data, list):
+            models = data
+        elif isinstance(data, dict) and "data" in data:
+            models = data["data"]
+        else:
+            logger.error("Unexpected API response format")
+            return get_fallback_models()
+            
         logger.info(f"Retrieved {len(models)} models from OpenRouter")
         
         # Filter for models that support chat completion
         chat_models = []
         for model in models:
-            types = model.get("types", [])
+            if not isinstance(model, dict):
+                continue
+                
+            model_id = model.get("id", "")
             context_length = model.get("context_length", 0)
+            pricing = model.get("pricing", {})
+            prompt_price = pricing.get("prompt") if isinstance(pricing, dict) else None
             
             # Only include models that:
-            # 1. Support chat completion
+            # 1. Have a valid model ID
             # 2. Have a reasonable context length (>1000 tokens)
             # 3. Have valid pricing information
-            if (any(t == "chat" for t in types) and 
+            if (model_id and 
                 context_length >= 1000 and 
-                model.get("pricing", {}).get("prompt") is not None):
-                chat_models.append(model)
+                prompt_price is not None):
+                chat_models.append({
+                    "id": model_id,
+                    "name": model.get("name", model_id),
+                    "pricing": {"prompt": prompt_price}
+                })
         
         logger.info(f"Filtered to {len(chat_models)} valid chat models")
         
-        # Sort by pricing (cost per 1k tokens)
+        # Sort by pricing (cost per token)
         chat_models.sort(key=lambda x: x.get("pricing", {}).get("prompt", 0))
         
         # Log the available models for debugging
         for model in chat_models:
-            logger.info(f"Available model: {model.get('id')} - "
-                       f"Context: {model.get('context_length')} tokens, "
-                       f"Price: {model.get('pricing', {}).get('prompt', 0):.5f} per token")
+            logger.info(f"Available model: {model['id']} - "
+                       f"Price: {model['pricing']['prompt']:.5f} per token")
         
-        return chat_models
+        return chat_models if chat_models else get_fallback_models()
         
     except requests.exceptions.Timeout:
         logger.error("Timeout while fetching models from OpenRouter")
@@ -223,105 +239,94 @@ def get_available_models() -> list[dict]:
 def get_fallback_models() -> list[dict]:
     """Return a list of fallback models when OpenRouter API is unavailable."""
     return [
+        # OpenAI Models
         {
-            "id": "anthropic/claude-3-opus-20240229",
-            "name": "Claude 3 Opus",
-            "pricing": {"prompt": 0.00150}
+            "id": "openai/o1",
+            "name": "OpenAI: o1",
+            "pricing": {"prompt": 0.000015, "completion": 0.00006, "image": 0.021675}
         },
         {
-            "id": "anthropic/claude-3-sonnet-20240229",
-            "name": "Claude 3 Sonnet",
-            "pricing": {"prompt": 0.00075}
-        },
-        {
-            "id": "anthropic/claude-3-haiku-20240307",
-            "name": "Claude 3 Haiku",
-            "pricing": {"prompt": 0.00025}
-        },
-        {
-            "id": "anthropic/claude-2.1",
-            "name": "Claude 2.1",
-            "pricing": {"prompt": 0.00080}
-        },
-        {
-            "id": "anthropic/claude-2.0",
-            "name": "Claude 2.0",
-            "pricing": {"prompt": 0.00080}
-        },
-        {
-            "id": "anthropic/claude-instant-1.2",
-            "name": "Claude Instant 1.2",
-            "pricing": {"prompt": 0.00020}
-        },
-        {
-            "id": "google/gemini-pro",
-            "name": "Gemini Pro",
-            "pricing": {"prompt": 0.00010}
-        },
-        {
-            "id": "google/gemini-pro-vision",
-            "name": "Gemini Pro Vision",
-            "pricing": {"prompt": 0.00010}
-        },
-        {
-            "id": "meta-llama/llama-2-13b-chat",
-            "name": "Llama 2 13B",
-            "pricing": {"prompt": 0.00010}
-        },
-        {
-            "id": "meta-llama/llama-2-70b-chat",
-            "name": "Llama 2 70B",
-            "pricing": {"prompt": 0.00015}
-        },
-        {
-            "id": "mistral/mistral-tiny",
-            "name": "Mistral Tiny",
-            "pricing": {"prompt": 0.00010}
-        },
-        {
-            "id": "mistral/mistral-small",
-            "name": "Mistral Small",
-            "pricing": {"prompt": 0.00020}
-        },
-        {
-            "id": "mistral/mistral-medium",
-            "name": "Mistral Medium",
-            "pricing": {"prompt": 0.00040}
-        },
-        {
-            "id": "perplexity/pplx-7b-chat",
-            "name": "PPLX 7B",
-            "pricing": {"prompt": 0.00010}
-        },
-        {
-            "id": "perplexity/pplx-70b-chat",
-            "name": "PPLX 70B",
-            "pricing": {"prompt": 0.00020}
-        },
-        {
-            "id": "perplexity/pplx-online",
-            "name": "PPLX Online",
-            "pricing": {"prompt": 0.00020}
-        },
-        {
-            "id": "openai/gpt-4",
-            "name": "GPT-4",
-            "pricing": {"prompt": 0.00300}
+            "id": "openai/gpt-4o",
+            "name": "OpenAI: GPT-4o",
+            "pricing": {"prompt": 0.0000025, "completion": 0.00001, "image": 0.003613}
         },
         {
             "id": "openai/gpt-4-turbo",
-            "name": "GPT-4 Turbo",
-            "pricing": {"prompt": 0.00100}
+            "name": "OpenAI: GPT-4 Turbo",
+            "pricing": {"prompt": 0.00001, "completion": 0.00003, "image": 0.01445}
+        },
+        # Anthropic Models
+        {
+            "id": "anthropic/claude-3-opus",
+            "name": "Claude 3 Opus",
+            "pricing": {"prompt": 0.000015, "completion": 0.000075, "image": 0.024}
         },
         {
-            "id": "openai/gpt-4-vision",
-            "name": "GPT-4 Vision",
-            "pricing": {"prompt": 0.00300}
+            "id": "anthropic/claude-3-sonnet",
+            "name": "Claude 3 Sonnet",
+            "pricing": {"prompt": 0.000003, "completion": 0.000015, "image": 0.0048}
         },
         {
-            "id": "openai/gpt-3.5-turbo",
-            "name": "GPT-3.5 Turbo",
-            "pricing": {"prompt": 0.00015}
+            "id": "anthropic/claude-3-haiku",
+            "name": "Claude 3 Haiku",
+            "pricing": {"prompt": 0.00000025, "completion": 0.00000125, "image": 0.0004}
+        },
+        # Google Models
+        {
+            "id": "google/gemini-2.0-flash-exp:free",
+            "name": "Google: Gemini Flash 2.0 Experimental",
+            "pricing": {"prompt": 0, "completion": 0, "image": 0}
+        },
+        {
+            "id": "google/gemini-pro-1.5",
+            "name": "Google: Gemini Pro 1.5",
+            "pricing": {"prompt": 0.00000125, "completion": 0.000005, "image": 0.0006575}
+        },
+        # Meta/Llama Models
+        {
+            "id": "meta-llama/llama-3.3-70b-instruct",
+            "name": "Meta: Llama 3.3 70B Instruct",
+            "pricing": {"prompt": 0.00000012, "completion": 0.0000003}
+        },
+        {
+            "id": "meta-llama/llama-3.1-405b-instruct",
+            "name": "Meta: Llama 3.1 405B Instruct",
+            "pricing": {"prompt": 0.0000008, "completion": 0.0000008}
+        },
+        # Mistral Models
+        {
+            "id": "mistralai/mistral-large-2411",
+            "name": "Mistral Large 2411",
+            "pricing": {"prompt": 0.000002, "completion": 0.000006}
+        },
+        {
+            "id": "mistralai/mixtral-8x22b-instruct",
+            "name": "Mistral: Mixtral 8x22B Instruct",
+            "pricing": {"prompt": 0.0000009, "completion": 0.0000009}
+        },
+        # Amazon Models
+        {
+            "id": "amazon/nova-pro-v1",
+            "name": "Amazon: Nova Pro 1.0",
+            "pricing": {"prompt": 0.0000008, "completion": 0.0000032, "image": 0.0012}
+        },
+        # Qwen Models
+        {
+            "id": "qwen/qwen-2.5-72b-instruct",
+            "name": "Qwen2.5 72B Instruct",
+            "pricing": {"prompt": 0.00000023, "completion": 0.0000004}
+        },
+        # xAI Models
+        {
+            "id": "x-ai/grok-2-1212",
+            "name": "xAI: Grok 2 1212",
+            "pricing": {"prompt": 0.000002, "completion": 0.00001}
+        },
+        # Cohere Models
+        {
+            "id": "cohere/command-r7b-12-2024",
+            "name": "Cohere: Command R7B (12-2024)",
+            "pricing": {"prompt": 0.0000000375, "completion": 0.00000015}
         }
     ]
 
