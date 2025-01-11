@@ -239,6 +239,12 @@ def get_available_models() -> list[dict]:
 def get_fallback_models() -> list[dict]:
     """Return a list of fallback models when OpenRouter API is unavailable."""
     return [
+        # Auto Router
+        {
+            "id": "openrouter/auto",
+            "name": "Auto Router (best for prompt)",
+            "pricing": {"prompt": -1, "completion": -1, "image": -1}
+        },
         # OpenAI Models
         {
             "id": "openai/o1",
@@ -251,25 +257,65 @@ def get_fallback_models() -> list[dict]:
             "pricing": {"prompt": 0.0000025, "completion": 0.00001, "image": 0.003613}
         },
         {
+            "id": "openai/gpt-4o-2024-11-20",
+            "name": "OpenAI: GPT-4o (2024-11-20)",
+            "pricing": {"prompt": 0.0000025, "completion": 0.00001, "image": 0.003613}
+        },
+        {
             "id": "openai/gpt-4-turbo",
             "name": "OpenAI: GPT-4 Turbo",
             "pricing": {"prompt": 0.00001, "completion": 0.00003, "image": 0.01445}
         },
+        {
+            "id": "openai/gpt-3.5-turbo",
+            "name": "OpenAI: GPT-3.5 Turbo",
+            "pricing": {"prompt": 0.000001, "completion": 0.000002}
+        },
+        {
+            "id": "openai/chatgpt-4o-latest",
+            "name": "OpenAI: ChatGPT-4o",
+            "pricing": {"prompt": 0.000005, "completion": 0.000015, "image": 0.007225}
+        },
+        {
+            "id": "openai/o1-mini",
+            "name": "OpenAI: o1-mini",
+            "pricing": {"prompt": 0.000003, "completion": 0.000012}
+        },
+        {
+            "id": "openai/o1-preview",
+            "name": "OpenAI: o1-preview",
+            "pricing": {"prompt": 0.000015, "completion": 0.00006}
+        },
         # Anthropic Models
         {
             "id": "anthropic/claude-3-opus",
-            "name": "Claude 3 Opus",
+            "name": "Anthropic: Claude 3 Opus",
             "pricing": {"prompt": 0.000015, "completion": 0.000075, "image": 0.024}
         },
         {
             "id": "anthropic/claude-3-sonnet",
-            "name": "Claude 3 Sonnet",
+            "name": "Anthropic: Claude 3 Sonnet",
             "pricing": {"prompt": 0.000003, "completion": 0.000015, "image": 0.0048}
         },
         {
             "id": "anthropic/claude-3-haiku",
-            "name": "Claude 3 Haiku",
+            "name": "Anthropic: Claude 3 Haiku",
             "pricing": {"prompt": 0.00000025, "completion": 0.00000125, "image": 0.0004}
+        },
+        {
+            "id": "anthropic/claude-3.5-sonnet",
+            "name": "Anthropic: Claude 3.5 Sonnet",
+            "pricing": {"prompt": 0.000003, "completion": 0.000015, "image": 0.0048}
+        },
+        {
+            "id": "anthropic/claude-3.5-haiku",
+            "name": "Anthropic: Claude 3.5 Haiku",
+            "pricing": {"prompt": 0.0000008, "completion": 0.000004}
+        },
+        {
+            "id": "anthropic/claude-2.1",
+            "name": "Anthropic: Claude 2.1",
+            "pricing": {"prompt": 0.000008, "completion": 0.000024}
         },
         # Google Models
         {
@@ -282,6 +328,26 @@ def get_fallback_models() -> list[dict]:
             "name": "Google: Gemini Pro 1.5",
             "pricing": {"prompt": 0.00000125, "completion": 0.000005, "image": 0.0006575}
         },
+        {
+            "id": "google/gemini-flash-1.5",
+            "name": "Google: Gemini Flash 1.5",
+            "pricing": {"prompt": 0.000000075, "completion": 0.0000003, "image": 0.00004}
+        },
+        {
+            "id": "google/gemini-pro",
+            "name": "Google: Gemini Pro",
+            "pricing": {"prompt": 0.0000005, "completion": 0.0000015, "image": 0.0025}
+        },
+        {
+            "id": "google/gemini-pro-vision",
+            "name": "Google: Gemini Pro Vision",
+            "pricing": {"prompt": 0.0000005, "completion": 0.0000015, "image": 0.0025}
+        },
+        {
+            "id": "google/gemini-flash-1.5-8b",
+            "name": "Google: Gemini Flash 1.5 8B",
+            "pricing": {"prompt": 0.0000000375, "completion": 0.00000015}
+        },
         # Meta/Llama Models
         {
             "id": "meta-llama/llama-3.3-70b-instruct",
@@ -289,9 +355,29 @@ def get_fallback_models() -> list[dict]:
             "pricing": {"prompt": 0.00000012, "completion": 0.0000003}
         },
         {
+            "id": "meta-llama/llama-3.2-90b-vision-instruct",
+            "name": "Meta: Llama 3.2 90B Vision Instruct",
+            "pricing": {"prompt": 0.0000009, "completion": 0.0000009, "image": 0.001301}
+        },
+        {
             "id": "meta-llama/llama-3.1-405b-instruct",
             "name": "Meta: Llama 3.1 405B Instruct",
             "pricing": {"prompt": 0.0000008, "completion": 0.0000008}
+        },
+        {
+            "id": "meta-llama/llama-3.2-3b-instruct",
+            "name": "Meta: Llama 3.2 3B Instruct",
+            "pricing": {"prompt": 0.00000001, "completion": 0.00000001}
+        },
+        {
+            "id": "meta-llama/llama-3.2-1b-instruct",
+            "name": "Meta: Llama 3.2 1B Instruct",
+            "pricing": {"prompt": 0.000000015, "completion": 0.000000025}
+        },
+        {
+            "id": "meta-llama/llama-guard-2-8b",
+            "name": "Meta: LlamaGuard 2 8B",
+            "pricing": {"prompt": 0.00000018, "completion": 0.00000018}
         },
         # Mistral Models
         {
@@ -304,11 +390,51 @@ def get_fallback_models() -> list[dict]:
             "name": "Mistral: Mixtral 8x22B Instruct",
             "pricing": {"prompt": 0.0000009, "completion": 0.0000009}
         },
+        {
+            "id": "mistralai/mistral-medium",
+            "name": "Mistral Medium",
+            "pricing": {"prompt": 0.00000275, "completion": 0.0000081}
+        },
+        {
+            "id": "mistralai/mistral-small",
+            "name": "Mistral Small",
+            "pricing": {"prompt": 0.0000002, "completion": 0.0000006}
+        },
+        {
+            "id": "mistralai/mistral-tiny",
+            "name": "Mistral Tiny",
+            "pricing": {"prompt": 0.00000025, "completion": 0.00000025}
+        },
+        {
+            "id": "mistralai/mistral-nemo",
+            "name": "Mistral: Mistral Nemo",
+            "pricing": {"prompt": 0.000000035, "completion": 0.00000008}
+        },
+        {
+            "id": "mistralai/codestral-mamba",
+            "name": "Mistral: Codestral Mamba",
+            "pricing": {"prompt": 0.00000025, "completion": 0.00000025}
+        },
+        {
+            "id": "mistralai/pixtral-large-2411",
+            "name": "Mistral: Pixtral Large 2411",
+            "pricing": {"prompt": 0.000002, "completion": 0.000006, "image": 0.002888}
+        },
         # Amazon Models
         {
             "id": "amazon/nova-pro-v1",
             "name": "Amazon: Nova Pro 1.0",
             "pricing": {"prompt": 0.0000008, "completion": 0.0000032, "image": 0.0012}
+        },
+        {
+            "id": "amazon/nova-lite-v1",
+            "name": "Amazon: Nova Lite 1.0",
+            "pricing": {"prompt": 0.00000006, "completion": 0.00000024, "image": 0.00009}
+        },
+        {
+            "id": "amazon/nova-micro-v1",
+            "name": "Amazon: Nova Micro 1.0",
+            "pricing": {"prompt": 0.000000035, "completion": 0.00000014}
         },
         # Qwen Models
         {
@@ -316,17 +442,93 @@ def get_fallback_models() -> list[dict]:
             "name": "Qwen2.5 72B Instruct",
             "pricing": {"prompt": 0.00000023, "completion": 0.0000004}
         },
+        {
+            "id": "qwen/qwen-2-vl-72b-instruct",
+            "name": "Qwen2-VL 72B Instruct",
+            "pricing": {"prompt": 0.0000004, "completion": 0.0000004, "image": 0.000578}
+        },
+        {
+            "id": "qwen/qwen-2.5-7b-instruct",
+            "name": "Qwen2.5 7B Instruct",
+            "pricing": {"prompt": 0.00000027, "completion": 0.00000027}
+        },
+        {
+            "id": "qwen/qvq-72b-preview",
+            "name": "Qwen: QvQ 72B Preview",
+            "pricing": {"prompt": 0.00000025, "completion": 0.0000005}
+        },
+        {
+            "id": "qwen/qwq-32b-preview",
+            "name": "Qwen: QwQ 32B Preview",
+            "pricing": {"prompt": 0.00000012, "completion": 0.00000018}
+        },
         # xAI Models
         {
             "id": "x-ai/grok-2-1212",
             "name": "xAI: Grok 2 1212",
             "pricing": {"prompt": 0.000002, "completion": 0.00001}
         },
+        {
+            "id": "x-ai/grok-2-vision-1212",
+            "name": "xAI: Grok 2 Vision 1212",
+            "pricing": {"prompt": 0.000002, "completion": 0.00001, "image": 0.0036}
+        },
+        {
+            "id": "x-ai/grok-vision-beta",
+            "name": "xAI: Grok Vision Beta",
+            "pricing": {"prompt": 0.000005, "completion": 0.000015, "image": 0.009}
+        },
+        {
+            "id": "x-ai/grok-beta",
+            "name": "xAI: Grok Beta",
+            "pricing": {"prompt": 0.000005, "completion": 0.000015}
+        },
         # Cohere Models
         {
             "id": "cohere/command-r7b-12-2024",
             "name": "Cohere: Command R7B (12-2024)",
             "pricing": {"prompt": 0.0000000375, "completion": 0.00000015}
+        },
+        {
+            "id": "cohere/command-r",
+            "name": "Cohere: Command R",
+            "pricing": {"prompt": 0.000000475, "completion": 0.000001425}
+        },
+        {
+            "id": "cohere/command-r-plus",
+            "name": "Cohere: Command R+",
+            "pricing": {"prompt": 0.00000285, "completion": 0.00001425}
+        },
+        # Other Notable Models
+        {
+            "id": "deepseek/deepseek-chat",
+            "name": "DeepSeek V3",
+            "pricing": {"prompt": 0.00000014, "completion": 0.00000028}
+        },
+        {
+            "id": "inflection/inflection-3-pi",
+            "name": "Inflection: Inflection 3 Pi",
+            "pricing": {"prompt": 0.0000025, "completion": 0.00001}
+        },
+        {
+            "id": "inflection/inflection-3-productivity",
+            "name": "Inflection: Inflection 3 Productivity",
+            "pricing": {"prompt": 0.0000025, "completion": 0.00001}
+        },
+        {
+            "id": "01-ai/yi-large",
+            "name": "01.AI: Yi Large",
+            "pricing": {"prompt": 0.000003, "completion": 0.000003}
+        },
+        {
+            "id": "databricks/dbrx-instruct",
+            "name": "Databricks: DBRX 132B Instruct",
+            "pricing": {"prompt": 0.00000108, "completion": 0.00000108}
+        },
+        {
+            "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+            "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
+            "pricing": {"prompt": 0.00000012, "completion": 0.0000003}
         }
     ]
 
