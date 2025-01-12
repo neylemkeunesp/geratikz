@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Evolution Box</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .evolution-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .evolution-step {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .evolution-step:not(:last-child)::after {
+            content: '↓';
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            color: #666;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .step-description {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="evolution-container">
+        <div class="evolution-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <div class="step-title">Initial Process</div>
+                <div class="step-description">Basic implementation with core functionality</div>
+            </div>
+        </div>
+        <div class="evolution-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <div class="step-title">Optimization</div>
+                <div class="step-description">Improved performance and resource utilization</div>
+            </div>
+        </div>
+        <div class="evolution-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <div class="step-title">Enhancement</div>
+                <div class="step-description">Added features and expanded capabilities</div>
+            </div>
+        </div>
+        <div class="evolution-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <div class="step-title">Maturation</div>
+                <div class="step-description">Refined and stabilized with robust error handling</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

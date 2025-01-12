@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request, Form
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 import openai
 import os
 import tempfile
@@ -60,6 +60,7 @@ def generate_tikz(description: str, model: str = "anthropic/claude-3-haiku") -> 
         description: The text description of the figure to generate
         model: The model to use (default: anthropic/claude-3-haiku)
     """
+    logger.info("=== Executing generate_tikz function ===")
     headers = {
         "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
         "HTTP-Referer": "http://localhost:3333",  # Optional but good practice
@@ -120,6 +121,7 @@ Example for 'Draw a red circle with radius 2cm centered at origin':
 
 def compile_tikz(tikz_code: str) -> Path:
     """Compile TikZ code to PDF and convert to PNG."""
+    logger.info("=== Executing compile_tikz function ===")
     latex_template = r"""
     \documentclass[tikz,border=10pt]{standalone}
     \usepackage{tikz}
@@ -140,30 +142,42 @@ def compile_tikz(tikz_code: str) -> Path:
         import subprocess
         try:
             result = subprocess.run(
-                ['pdflatex', '-shell-escape', str(tex_path)],
+                ['pdflatex', '-shell-escape', '-interaction=nonstopmode', str(tex_path)],
                 cwd=tmp_path,
-                check=True,
+                check=False,  # Don't raise exception on error
                 capture_output=True,
                 text=True
             )
             logger.info("LaTeX compilation output: %s", result.stdout)
-            logger.info("LaTeX compilation errors: %s", result.stderr)
-        except subprocess.CalledProcessError as e:
-            logger.error("LaTeX compilation failed: %s %s", e.stdout, e.stderr)
-            raise Exception(f"LaTeX compilation failed: {e.stdout}\n{e.stderr}")
+            if result.stderr:
+                logger.warning("LaTeX compilation warnings/errors: %s", result.stderr)
+        except Exception as e:
+            logger.error("Error during LaTeX compilation: %s", str(e))
         
         # The PDF is already generated at the expected location
         pdf_path = tmp_path / "figure.pdf"
         
-        # Convert PDF to PNG
-        images = convert_from_path(tmp_path / "figure.pdf")
+        # Check if PDF was generated
+        pdf_path = tmp_path / "figure.pdf"
         png_path = Path("static/figures/latest.png")
         png_path.parent.mkdir(parents=True, exist_ok=True)
-        images[0].save(png_path, "PNG")
+        
+        if pdf_path.exists():
+            # Convert PDF to PNG
+            images = convert_from_path(pdf_path)
+            images[0].save(png_path, "PNG")
+        else:
+            # Create a blank PNG if PDF generation failed
+            from PIL import Image
+            blank_image = Image.new('RGB', (400, 300), 'white')
+            blank_image.save(png_path, "PNG")
+            logger.error("PDF generation failed - created blank image")
+            
         return png_path
 
 def get_available_models() -> list[dict]:
     """Fetch available models from OpenRouter API."""
+    logger.info("=== Executing get_available_models function ===")
     headers = {
         "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
         "HTTP-Referer": "http://localhost:3333",
@@ -238,6 +252,7 @@ def get_available_models() -> list[dict]:
 
 def get_fallback_models() -> list[dict]:
     """Return a list of fallback models when OpenRouter API is unavailable."""
+    logger.info("=== Executing get_fallback_models function ===")
     return [
         # Auto Router
         {
@@ -532,6 +547,74 @@ def get_fallback_models() -> list[dict]:
         }
     ]
 
+def improve_tikz(description: str, tikz_code: str, analysis: str, model: str) -> str:
+    """Generate improved TikZ code based on previous attempt and analysis."""
+    logger.info("=== Executing improve_tikz function ===")
+    headers = {
+        "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
+        "HTTP-Referer": "http://localhost:3333",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": """You are a LaTeX/TikZ expert. Generate ONLY the TikZ code that matches the given description.
+Rules:
+1. Do not include any explanatory text, comments, or natural language responses
+2. Do not include LaTeX preamble or document environment commands (\\begin{document}, \\end{document})
+3. Only output valid TikZ commands wrapped in \\begin{tikzpicture} and \\end{tikzpicture}
+4. If color is specified, use the appropriate TikZ color command
+5. Use exact measurements as specified in the description
+6. Your response must contain ONLY the TikZ code, nothing else
+
+Example format:
+\\begin{tikzpicture}
+[your TikZ commands here]
+\\end{tikzpicture}"""},
+            {"role": "user", "content": f"Previous attempt to create figure with description: {description}\n\nPrevious TikZ code:\n{tikz_code}\n\nAnalysis of previous attempt:\n{analysis}\n\nPlease generate improved TikZ code that better matches the description."}
+        ]
+    }
+
+    try:
+        response = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers=headers,
+            json=payload
+        )
+        
+        if response.status_code != 200:
+            raise Exception(f"OpenRouter API error: {response.text}")
+        
+        response_json = response.json()
+        logger.info("OpenRouter response: %s", response_json)
+        
+        if "choices" in response_json:
+            tikz_code = response_json["choices"][0]["message"]["content"]
+            
+            # Clean up the response to ensure proper TikZ code
+            # Remove any text before \begin{tikzpicture} and after \end{tikzpicture}
+            begin_idx = tikz_code.find("\\begin{tikzpicture}")
+            end_idx = tikz_code.find("\\end{tikzpicture}")
+            
+            if begin_idx != -1 and end_idx != -1:
+                tikz_code = tikz_code[begin_idx:end_idx + len("\\end{tikzpicture}")]
+            else:
+                # If tikzpicture environment is not found, wrap the code
+                # First, remove any LaTeX document commands
+                tikz_code = tikz_code.replace("\\begin{document}", "").replace("\\end{document}", "")
+                tikz_code = tikz_code.strip()
+                tikz_code = "\\begin{tikzpicture}\n" + tikz_code + "\n\\end{tikzpicture}"
+            
+            return tikz_code
+        elif "error" in response_json:
+            raise Exception(f"OpenRouter API error: {response_json['error']}")
+        else:
+            raise Exception(f"Unexpected response format: {response_json}")
+    except Exception as e:
+        logger.error(f"Error in improve_tikz: {str(e)}")
+        raise
+
 def validate_figure(description: str, image_path: Path, model: str = "anthropic/claude-3-haiku") -> tuple[bool, str]:
     """Use OpenRouter Vision to analyze and validate the figure.
     
@@ -540,6 +623,7 @@ def validate_figure(description: str, image_path: Path, model: str = "anthropic/
         image_path: Path to the generated figure image
         model: The model to use for validation (default: anthropic/claude-3-haiku)
     """
+    logger.info("=== Executing validate_figure function ===")
     headers = {
         "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
         "HTTP-Referer": "http://localhost:3333",  # Optional but good practice
@@ -582,13 +666,54 @@ def validate_figure(description: str, image_path: Path, model: str = "anthropic/
     else:
         raise Exception(f"Unexpected response format: {response_json}")
 
+@app.post("/improve")
+async def improve(
+    request: Request,
+    description: str = Form(...),
+    model: str = Form(...),
+    tikz_code: str = Form(...),
+    analysis: str = Form(...)
+):
+    logger.info("=== Executing improve route handler ===")
+    try:
+        improved_tikz = improve_tikz(description, tikz_code, analysis, model)
+        image_path = compile_tikz(improved_tikz)
+        is_valid, new_analysis = validate_figure(description, image_path, model)
+        
+        return templates.TemplateResponse(
+            "index.html",
+            {
+                "request": request,
+                "tikz_code": improved_tikz,
+                "image_url": "/static/figures/latest.png",
+                "description": description,
+                "is_valid": is_valid,
+                "analysis": new_analysis,
+                "error": None,
+                "model": model,
+                "available_models": get_available_models()
+            }
+        )
+    except Exception as e:
+        return templates.TemplateResponse(
+            "index.html",
+            {
+                "request": request,
+                "error": str(e),
+                "description": description,
+                "model": model,
+                "available_models": get_available_models()
+            }
+        )
+
 @app.get("/")
 async def root():
-    return {"message": "Welcome to GeraTikZ"}
+    logger.info("=== Executing root route handler ===")
+    return RedirectResponse(url="/ui")
 
 @app.get("/ui", response_class=HTMLResponse)
 async def home(request: Request):
-    logger.info("Handling UI route")  # Debug print
+    logger.info("=== Executing home route handler ===")
     try:
         models = get_available_models()
         default_model = "anthropic/claude-3-haiku"
@@ -608,6 +733,7 @@ async def home(request: Request):
 
 @app.post("/generate")
 async def generate(request: Request, description: str = Form(...), model: str = Form(...)):
+    logger.info("=== Executing generate route handler ===")
     try:
         # Check if OpenRouter API key is valid
         api_key = os.getenv("OPENROUTER_API_KEY")
@@ -668,6 +794,7 @@ async def generate(request: Request, description: str = Form(...), model: str = 
 @app.get("/test")
 async def test():
     """Test route that attempts to make an API call to OpenRouter"""
+    logger.info("=== Executing test route handler ===")
     # Get and validate API key
     api_key = os.getenv('OPENROUTER_API_KEY')
     if not api_key:

@@ -1,5 +1,0 @@
-2025-01-08 17:47:28,263 - __main__ - INFO - Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
-2025-01-08 17:47:28,264 - __main__ - INFO - Socket names: DESKTOP-I31G8LD, DESKTOP-I31G8LD.
-2025-01-08 17:47:28,264 - __main__ - INFO - Attempting to bind to 0.0.0.0:5000
-2025-01-08 17:47:28,264 - __main__ - INFO - Server created and bound to 0.0.0.0:5000
-2025-01-08 17:47:28,264 - __main__ - INFO - Starting server...

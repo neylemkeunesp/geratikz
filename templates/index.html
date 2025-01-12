@@ -6,9 +6,38 @@
     <title>GeraTikZ - TikZ Figure Generator</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen p-8">
-    <div class="max-w-4xl mx-auto">
-        <h1 class="text-3xl font-bold text-center mb-8">GeraTikZ</h1>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 mb-8">
+        <div class="max-w-4xl mx-auto px-8 flex items-center justify-between">
+            <div class="flex items-center">
+                <svg class="w-8 h-8 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0012 18.75c-1.03 0-1.96-.474-2.58-1.284l-.549-.547z" />
+                </svg>
+                <h1 class="text-3xl font-bold text-gray-800">GeraTikZ</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-8">
+        <!-- Hero Section -->
+        <div class="text-center mb-12">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Generate Beautiful TikZ Figures from Natural Language</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Simply describe the figure you want to create, and let GeraTikZ generate the TikZ code for you. 
+                Perfect for academic papers, presentations, and technical documentation.
+            </p>
+        </div>
+
+        <!-- Example Figures -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded mb-3">
+                    <img src="/static/figures/latest.png" alt="Example TikZ figure" class="object-contain">
+                </div>
+                <p class="text-sm text-gray-600 text-center">Latest Generated Figure</p>
+            </div>
+        </div>
         
         <form action="/generate" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
@@ -40,12 +69,14 @@
                 >{{ description if description else "" }}</textarea>
             </div>
             <div class="flex items-center justify-between">
-                <button 
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit"
-                >
-                    Generate Figure
-                </button>
+                <div>
+                    <button 
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit"
+                    >
+                        Generate Figure
+                    </button>
+                </div>
             </div>
         </form>
 
@@ -78,10 +109,47 @@
                     {% endif %}
                 </p>
                 <p class="text-sm">{{ analysis }}</p>
+                <form action="/improve" method="POST" class="mt-4">
+                    <input type="hidden" name="description" value="{{ description }}">
+                    <input type="hidden" name="model" value="{{ model }}">
+                    <input type="hidden" name="tikz_code" value="{{ tikz_code }}">
+                    <input type="hidden" name="analysis" value="{{ analysis }}">
+                    <button 
+                        type="submit"
+                        class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    >
+                        Improve Figure
+                    </button>
+                </form>
             </div>
             {% endif %}
         </div>
         {% endif %}
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16 py-8">
+        <div class="max-w-4xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About GeraTikZ</h3>
+                    <p class="text-gray-400">
+                        GeraTikZ is an AI-powered tool that converts natural language descriptions into TikZ figures, 
+                        making it easier for academics and professionals to create high-quality technical diagrams.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://tikz.dev" class="hover:text-white">TikZ Documentation</a></li>
+                        <li><a href="https://github.com/lemke-ethan/geratikz" class="hover:text-white">GitHub Repository</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 GeraTikZ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

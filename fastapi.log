@@ -1,4 +1,0 @@
-2025-01-08 17:46:47,164 - __main__ - INFO - Starting server with Python 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
-2025-01-08 17:46:47,174 - __main__ - INFO - Starting up FastAPI application
-2025-01-08 17:47:06,519 - __main__ - INFO - Shutting down FastAPI application
-2025-01-08 17:47:06,520 - __main__ - INFO - Received signal 2
